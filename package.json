@@ -1,8 +1,9 @@
 {
   "name": "trimps",
   "version": "5.9.2",
-  "description": "Trimps",
+  "description": "TrimpsX",
   "author": "Zach Hood",
+  "private": true,
   "license": "GPL-3.0",
   "scripts": {
     "build": "node scripts/build.mjs",
