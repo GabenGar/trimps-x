@@ -1,0 +1,86 @@
+import type { LoaderFunctionArgs, ActionFunctionArgs } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
+import { Form, useLoaderData, useNavigate } from "@remix-run/react";
+import invariant from "tiny-invariant";
+
+import { getContact, updateContact } from "../data";
+
+export default function EditContact() {
+  const navigate = useNavigate();
+  const { contact } = useLoaderData<typeof loader>();
+
+  return (
+    <Form key={contact.id} id="contact-form" method="post">
+      <p>
+        <span>Name</span>
+        <input
+          defaultValue={contact.first}
+          aria-label="First name"
+          name="first"
+          type="text"
+          placeholder="First"
+        />
+        <input
+          aria-label="Last name"
+          defaultValue={contact.last}
+          name="last"
+          placeholder="Last"
+          type="text"
+        />
+      </p>
+
+      <label>
+        <span>Twitter</span>
+        <input
+          defaultValue={contact.twitter}
+          name="twitter"
+          placeholder="@jack"
+          type="text"
+        />
+      </label>
+
+      <label>
+        <span>Avatar URL</span>
+        <input
+          aria-label="Avatar URL"
+          defaultValue={contact.avatar}
+          name="avatar"
+          placeholder="https://example.com/avatar.jpg"
+          type="text"
+        />
+      </label>
+
+      <label>
+        <span>Notes</span>
+        <textarea defaultValue={contact.notes} name="notes" rows={6} />
+      </label>
+
+      <p>
+        <button type="submit">Save</button>
+        <button type="button" onClick={() => navigate(-1)}>
+          Cancel
+        </button>
+      </p>
+    </Form>
+  );
+}
+
+export async function loader({ params }: LoaderFunctionArgs) {
+  invariant(params.id, "Missing contactId param");
+  const contact = await getContact(params.id);
+
+  if (!contact) {
+    throw new Response("Not Found", { status: 404 });
+  }
+
+  return json({ contact });
+}
+
+export async function action({ params, request }: ActionFunctionArgs) {
+  invariant(params.id, "Missing contactId param");
+  const formData = await request.formData();
+  const updates = Object.fromEntries(formData);
+  await updateContact(params.id, updates);
+
+  return redirect(`/contacts/${params.id}`);
+}

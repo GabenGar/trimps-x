@@ -1,3 +1,11 @@
-dist
+# output folders
+/build
+/dist
+
+/.cache
+.env
+
 node_modules
+
+# VSCode workspace file
 *.code-workspace
