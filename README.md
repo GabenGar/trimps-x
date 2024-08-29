@@ -2,35 +2,38 @@
 
 ## Development
 
-From your terminal:
+You can develop your SPA app just like you would a normal Remix app, via:
 
 ```sh
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
 ## Deployment
 
-First, build your app for production:
+When you are ready to build a production version of your app, `npm run build` will generate your assets and an `index.html` for the SPA.
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+### Preview
+
+You can preview the build locally with [vite preview](https://vitejs.dev/guide/cli#vite-preview) to serve all routes via the single `index.html` file:
 
 ```sh
-npm start
+npm run preview
 ```
 
-Now you'll need to pick a host to deploy it to.
+> [!IMPORTANT]
+>
+> `vite preview` is not designed for use as a production server
 
-### DIY
+### Deployment
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+You can then serve your app from any HTTP server of your choosing. The server should be configured to serve multiple paths from a single root `/index.html` file (commonly called "SPA fallback"). Other steps may be required if the server doesn't directly support this functionality.
 
-Make sure to deploy the output of `remix build`
+For a simple example, you could use [sirv-cli](https://www.npmjs.com/package/sirv-cli):
 
-- `build/server`
-- `build/client`
+```shellscript
+npx sirv-cli build/client/ --single
+```

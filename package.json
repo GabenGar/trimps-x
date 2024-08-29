@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "remix vite:build",
+    "preview": "vite preview",
     "start": "remix-serve build/server/index.js",
     "dev": "remix vite:dev",
     "lint": "biome lint --write .",
@@ -19,7 +20,7 @@
     "check": "biome check --write . && tsc"
   },
   "imports": {
-    "#/*": "./app/*"
+    "#/*": "./src/*/index.ts"
   },
   "dependencies": {
     "@remix-run/node": "^2.11.2",
@@ -37,6 +38,7 @@
     "@remix-run/dev": "^2.11.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "sass": "^1.77.8",
     "typescript": "^5.1.6",
     "vite": "^5.4.2",
     "vite-tsconfig-paths": "^4.3.1"

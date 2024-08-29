@@ -1,5 +1,4 @@
-# output folders
-/build
+# output folder
 /dist
 
 /.cache
