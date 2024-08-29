@@ -39,7 +39,7 @@ export default function App() {
       return;
     }
 
-    searchFieldRef.current.value = q || "";
+    searchFieldRef.current.value = q ?? "";
   }, [q]);
 
   return (
@@ -59,7 +59,13 @@ export default function App() {
             <search>
               <Form
                 id="search-form"
-                onChange={(event) => submit(event.currentTarget)}
+                onChange={(event) => {
+                  const isFirstSearch = q === undefined;
+
+                  submit(event.currentTarget, {
+                    replace: !isFirstSearch,
+                  });
+                }}
               >
                 <input
                   ref={searchFieldRef}
