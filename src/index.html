@@ -253,15 +253,10 @@
                     id="boneShrineBtn"
                     style="display: none"
                     class="isEmpty noselect"
-                    onmouseover="tooltip('Bone Shrine', null, event)"
-                    onclick="game.permaBoneBonuses.boosts.consume()"
-                    onmouseout="tooltip('hide')"
                   ></div>
                   <span class="title">Food</span>
                   <br />
-                  <span
-                    class="ownedArea bdHover"
-                    onclick="getMaxResources('Food')"
+                  <span class="ownedArea bdHover"
                     ><span id="foodOwned">0</span> / <span id="foodMax"></span
                   ></span>
                   <br />
@@ -279,7 +274,6 @@
                       <div
                         id="foodCollectBtn"
                         class="workBtn workColorOff pointer noselect"
-                        onclick="setGather('food')"
                       >
                         Gather
                       </div>
@@ -288,7 +282,6 @@
                       <span
                         class="psText sizeSecRegular pointer noselect"
                         id="foodPs"
-                        onclick="getPsString('food')"
                         >+0/sec</span
                       >
                     </div>
@@ -300,9 +293,7 @@
                 <div id="wood" class="playerGather" style="visibility: hidden">
                   <span class="title">Wood</span>
                   <br />
-                  <span
-                    class="ownedArea bdHover"
-                    onclick="getMaxResources('Wood')"
+                  <span class="ownedArea bdHover"
                     ><span id="woodOwned">0</span> / <span id="woodMax"></span
                   ></span>
                   <br />
@@ -321,16 +312,15 @@
                       <div
                         id="woodCollectBtn"
                         class="workBtn workColorOff pointer noselect"
-                        onclick="setGather('wood')"
                       >
                         Chop
                       </div>
                     </div>
+
                     <div class="col-xs-6">
                       <span
                         class="psText sizeSecRegular pointer noselect"
                         id="woodPs"
-                        onclick="getPsString('wood')"
                         >+0/sec</span
                       >
                     </div>
@@ -338,6 +328,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row resourceRow">
               <div class="col-xs-6 maxH">
                 <div id="metal" class="playerGather" style="visibility: hidden">
