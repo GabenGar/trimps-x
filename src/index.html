@@ -10,6 +10,14 @@
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css?38" />
+	<script defer src="Playfab/PlayFabSDK/PlayFabClientApi.js"></script>
+	<script defer src="lz-string.js"></script>
+	<script defer src="decimal.min.js"></script>
+	<script defer src="config.js?60"></script>
+	<script defer src="updates.js?60"></script>
+	<script defer src="playerSpire.js?60"></script>
+	<script defer src="objects.js?60"></script>
+	<script defer src="main.js?60"></script>
 </head>
 <!-- 		Trimps
 		Copyright (C) 2023 Zach Hood
@@ -29,7 +37,7 @@
 		author's website, you can find a copy at
 		<trimps.github.io/license.txt>). If not, see
 		<http://www.gnu.org/licenses/>. -->
-<body onblur="gameUnfocused()">
+<body>
 	<div id="remix-app" hidden><!-- Remix SPA --></div>
 	<noscript>
 	<div id="checkJavascript" style="position: absolute; height: 100%; width: 100%; font-size: 2vw; padding: 10%; color: white; background-color: black; z-index: 1000000;">
@@ -59,22 +67,22 @@
 				<div id='offlineMapBtns' class='col-xs-6'>
 					<div id='offlineMapText' style='text-align: center;'>Wanna run a map?</div>
 					<div id='offlineMapBtnsInner'>
-						<span id="offlineMapBtn0" class="offlineMapBtn btn btn-md btn-success" onclick="offlineProgress.runFirstMap(0);">World Level Map</span>
-						<span id="offlineMapBtn1" class="offlineMapBtn btn btn-md btn-success" onclick="offlineProgress.runFirstMap(-1);">-1 Level map</span>
-						<span id="offlineMapBtn2" class="offlineMapBtn btn btn-md btn-success" onclick="offlineProgress.runFirstMap(-2);">-2 Level map</span>
-						<span id="offlineMapBtn3" class="offlineMapBtn btn btn-md btn-success" onclick="offlineProgress.runFirstMap(-3);">-3 Level map</span>
+						<span id="offlineMapBtn0" class="offlineMapBtn btn btn-md btn-success">World Level Map</span>
+						<span id="offlineMapBtn1" class="offlineMapBtn btn btn-md btn-success">-1 Level map</span>
+						<span id="offlineMapBtn2" class="offlineMapBtn btn btn-md btn-success">-2 Level map</span>
+						<span id="offlineMapBtn3" class="offlineMapBtn btn btn-md btn-success">-3 Level map</span>
 					</div>
 				</div>
 				<div id='offlineZoneBtns' class='col-xs-6'>
 					<div id='offlineInMapDescription' style='text-align: center;'></div>
-					<span id='offlineZoneBtn' onclick="offlineProgress.leaveMap();" class="offlineExtraBtn btn btn-md btn-primary">Back to World</span>
+					<span id='offlineZoneBtn' class="offlineExtraBtn btn btn-md btn-primary">Back to World</span>
 				</div>
 				<div id='offlineExtraBtnsContainer' class='col-xs-6' style='position: absolute; left: 50%; width: 25%;'>
 					<div id='offlineTimeOffline'></div>
-					<div class='btn btn-lg btn-info offlineExtraBtn' onclick="tooltip('Lost Time', null, 'update');">What is This?!</div>
-					<div class='btn btn-lg btn-danger offlineExtraBtn' onclick='offlineProgress.finish()'>Stop Here</div>
-					<div class='btn btn-lg btn-warning offlineExtraBtn' id='offlineEqualityBtn' onclick='offlineProgress.showEquality()'>Show Equality</div>
-					<div class='btn btn-lg btn-primary offlineExtraBtn' id='offlineFightBtn' onclick='offlineProgress.fightClicked()'>Start Fighting</div>
+					<div class='btn btn-lg btn-info offlineExtraBtn'>What is This?!</div>
+					<div class='btn btn-lg btn-danger offlineExtraBtn'>Stop Here</div>
+					<div class='btn btn-lg btn-warning offlineExtraBtn' id='offlineEqualityBtn'>Show Equality</div>
+					<div class='btn btn-lg btn-primary offlineExtraBtn' id='offlineFightBtn'>Start Fighting</div>
 					<div id='offlineFormations'></div>
 					<div id='offlineSettingContainer'></div>
 					<div id='offlineEffective'></div>
@@ -1385,15 +1393,6 @@
 			&nbsp;
 		</div>
 	</div>
-	<script type="text/javascript" src="Playfab/PlayFabSDK/PlayFabClientApi.js"></script>
-	<script type="text/javascript" src="lz-string.js"></script>
-	<script type="text/javascript" src="decimal.min.js"></script>
-	<script type="text/javascript" src="config.js?60"></script>
-	<script type="text/javascript" src="updates.js?60"></script>
-	<script type="text/javascript" src="playerSpire.js?60"></script>
-	<script type="text/javascript" src="objects.js?60"></script>
-	<script type="text/javascript" src="main.js?60"></script>
-
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Links,
   Meta,
@@ -5,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { init } from "./init.client";
 
 import "./styles/global.scss";
 
@@ -27,6 +29,8 @@ import "./styles/global.scss";
 // }
 
 export default function App() {
+  useEffect(() => init(), []);
+
   return (
     <>
       <Outlet />
