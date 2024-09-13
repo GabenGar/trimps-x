@@ -58,13 +58,15 @@ function initOfflineExtraButtons() {
     ".btn-danger",
     offlineExtraBtnsContainer,
   );
-  const offlineEqualityBtn = ensureOneSelector<HTMLDivElement>("#offlineEqualityBtn");
+  const offlineEqualityBtn = ensureOneSelector<HTMLDivElement>(
+    "#offlineEqualityBtn",
+  );
   const offlineFightBtn = ensureOneSelector<HTMLDivElement>("#offlineFightBtn");
 
-  buttonInfo.onclick = () => tooltip('Lost Time', null, 'update')
-  buttonDanger.onclick = () => offlineProgress.finish()
-  offlineEqualityBtn.onclick = () => offlineProgress.showEquality()
-  offlineFightBtn.onclick = () => offlineProgress.fightClicked()
+  buttonInfo.onclick = () => tooltip("Lost Time", null, "update");
+  buttonDanger.onclick = () => offlineProgress.finish();
+  offlineEqualityBtn.onclick = () => offlineProgress.showEquality();
+  offlineFightBtn.onclick = () => offlineProgress.fightClicked();
 }
 
 function ensureOneSelector<ReturnElement extends Element = Element>(
