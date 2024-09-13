@@ -15,9 +15,9 @@
     "preview": "vite preview",
     "start": "remix-serve build/server/index.js",
     "dev": "remix vite:dev",
-    "lint": "npx eslint ./src",
-    "format": "biome format --write .",
-    "check": "biome check --write . && tsc"
+    "lint": "eslint ./src",
+    "format": "prettier --write ./src",
+    "check": "npm run lint && npx prettier --check ./src && tsc"
   },
   "imports": {
     "#/*": "./src/*/index.ts"
@@ -36,8 +36,10 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.36.1",
     "globals": "^15.9.0",
+    "prettier": "3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.1.6",
     "typescript-eslint": "^8.5.0",
