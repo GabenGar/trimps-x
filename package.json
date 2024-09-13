@@ -20,7 +20,7 @@
     "check": "npm run lint && npx prettier --check ./src && tsc"
   },
   "imports": {
-    "#/*": "./src/*/index.ts"
+    "#*": "./src/*/index.ts"
   },
   "dependencies": {
     "@remix-run/node": "^2.11.2",
