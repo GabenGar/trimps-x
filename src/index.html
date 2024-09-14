@@ -163,6 +163,7 @@
               The Bone Trader trades bones for... bonuses
             </div>
           </div>
+
           <div class="col-xs-2">
             <div class="boneBtn dangerColor pointer noselect">Close</div>
           </div>
@@ -173,6 +174,7 @@
             <div class="boneBuyDesc" id="permaBonesDesc"></div>
             <div id="permaBoneBonuses"></div>
           </div>
+
           <div id="boneImportsColumn" class="col-xs-4 boneBuyColumn">
             <div class="boneBuyTitle">Exotic Imp-orts</div>
             <div class="boostSpacerImports boostSpacer">
@@ -183,6 +185,7 @@
                 multipliers from killing Imp-orts reset on Portal but the imps
                 do not have to be unlocked again.
               </div>
+
               <div class="importsPreview">
                 <div class="importLocation">Spawns in World</div>
                 <table
@@ -195,6 +198,7 @@
                   id="importsTableMaps0"
                 ></table>
               </div>
+
               <div id="purchaseContainerImports">
                 <div
                   class="boneBtn boneBtnStateOn pointer noselect"
@@ -203,6 +207,7 @@
               </div>
             </div>
           </div>
+
           <div id="boneMiscColumn" class="col-xs-4 boneBuyColumn">
             <div class="boneBuyTitle">Other Goodies</div>
             <div class="boostSpacer">
@@ -221,6 +226,7 @@
                   >
                 </div>
               </div>
+
               <div id="singleRunBonuses"></div>
               <div id="buyHeirloomArea">
                 <div
@@ -334,9 +340,7 @@
                 <div id="metal" class="playerGather" style="visibility: hidden">
                   <span class="title">Metal</span>
                   <br />
-                  <span
-                    class="ownedArea bdHover"
-                    onclick="getMaxResources('Metal')"
+                  <span class="ownedArea bdHover"
                     ><span id="metalOwned">0</span> / <span id="metalMax"></span
                   ></span>
                   <br />
@@ -354,7 +358,6 @@
                       <div
                         id="metalCollectBtn"
                         class="workBtn workColorOff pointer noselect"
-                        onclick="setGather('metal')"
                       >
                         Mine
                       </div>
@@ -363,7 +366,6 @@
                       <span
                         class="psText sizeSecRegular pointer noselect"
                         id="metalPs"
-                        onclick="getPsString('metal')"
                         >+0/sec</span
                       >
                     </div>
@@ -387,7 +389,6 @@
                       <div
                         id="scienceCollectBtn"
                         class="workBtn workColorOff pointer noselect"
-                        onclick="setGather('science')"
                       >
                         Research
                       </div>
@@ -396,7 +397,6 @@
                       <span
                         class="psText sizeSecRegular pointer noselect"
                         id="sciencePs"
-                        onclick="getPsString('science')"
                         >+0/sec</span
                       >
                     </div>
@@ -419,10 +419,10 @@
                 class="psText sizeSecRegular pointer noselect"
                 id="fragmentsPs"
                 style="display: none"
-                onclick="getPsString('fragments')"
                 >+0/sec</span
               >
             </div>
+
             <div
               id="gems"
               class="playerGather playerGatherSm"
@@ -436,10 +436,10 @@
                 class="psText sizeSecRegular pointer noselect"
                 id="gemsPs"
                 style="display: none"
-                onclick="getPsString('gems')"
                 >+0/sec</span
               >
             </div>
+
             <div
               id="helium"
               class="playerGather playerGatherSm"
@@ -451,12 +451,11 @@
               <br />
               <span
                 id="heliumPh"
-                onmouseover="tooltip('Helium Per Hour', null, event)"
-                onmouseout="tooltip('hide')"
                 class="heliumPh hePhColorNormal"
               ></span>
             </div>
           </div>
+
           <div class="col-xs-2" id="trimpsColumn">
             <div id="trimps" class="playerGather" style="visibility: hidden">
               <div class="row">
