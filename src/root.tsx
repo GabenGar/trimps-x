@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { init } from "./init.client";
+import { init } from "#legacy";
 
 import "./styles/global.scss";
 
