@@ -12,7 +12,7 @@ declare global {
   function tooltip(title: "hide"): void;
   function tooltip(
     title: string,
-    secondArg: null,
+    secondArg: null | "customText",
     thirdArg: ITooltipThirdArg,
     fourthArg?: string,
     fifthArg?: string,
@@ -31,7 +31,7 @@ declare global {
 
   function getMaxResources(name: "Food" | "Wood" | "Metal"): void;
   function setGather(
-    name: "food" | "wood" | "metal" | "science" | "trimps",
+    name: "food" | "wood" | "metal" | "science" | "trimps" | "buildings",
   ): void;
   function getPsString(
     name: "food" | "wood" | "metal" | "science" | "fragments" | "gems",
@@ -46,6 +46,14 @@ declare global {
   ): void;
 
   function startTrackAchieve(): void;
+
+  function toggleAutoTrap(): void;
+
+  function filterTabs(
+    tabName: "all" | "buildings" | "jobs" | "upgrades" | "equipment",
+  ): void;
+
+  function numTab(tab: 1 | 2 | 3 | 4 | 5 | 6): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

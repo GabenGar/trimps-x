@@ -449,10 +449,7 @@
               <br />
               <span class="ownedArea"><span id="heliumOwned">0</span></span>
               <br />
-              <span
-                id="heliumPh"
-                class="heliumPh hePhColorNormal"
-              ></span>
+              <span id="heliumPh" class="heliumPh hePhColorNormal"></span>
             </div>
           </div>
 
@@ -460,10 +457,7 @@
             <div id="trimps" class="playerGather" style="visibility: hidden">
               <div class="row">
                 <div class="col-xs-3" style="padding-right: 0">
-                  <div
-                    id="turkimpBuff"
-                    style="display: none"
-                  >
+                  <div id="turkimpBuff" style="display: none">
                     <span class="icomoon icon-spoon-knife"></span><br /><span
                       id="turkimpTime"
                     ></span>
@@ -477,10 +471,7 @@
                 </div>
 
                 <div class="col-xs-3" style="padding-left: 0">
-                  <div
-                    id="fluffyBox"
-                    style="display: none"
-                  >
+                  <div id="fluffyBox" style="display: none">
                     <span class="fluffyIcon glyphicon glyphicon-user"></span
                     >&nbsp;Lv<span id="fluffyLevel"></span><br />
                     <div class="progress" id="fluffyExpContainer">
@@ -491,8 +482,7 @@
                   </div>
                 </div>
               </div>
-              <span
-                class="ownedArea pointer noselect bdHover"
+              <span class="ownedArea pointer noselect bdHover"
                 ><span id="trimpsOwned">0</span> /
                 <span id="trimpsMax">10</span></span
               >
@@ -514,7 +504,6 @@
                 <br /><span
                   id="trimpsPs"
                   class="pointer sizeSecRegular noselect bdHover psColorWhite"
-
                   >+0/sec</span
                 >
                 <br />
@@ -529,7 +518,6 @@
                 <div
                   id="trimpsCollectBtn"
                   class="workBtn workColorOff pointer noSelect"
-
                 >
                   Check&nbsp;Traps&nbsp;(<span id="trimpTrapText">1</span>)
                 </div>
@@ -567,52 +555,52 @@
                     Story
                   </button>
                 </div>
+
                 <div class="btn-group" role="group">
                   <button
                     id="LootFilter"
-
                     type="button"
                     class="btn btn-success logFlt"
                   >
                     Loot
                   </button>
                 </div>
+
                 <div class="btn-group" role="group">
                   <button
                     id="UnlocksFilter"
-
                     type="button"
                     class="btn btn-success logFlt"
                   >
                     Unlocks
                   </button>
                 </div>
+
                 <div class="btn-group" role="group">
                   <button
                     id="CombatFilter"
                     type="button"
-
                     class="btn btn-success logFlt"
                   >
                     Combat
                   </button>
                 </div>
+
                 <div id="logConfigHolder" class="btn-group" role="group">
                   <button
                     id="logConfigBtn"
                     type="button"
-
                     class="btn btn-default logFlt"
                   >
                     <span class="glyphicon glyphicon-cog"></span>
                   </button>
                 </div>
               </div>
+
               <div id="achievementTracker">
                 <div class="row">
                   <span
                     id="closeTrackedAchieve"
-
                     class="icomoon icon-close"
                     style="cursor: pointer"
                   ></span>
@@ -637,6 +625,7 @@
                   <div class="col-xs-1 noPad">&nbsp;</div>
                 </div>
               </div>
+
               <div id="log" class="niceScroll">
                 <span class="StoryMessage message"
                   ><span class="glyphicon glyphicon-star"></span>A green shimmer
@@ -655,23 +644,26 @@
                 <div class="col-xs-4 lowPad">
                   <span id="foremenCount"></span>
                 </div>
+
                 <div class="col-xs-2 lowPad">
                   <span id="buildSpeed"></span>
                 </div>
+
                 <div class="col-xs-3 lowPad">
                   <div
                     id="autoTrapBtn"
                     style="display: none"
-                    onclick="toggleAutoTrap()"
+
                     class="pointer noselect colorDanger autoUpgradeBtn"
                   >
                     AutoTraps Off
                   </div>
                 </div>
+
                 <div class="col-xs-3">
                   <div
                     id="buildingsCollectBtn"
-                    onclick="setGather('buildings')"
+
                     class="workBtn workColorOff pointer noselect"
                   >
                     Build
@@ -683,13 +675,14 @@
                 <div id="queueItemsHere"></div>
               </div>
             </div>
+
             <div id="outerBuyContainer">
               <div id="buyTabs">
                 <ul id="buyTabsUl" class="nav nav-tabs nav-justified buyTabsUl">
                   <li
                     role="presentation"
                     id="allTab"
-                    onclick="filterTabs('all')"
+
                     class="tabNotSelected buyTab"
                   >
                     <a id="allA">All</a>
@@ -697,7 +690,7 @@
                   <li
                     role="presentation"
                     id="buildingsTab"
-                    onclick="filterTabs('buildings')"
+
                     class="tabNotSelected buyTab"
                   >
                     <a id="buildingsA"
@@ -709,7 +702,7 @@
                     role="presentation"
                     id="jobsTab"
                     style="visibility: hidden"
-                    onclick="filterTabs('jobs')"
+
                     class="tabNotSelected buyTab"
                   >
                     <a id="jobsA"
@@ -720,7 +713,7 @@
                     role="presentation"
                     id="upgradesTab"
                     style="visibility: hidden"
-                    onclick="filterTabs('upgrades')"
+
                     class="tabNotSelected buyTab"
                   >
                     <a id="upgradesA"
@@ -732,7 +725,7 @@
                     role="presentation"
                     id="equipmentTab"
                     style="visibility: hidden"
-                    onclick="filterTabs('equipment')"
+
                     class="tabNotSelected buyTab"
                   >
                     <a id="equipmentA"
@@ -819,7 +812,7 @@
                     role="presentation"
                     class="tabNotSelected"
                     id="tab1"
-                    onclick="numTab(1)"
+
                   >
                     <a id="tab1Text">+1</a>
                   </li>
@@ -827,7 +820,7 @@
                     role="presentation"
                     class="tabNotSelected"
                     id="tab2"
-                    onclick="numTab(2)"
+
                   >
                     <a id="tab2Text">+10</a>
                   </li>
@@ -835,7 +828,7 @@
                     role="presentation"
                     class="tabNotSelected"
                     id="tab3"
-                    onclick="numTab(3)"
+
                   >
                     <a id="tab3Text">+25</a>
                   </li>
@@ -843,15 +836,15 @@
                     role="presentation"
                     class="tabNotSelected"
                     id="tab4"
-                    onclick="numTab(4)"
+
                   >
                     <a id="tab4Text">+100</a>
                   </li>
                   <li role="presentation" class="tabNotSelected" id="tab5">
-                    <a id="tab5Text" onclick="numTab(5)">+1</a>
+                    <a id="tab5Text" >+1</a>
                     <a
                       id="tab5Text2"
-                      onclick="tooltip('Custom', null, 'update')"
+
                       >Custom</a
                     >
                   </li>
@@ -859,9 +852,7 @@
                     role="presentation"
                     class="tabNotSelected"
                     id="tab6"
-                    onclick="numTab(6)"
-                    onmouseover="tooltip('Buy Max', 'customText', event, 'Switching to this option will spend the majority of your resources with each purchase. <b>Click twice to customize.</b>')"
-                    onmouseout="tooltip('hide')"
+
                   >
                     <a id="tab6Text">Max</a>
                   </li>
@@ -1424,6 +1415,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-xs-7" id="rightCol">
             <div id="battleContainer" style="visibility: hidden">
               <div id="battleHeadContainer">
@@ -2236,6 +2228,7 @@
             </div>
           </div>
         </div>
+
         <div id="settingsRow">
           <table id="settingsTable">
             <tr>

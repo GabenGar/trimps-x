@@ -1,5 +1,10 @@
 import { initBoneZone } from "./bone-zone";
-import { initOfflineExtraButtons, initOfflineMapButtons, initOfflineZoneButton } from "./offline";
+import { initBottomRow } from "./bottom-row";
+import {
+  initOfflineExtraButtons,
+  initOfflineMapButtons,
+  initOfflineZoneButton,
+} from "./offline";
 import { initTopRow } from "./top-row";
 
 /**
@@ -14,4 +19,5 @@ export function init() {
   initOfflineExtraButtons();
   initBoneZone();
   initTopRow();
+  initBottomRow();
 }
