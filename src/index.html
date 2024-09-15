@@ -463,26 +463,23 @@
                   <div
                     id="turkimpBuff"
                     style="display: none"
-                    onmouseover="tooltip('Well Fed', null, event)"
-                    onmouseout="tooltip('hide')"
                   >
                     <span class="icomoon icon-spoon-knife"></span><br /><span
                       id="turkimpTime"
                     ></span>
                   </div>
                 </div>
+
                 <div class="col-xs-6">
                   <div class="maxCenter">
                     <span id="trimpTitle" class="title">???</span>
                   </div>
                 </div>
+
                 <div class="col-xs-3" style="padding-left: 0">
                   <div
                     id="fluffyBox"
                     style="display: none"
-                    onmouseover="tooltip('Fluffy', null, event)"
-                    onmouseout="tooltip('hide')"
-                    onclick="tooltip('Fluffy', null, 'update')"
                   >
                     <span class="fluffyIcon glyphicon glyphicon-user"></span
                     >&nbsp;Lv<span id="fluffyLevel"></span><br />
@@ -496,7 +493,6 @@
               </div>
               <span
                 class="ownedArea pointer noselect bdHover"
-                onclick="getMaxTrimps()"
                 ><span id="trimpsOwned">0</span> /
                 <span id="trimpsMax">10</span></span
               >
@@ -518,7 +514,7 @@
                 <br /><span
                   id="trimpsPs"
                   class="pointer sizeSecRegular noselect bdHover psColorWhite"
-                  onclick="getTrimpPs()"
+
                   >+0/sec</span
                 >
                 <br />
@@ -533,7 +529,7 @@
                 <div
                   id="trimpsCollectBtn"
                   class="workBtn workColorOff pointer noSelect"
-                  onclick="setGather('trimps')"
+
                 >
                   Check&nbsp;Traps&nbsp;(<span id="trimpTrapText">1</span>)
                 </div>
@@ -554,6 +550,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-xs-5" id="logColumn">
             <div id="logContainer">
               <div
@@ -564,7 +561,6 @@
                 <div class="btn-group" role="group">
                   <button
                     id="StoryFilter"
-                    onclick="filterMessage('Story')"
                     type="button"
                     class="btn btn-success logFlt"
                   >
@@ -574,7 +570,7 @@
                 <div class="btn-group" role="group">
                   <button
                     id="LootFilter"
-                    onclick="filterMessage('Loot')"
+
                     type="button"
                     class="btn btn-success logFlt"
                   >
@@ -584,7 +580,7 @@
                 <div class="btn-group" role="group">
                   <button
                     id="UnlocksFilter"
-                    onclick="filterMessage('Unlocks')"
+
                     type="button"
                     class="btn btn-success logFlt"
                   >
@@ -595,7 +591,7 @@
                   <button
                     id="CombatFilter"
                     type="button"
-                    onclick="filterMessage('Combat')"
+
                     class="btn btn-success logFlt"
                   >
                     Combat
@@ -605,7 +601,7 @@
                   <button
                     id="logConfigBtn"
                     type="button"
-                    onclick="tooltip('Message Config', null, 'update')"
+
                     class="btn btn-default logFlt"
                   >
                     <span class="glyphicon glyphicon-cog"></span>
@@ -616,7 +612,7 @@
                 <div class="row">
                   <span
                     id="closeTrackedAchieve"
-                    onclick="startTrackAchieve()"
+
                     class="icomoon icon-close"
                     style="cursor: pointer"
                   ></span>
@@ -651,6 +647,7 @@
             </div>
           </div>
         </div>
+
         <div class="row" id="bottomRow">
           <div id="buyCol" class="col-xs-5" style="visibility: hidden">
             <div id="queueContainer">

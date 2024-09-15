@@ -30,10 +30,22 @@ declare global {
   };
 
   function getMaxResources(name: "Food" | "Wood" | "Metal"): void;
-  function setGather(name: "food" | "wood" | "metal" | "science"): void;
+  function setGather(
+    name: "food" | "wood" | "metal" | "science" | "trimps",
+  ): void;
   function getPsString(
     name: "food" | "wood" | "metal" | "science" | "fragments" | "gems",
   ): void;
+
+  function getMaxTrimps(): void;
+
+  function getTrimpPs(): void;
+
+  function filterMessage(
+    messageType: "Story" | "Loot" | "Unlocks" | "Combat",
+  ): void;
+
+  function startTrackAchieve(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;
