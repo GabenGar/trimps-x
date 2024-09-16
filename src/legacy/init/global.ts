@@ -54,6 +54,46 @@ declare global {
   ): void;
 
   function numTab(tab: 1 | 2 | 3 | 4 | 5 | 6): void;
+
+  function toggleAutoStructure(): void;
+
+  function toggleAutoStorage(): void;
+
+  function toggleAutoJobs(): void;
+
+  function fireMode(): void;
+
+  function toggleAutoPrestiges(): void;
+
+  function toggleAutoUpgrades(): void;
+
+  function toggleAutoEquip(): void;
+
+  const u2Mutations: {
+    swapTab(bool: boolean): void;
+  };
+
+  function respecTalents(): void;
+
+  function preventZoom(handler: GlobalEventHandlers): void;
+
+  function natureTooltip(
+    event: MouseEvent,
+    type:
+      | "description"
+      | "upgrade"
+      | "stackTransfer"
+      | "uberEmpower"
+      | "convert",
+    elementName: "Poison" | "Wind" | "Ice",
+    fourthArg?: "Wind" | "Ice" | "Poison",
+  ): void;
+
+  function naturePurchase(
+    type: "upgrade" | "stackTransfer" | "uberEmpower" | "convert",
+    element: "Poison" | "Wind" | "Ice",
+    anotherElement?: "Wind" | "Ice" | "Poison",
+  ): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

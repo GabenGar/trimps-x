@@ -653,7 +653,6 @@
                   <div
                     id="autoTrapBtn"
                     style="display: none"
-
                     class="pointer noselect colorDanger autoUpgradeBtn"
                   >
                     AutoTraps Off
@@ -663,7 +662,6 @@
                 <div class="col-xs-3">
                   <div
                     id="buildingsCollectBtn"
-
                     class="workBtn workColorOff pointer noselect"
                   >
                     Build
@@ -682,7 +680,6 @@
                   <li
                     role="presentation"
                     id="allTab"
-
                     class="tabNotSelected buyTab"
                   >
                     <a id="allA">All</a>
@@ -690,7 +687,6 @@
                   <li
                     role="presentation"
                     id="buildingsTab"
-
                     class="tabNotSelected buyTab"
                   >
                     <a id="buildingsA"
@@ -702,7 +698,6 @@
                     role="presentation"
                     id="jobsTab"
                     style="visibility: hidden"
-
                     class="tabNotSelected buyTab"
                   >
                     <a id="jobsA"
@@ -713,7 +708,6 @@
                     role="presentation"
                     id="upgradesTab"
                     style="visibility: hidden"
-
                     class="tabNotSelected buyTab"
                   >
                     <a id="upgradesA"
@@ -725,7 +719,6 @@
                     role="presentation"
                     id="equipmentTab"
                     style="visibility: hidden"
-
                     class="tabNotSelected buyTab"
                   >
                     <a id="equipmentA"
@@ -808,56 +801,28 @@
 
               <div id="numTabs" class="numTabs">
                 <ul class="nav nav-tabs nav-justified">
-                  <li
-                    role="presentation"
-                    class="tabNotSelected"
-                    id="tab1"
-
-                  >
+                  <li role="presentation" class="tabNotSelected" id="tab1">
                     <a id="tab1Text">+1</a>
                   </li>
-                  <li
-                    role="presentation"
-                    class="tabNotSelected"
-                    id="tab2"
-
-                  >
+                  <li role="presentation" class="tabNotSelected" id="tab2">
                     <a id="tab2Text">+10</a>
                   </li>
-                  <li
-                    role="presentation"
-                    class="tabNotSelected"
-                    id="tab3"
-
-                  >
+                  <li role="presentation" class="tabNotSelected" id="tab3">
                     <a id="tab3Text">+25</a>
                   </li>
-                  <li
-                    role="presentation"
-                    class="tabNotSelected"
-                    id="tab4"
-
-                  >
+                  <li role="presentation" class="tabNotSelected" id="tab4">
                     <a id="tab4Text">+100</a>
                   </li>
                   <li role="presentation" class="tabNotSelected" id="tab5">
-                    <a id="tab5Text" >+1</a>
-                    <a
-                      id="tab5Text2"
-
-                      >Custom</a
-                    >
+                    <a id="tab5Text">+1</a>
+                    <a id="tab5Text2">Custom</a>
                   </li>
-                  <li
-                    role="presentation"
-                    class="tabNotSelected"
-                    id="tab6"
-
-                  >
+                  <li role="presentation" class="tabNotSelected" id="tab6">
                     <a id="tab6Text">Max</a>
                   </li>
                 </ul>
               </div>
+
               <div id="buyContainer" class="niceScroll buyContainerSizeSm">
                 <div id="buyHere" class="niceScroll buttonSizeLarge">
                   <div id="buildingsContainer">
@@ -868,40 +833,33 @@
                             >Buildings</span
                           >
                         </div>
+
                         <div class="col-xs-3 lowPad">&nbsp;</div>
+
                         <div class="col-xs-3 lowPad">
                           <div
                             id="autoStructureBtn"
-                            onmouseover='tooltip("AutoStructure", null, event)'
-                            onmouseout='tooltip("hide")'
                             class="toggleConfigBtn pointer noselect colorDanger autoUpgradeBtn"
                           >
-                            <div
-                              id="autoStructureText"
-                              onclick="toggleAutoStructure()"
-                            >
-                              AutoStructure
-                            </div>
-                            <div
-                              onclick="tooltip('Configure AutoStructure', null, 'update')"
-                            >
+                            <div id="autoStructureText">AutoStructure</div>
+
+                            <div id="autoStructureConfig">
                               <span class="glyphicon glyphicon-cog"></span>
                             </div>
                           </div>
                         </div>
+
                         <div class="col-xs-3" style="padding-left: 5px">
                           <div
                             id="autoStorageBtn"
                             class="pointer noselect colorDanger autoUpgradeBtn"
-                            onmouseover="tooltip('AutoStorage', 'customText', event, 'Enabling this will cause your Trimps to automatically add a storage building to the queue if you reach max capacity. This will work on and offline if enabled.')"
-                            onmouseout="tooltip('hide')"
-                            onclick="toggleAutoStorage()"
                           >
                             AutoStorage
                           </div>
                         </div>
                       </div>
                     </div>
+
                     <div class="buyBox" id="buildingsHere"></div>
                   </div>
                   <div id="jobsContainer">
@@ -914,22 +872,21 @@
                         <div class="col-xs-3" style="padding-right: 5px">
                           <span id="jobsTitleSpan" class="titleSpan">Jobs</span>
                         </div>
+
                         <div class="col-xs-3 lowPad">
                           <span
                             id="jobsTitleUnemployed"
                             class="titleSpan"
                           ></span>
                         </div>
+
                         <div class="col-xs-3 lowPad">
                           <div
                             id="autoJobsBtn"
-                            onmouseover='tooltip("AutoJobs", null, event)'
-                            onmouseout='tooltip("hide")'
                             class="toggleConfigBtn pointer noselect colorDanger autoUpgradeBtn"
                           >
-                            <div id="autoJobsText" onclick="toggleAutoJobs()">
-                              AutoJobs
-                            </div>
+                            <div id="autoJobsText">AutoJobs</div>
+
                             <div
                               onclick="tooltip('Configure AutoJobs', null, 'update')"
                             >
@@ -941,9 +898,6 @@
                           <div
                             id="fireBtn"
                             class="pointer noselect fireBtnNotFiring"
-                            onclick="fireMode()"
-                            onmouseover="tooltip('Fire Trimps',null,event)"
-                            onmouseout="tooltip('hide')"
                           >
                             Fire
                           </div>
@@ -967,8 +921,6 @@
                         <div class="col-xs-3 lowPad">
                           <div
                             id="autoGoldenBtn"
-                            onmouseover="tooltip('AutoGold', null, event)"
-                            onmouseout="tooltip('hide')"
                             class="pointer noselect settingBtn0 autoUpgradeBtn"
                           >
                             <div
@@ -983,9 +935,6 @@
                           <div
                             id="autoPrestigeBtn"
                             class="pointer noselect autoUpgradeBtn settingBtn0"
-                            onmouseover="tooltip('AutoPrestige', null, event)"
-                            onmouseout="tooltip('hide')"
-                            onclick="toggleAutoPrestiges()"
                           >
                             AutoPrestige
                           </div>
@@ -994,9 +943,6 @@
                           <div
                             id="autoUpgradeBtn"
                             class="pointer noselect colorDanger autoUpgradeBtn"
-                            onmouseover="tooltip('AutoUpgrade', null, event)"
-                            onmouseout="tooltip('hide')"
-                            onclick="toggleAutoUpgrades()"
                           >
                             AutoUpgrade
                           </div>
@@ -1022,16 +968,10 @@
                         <div class="col-xs-3" style="padding-left: 5px">
                           <div
                             id="autoEquipBtn"
-                            onmouseover='tooltip("AutoEquip", null, event)'
-                            onmouseout='tooltip("hide")'
                             class="toggleConfigBtn pointer noselect colorDanger autoUpgradeBtn"
                           >
-                            <div id="autoEquipText" onclick="toggleAutoEquip()">
-                              AutoEquip
-                            </div>
-                            <div
-                              onclick="tooltip('Configure AutoEquip', null, 'update')"
-                            >
+                            <div id="autoEquipText">AutoEquip</div>
+                            <div id="autoEquipConfig">
                               <span class="glyphicon glyphicon-cog"></span>
                             </div>
                           </div>
@@ -1041,16 +981,17 @@
 
                     <div class="buyBox" id="equipmentHere"></div>
                   </div>
+
                   <div id="talentsContainer" style="display: none">
                     <div
                       style="display: none; width: 100%"
                       id="swapToMutatorsBtn"
                       class="btn btn-primary btn-lg"
-                      onclick="u2Mutations.swapTab(true)"
                     >
                       Swap to Mutators
                       <span id="mutatorsAlert2" class="alert badge"></span>
                     </div>
+
                     <div class="row noMarg">
                       <div class="col-xs-3 lowPad">
                         <div id="talentsAffordable"></div>
@@ -1063,9 +1004,6 @@
                       <div class="col-xs-3 lowPad">
                         <div
                           class="pointer noselect colorDanger"
-                          onmouseover='tooltip("Respec Masteries", null, event)'
-                          onmouseout='tooltip("hide")'
-                          onclick="respecTalents()"
                           id="talentRespecBtn"
                         >
                           Respec (20 bones)
@@ -1076,7 +1014,7 @@
                       Your next mastery costs
                       <span id="talentsNextCost">0</span>.
                     </div>
-                    <div id="talentsHere" onload="preventZoom(this)"></div>
+                    <div id="talentsHere"></div>
                   </div>
                   <div id="natureContainer" style="display: none; height: 100%">
                     <div class="row noMarg" style="height: 100%">
@@ -1086,11 +1024,7 @@
                       >
                         <div class="natureTop">
                           <div class="natureTitle">
-                            <span
-                              id="infoSpanPoison"
-                              class="infoSpanNature"
-                              onmouseover="natureTooltip(event, 'description', 'Poison')"
-                              onmouseout="tooltip('hide')"
+                            <span id="infoSpanPoison" class="infoSpanNature"
                               ><span class="icomoon icon-info2"></span
                             ></span>
                             Poison
@@ -1098,10 +1032,8 @@
                           Tokens: <span id="tokenCountPoison">0</span>
                         </div>
                         <span
+                          id="natureUpgradePoison"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'upgrade', 'Poison')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('upgrade', 'Poison')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1114,10 +1046,8 @@
                           <span class="natureBigIcon icomoon icon-plus"></span>
                         </span>
                         <span
+                          id="natureUpgradeTransferPoison"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'stackTransfer', 'Poison')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('stackTransfer', 'Poison')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1134,9 +1064,6 @@
                         <span
                           id="uberPoisonContainer"
                           class="natureBuyIcon natureUberContainer noselect"
-                          onmouseover="natureTooltip(event, 'uberEmpower', 'Poison')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('uberEmpower', 'Poison')"
                         >
                           <span
                             class="natureUpgradeLevel natureUberName"
@@ -1152,10 +1079,8 @@
                         </span>
                         <div class="transferButtons">
                           <span
+                            id="natureConvertPoisonWind"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Poison', 'Wind')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Poison', 'Wind')"
                           >
                             <span
                               class="natureUpgradeCost"
@@ -1169,10 +1094,8 @@
                             ></span>
                           </span>
                           <span
+                            id="natureConvertPoisonIce"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Poison', 'Ice')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Poison', 'Ice')"
                           >
                             <span
                               class="natureUpgradeCost"
@@ -1190,17 +1113,14 @@
                           class="natureBackgroundIcon icomoon icon-flask"
                         ></span>
                       </div>
+
                       <div
                         id="tabColWind"
                         class="col-xs-4 tabColWind tabColNature noPad"
                       >
                         <div class="natureTop">
                           <div class="natureTitle">
-                            <span
-                              id="infoSpanWind"
-                              class="infoSpanNature"
-                              onmouseover="natureTooltip(event, 'description', 'Wind')"
-                              onmouseout="tooltip('hide')"
+                            <span id="infoSpanWind" class="infoSpanNature"
                               ><span class="icomoon icon-info2"></span
                             ></span>
                             Wind
@@ -1208,10 +1128,8 @@
                           Tokens: <span id="tokenCountWind">0</span>
                         </div>
                         <span
+                          id="natureUpgradeLevelWind"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'upgrade', 'Wind')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('upgrade', 'Wind')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1224,10 +1142,8 @@
                           <span class="natureBigIcon icomoon icon-plus"></span>
                         </span>
                         <span
+                          id="natureUpgradeTransferWind"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'stackTransfer', 'Wind')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('stackTransfer', 'Wind')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1244,9 +1160,6 @@
                         <span
                           id="uberWindContainer"
                           class="natureBuyIcon natureUberContainer noselect"
-                          onmouseover="natureTooltip(event, 'uberEmpower', 'Wind')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('uberEmpower', 'Wind')"
                         >
                           <span
                             class="natureUpgradeLevel natureUberName"
@@ -1262,10 +1175,8 @@
                         </span>
                         <div class="transferButtons">
                           <span
+                            id="natureTransferWindPoison"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Wind', 'Poison')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Wind', 'Poison')"
                           >
                             <span
                               class="natureUpgradeCost"
@@ -1279,10 +1190,8 @@
                             ></span>
                           </span>
                           <span
+                            id="natureTransferWindIce"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Wind', 'Ice')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Wind', 'Ice')"
                           >
                             <span
                               class="natureUpgradeCost"
@@ -1300,6 +1209,7 @@
                           class="natureBackgroundIcon icomoon icon-air"
                         ></span>
                       </div>
+
                       <div
                         id="tabColIce"
                         class="col-xs-4 tabColIce tabColNature noPad"
@@ -1309,18 +1219,14 @@
                             <span
                               id="infoSpanIce"
                               class="infoSpanNature"
-                              onmouseover="natureTooltip(event, 'description', 'Ice')"
-                              onmouseout="tooltip('hide')"
                             ></span>
                             Ice
                           </div>
                           Tokens: <span id="tokenCountIce">0</span>
                         </div>
                         <span
+                          id="natureUpgradeLevelIce"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'upgrade', 'Ice')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('upgrade', 'Ice')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1333,10 +1239,8 @@
                           <span class="natureBigIcon icomoon icon-plus"></span>
                         </span>
                         <span
+                          id="natureUpgradeTransferIce"
                           class="natureBuyIcon noselect"
-                          onmouseover="natureTooltip(event, 'stackTransfer', 'Ice')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('stackTransfer', 'Ice')"
                         >
                           <span
                             class="natureUpgradeLevel"
@@ -1353,9 +1257,6 @@
                         <span
                           id="uberIceContainer"
                           class="natureBuyIcon noselect natureUberContainer"
-                          onmouseover="natureTooltip(event, 'uberEmpower', 'Ice')"
-                          onmouseout="tooltip('hide');"
-                          onclick="naturePurchase('uberEmpower', 'Ice')"
                         >
                           <span
                             class="natureUpgradeLevel natureUberName"
@@ -1371,10 +1272,8 @@
                         </span>
                         <div class="transferButtons">
                           <span
+                            id="natureConvertIcePoison"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Ice', 'Poison')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Ice', 'Poison')"
                           >
                             <span
                               class="natureUpgradeCost"
@@ -1388,10 +1287,8 @@
                             ></span>
                           </span>
                           <span
+                            id="natureConvertIceWind"
                             class="natureBuyIcon noselect natureBuyIconMini"
-                            onmouseover="natureTooltip(event, 'convert', 'Ice', 'Wind')"
-                            onmouseout="tooltip('hide');"
-                            onclick="naturePurchase('convert', 'Ice', 'Wind')"
                           >
                             <span
                               class="natureUpgradeCost"
