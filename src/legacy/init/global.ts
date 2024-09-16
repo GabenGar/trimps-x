@@ -84,8 +84,9 @@ declare global {
       | "upgrade"
       | "stackTransfer"
       | "uberEmpower"
-      | "convert",
-    elementName: "Poison" | "Wind" | "Ice",
+      | "convert"
+      | "formation",
+    elementName?: "Poison" | "Wind" | "Ice",
     fourthArg?: "Wind" | "Ice" | "Poison",
   ): void;
 
@@ -94,6 +95,18 @@ declare global {
     element: "Poison" | "Wind" | "Ice",
     anotherElement?: "Wind" | "Ice" | "Poison",
   ): void;
+
+  function setFormation(value: "0" | "1" | "2" | "3" | "4" | "5"): void;
+
+  function getBattleStatBd(stat: "attack" | "block" | "health"): void;
+
+  function magnetoShriek(): void;
+
+  function getLootBd(type: "Food/Wood/Metal"): void;
+
+  const tutorial: {
+    popup(): void;
+  };
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

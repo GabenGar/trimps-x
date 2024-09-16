@@ -1342,66 +1342,48 @@
                         <div class="row noPad" style="padding-right: 15px">
                           <div id="form0Container" class="formFifth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('0')"
                               id="formation0"
-                              onmouseover="tooltip('No Formation', 'customText', event, 'Clear your formations, return to normal stats, and derp around the battlefield. (Hotkeys: X or 1)')"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               X
                             </div>
                           </div>
                           <div id="form1Container" class="formFifth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('1')"
                               id="formation1"
-                              onmouseover="tooltip('Heap Formation', 'customText', event, 'Trimps gain 4x health but lose half of their attack and block. (Hotkeys: H or 2)')"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               H
                             </div>
                           </div>
                           <div id="form2Container" class="formFifth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('2')"
                               id="formation2"
-                              onmouseover="tooltip('Dominance Formation', 'customText', event, 'Trimps gain 4x attack but lose half of their health and block. (Hotkeys: D or 3)')"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               D
                             </div>
                           </div>
                           <div id="form3Container" class="formFifth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('3')"
                               id="formation3"
-                              onmouseover="tooltip('Barrier Formation', 'customText', event, 'Trimps gain 4x block and 50% block pierce reduction but lose half of their health and attack. (Hotkeys: B or 4)')"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               B
                             </div>
                           </div>
                           <div id="form4Container" class="formFifth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('4')"
                               id="formation4"
-                              onmouseover="tooltip('Scryer Formation', null, event)"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               S
                             </div>
                           </div>
                           <div id="form5Container" class="formSixth noPad">
                             <div
-                              class="formationBtn pointer formationStateDisabled"
-                              onclick="setFormation('5')"
                               id="formation5"
-                              onmouseover="natureTooltip(event, 'formation')"
-                              onmouseout="tooltip('hide')"
+                              class="formationBtn pointer formationStateDisabled"
                             >
                               N
                             </div>
@@ -1409,12 +1391,12 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="row guyRow" id="goodGuyStatsRow">
                       <div
                         id="damageDiv"
                         class="col-xs-6 lbdHover pointer noselect bdHover"
                         style="padding-right: 0"
-                        onclick="getBattleStatBd('attack')"
                       >
                         <span
                           id="goodGuyAttack"
@@ -1422,27 +1404,25 @@
                         ></span>
                         DMG <span id="critSpan"></span>
                       </div>
+
                       <div
                         class="col-xs-4 noPad pointer noselect bdHover"
                         id="blockDiv"
                         style="visibility: hidden"
-                        onclick="getBattleStatBd('block')"
                       >
                         <span id="goodGuyBlock">0</span>
                         <span id="goodGuyBlockName">BLK</span>
                       </div>
+
                       <div
+                        id="roboTrimpBtn"
                         class="col-xs-2 pointer noselect"
                         style="padding-left: 0"
-                        id="roboTrimpBtn"
-                        onclick="magnetoShriek()"
                       >
                         <span
                           id="chainHolder"
                           class="shriekStateCooldown"
                           style="visibility: hidden"
-                          onmouseover="tooltip('MagnetoShriek', null, event)"
-                          onmouseout="tooltip('hide')"
                           ><span id="roboTrimpTurnsLeft"></span>
                           <span
                             class="icomoon icon-chain"
@@ -1451,6 +1431,7 @@
                         ></span>
                       </div>
                     </div>
+
                     <div class="progress fightBar">
                       <div
                         class="progress-bar percentColorBlue"
@@ -1460,7 +1441,6 @@
                         <span
                           style="z-index: 3"
                           class="bdHover pointer noselect innerFightBar"
-                          onclick="getBattleStatBd('health')"
                         >
                           <span id="goodGuyHealth">0</span>/<span
                             id="goodGuyHealthMax"
@@ -1468,6 +1448,7 @@
                           >
                         </span>
                       </div>
+
                       <div
                         class="progress-bar es0"
                         role="progressbar"
@@ -1475,6 +1456,7 @@
                       >
                         &nbsp;
                       </div>
+
                       <div
                         class="progress-bar es1"
                         role="progressbar"
@@ -1482,6 +1464,7 @@
                       >
                         &nbsp;
                       </div>
+
                       <div
                         class="progress-bar es2"
                         role="progressbar"
@@ -1491,6 +1474,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div
                     class="col-xs-6"
                     id="badGuyCol"
@@ -1507,8 +1491,6 @@
                               id="badCanCrit"
                               style="display: none"
                               class="badge"
-                              onmouseover="tooltip('Crushing Blows', 'customText', event, 'Your current health is higher than your block, making you vulnerable to critical strikes from your enemies. Better fix that...')"
-                              onmouseout="tooltip('hide')"
                               ><span
                                 class="icomoon icon-hair-cross"
                               ></span></span
@@ -1524,6 +1506,7 @@
                             </div>
                           </div>
                         </div>
+
                         <div
                           class="col-xs-1"
                           style="font-size: 1.5em; padding: 0"
@@ -1532,7 +1515,6 @@
                             <span
                               id="lootBdBtn"
                               class="icomoon icon-gift2 pointer"
-                              onclick="getLootBd('Food/Wood/Metal')"
                             ></span>
                             <div
                               id="openTutorialContainer"
@@ -1541,7 +1523,6 @@
                               <span
                                 id="openTutorialBtn"
                                 class="flashNo icomoon icon-star pointer tutorialStar"
-                                onclick="tutorial.popup()"
                                 style="color: gold"
                               ></span>
                             </div>
@@ -1549,6 +1530,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="progress fightBar">
                       <div
                         class="progress-bar percentColorBlue"
@@ -1566,6 +1548,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="row" id="gridRow">
                 <div class="col-xs-2" id="battleBtnsColumn">
                   <div
