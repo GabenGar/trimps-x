@@ -107,6 +107,24 @@ declare global {
   const tutorial: {
     popup(): void;
   };
+
+  function getZoneStats(event: MouseEvent): void;
+
+  function fightManual(): void;
+
+  function pauseFight(): void;
+
+  function mapsClicked(): void;
+
+  function toggleVoidMaps(): void;
+
+  function portalClicked(): void;
+
+  function repeatClicked(): void;
+
+  function toggleHeirlooms(): void;
+
+  function showBones(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

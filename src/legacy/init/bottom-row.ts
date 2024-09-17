@@ -438,6 +438,7 @@ function initBuyContainer() {
 
 function initRightColumn() {
   initBattleHeadContainer();
+  initGridRow();
 }
 
 function initBattleHeadContainer() {
@@ -583,4 +584,108 @@ function initBattleHeadContainer() {
 
     openTutorialBtn.onclick = () => tutorial.popup();
   }
+}
+
+function initGridRow() {
+  {
+    const battleSideTitle =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("battleSideTitle");
+
+    battleSideTitle.onmouseover = (event) => getZoneStats(event);
+    battleSideTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const fightBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("fightBtn");
+
+    fightBtn.onmouseover = (event) => tooltip("Fight", null, event);
+    fightBtn.onmouseout = () => tooltip("hide");
+    fightBtn.onclick = () => fightManual();
+  }
+
+  {
+    const pauseFightBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("pauseFight");
+
+    pauseFightBtn.onmouseover = (event) => tooltip("AutoFight", null, event);
+    pauseFightBtn.onmouseout = () => tooltip("hide");
+    pauseFightBtn.onclick = () => pauseFight();
+  }
+
+  {
+    const mapsBtn = ensureIDSelector<HTMLElementTagNameMap["div"]>("mapsBtn");
+
+    mapsBtn.onmouseover = (event) => tooltip("Maps", null, event);
+    mapsBtn.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const mapsBtnText =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("mapsBtnText");
+
+    mapsBtnText.onclick = () => mapsClicked();
+  }
+
+  {
+    const configureMaps =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("configureMaps");
+
+    configureMaps.onclick = () => tooltip("Configure Maps", null, "update");
+  }
+
+  {
+    const voidMapsBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("voidMapsBtn");
+
+    voidMapsBtn.onclick = () => toggleVoidMaps();
+  }
+
+  {
+    const portalBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("portalBtn");
+
+    portalBtn.onmouseover = (event) => tooltip("Portal", null, event);
+    portalBtn.onmouseout = () => tooltip("hide");
+    portalBtn.onclick = () => portalClicked();
+  }
+
+  {
+    const repeatBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("repeatBtn");
+
+    repeatBtn.onmouseover = (event) => tooltip("Repeat Map", null, event);
+    repeatBtn.onmouseout = () => tooltip("hide");
+    repeatBtn.onclick = () => repeatClicked();
+  }
+
+  {
+    const heirloomsBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("heirloomsBtn");
+
+    heirloomsBtn.onclick = () => toggleHeirlooms();
+  }
+
+  {
+    const boneBtnMain =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("boneBtnMain");
+
+    boneBtnMain.onclick = () => showBones();
+  }
+
+  {
+    const finishDailyBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("finishDailyBtn");
+
+    finishDailyBtn.onclick = () => tooltip("Finish Daily", null, "update");
+  }
+
+  {
+    const exitSpireBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("exitSpireBtn");
+
+    exitSpireBtn.onclick = () => tooltip("Exit Spire", null, "update");
+  }
+
+
 }

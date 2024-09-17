@@ -1553,85 +1553,82 @@
                 <div class="col-xs-2" id="battleBtnsColumn">
                   <div
                     id="battleSideTitle"
-                    onmouseover="getZoneStats(event)"
-                    onmouseout="tooltip('hide')"
+
                   >
                     <span id="worldName">Zone</span>
                     <span id="worldNumber">1</span><br /><span
                       id="mapBonus"
                     ></span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn btn-primary fightBtn"
                       id="fightBtn"
-                      onmouseover="tooltip('Fight',null,event)"
-                      onmouseout="tooltip('hide')"
-                      onclick="fightManual()"
+
                     >
                       Fight
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn btn-danger fightBtn"
                       id="pauseFight"
-                      onmouseover="tooltip('AutoFight',null,event)"
-                      onmouseout="tooltip('hide')"
-                      onclick="pauseFight()"
+
                       style="display: none"
                     >
                       AutoFight Off
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <div
                       id="mapsBtn"
                       class="btn btn-warning fightBtn"
-                      onmouseover="tooltip('Maps', null, event)"
-                      onmouseout="tooltip('hide')"
+
                       style="display: none"
                     >
-                      <div id="mapsBtnText" onclick="mapsClicked()">Maps</div>
-                      <div onclick="tooltip('Configure Maps', null, 'update')">
+                      <div id="mapsBtnText" >Maps</div>
+                      <div id="configureMaps" >
                         <span class="glyphicon glyphicon-cog"></span>
                       </div>
                     </div>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn voidMessage fightBtn"
                       id="voidMapsBtn"
-                      onclick="toggleVoidMaps()"
+
                       style="display: none"
                     >
                       Void Maps
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn btn-info fightBtn"
                       id="portalBtn"
-                      onmouseover="tooltip('Portal', null, event)"
-                      onmouseout="tooltip('hide')"
-                      onclick="portalClicked()"
+
                       style="display: none"
                     >
                       Portal
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn btn-danger fightBtn"
                       id="repeatBtn"
-                      onmouseover="tooltip('Repeat Map', null, event)"
-                      onmouseout="tooltip('hide')"
-                      onclick="repeatClicked()"
+
                       style="display: none"
                     >
                       Repeat Off
                     </span>
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
@@ -1640,10 +1637,11 @@
                     <span
                       id="heirloomsBtn"
                       class="btn fightBtn heirloomsBtnColor"
-                      onclick="toggleHeirlooms()"
+
                       >Heirlooms</span
                     >
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
@@ -1652,11 +1650,12 @@
                     <span
                       class="btn btn-default fightBtn"
                       id="boneBtnMain"
-                      onclick="showBones()"
+
                     >
                       <span id="boneBtnText">Bone Trader</span>
                     </span>
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
@@ -1665,11 +1664,12 @@
                     <span
                       class="btn btn-success fightBtn"
                       id="finishDailyBtn"
-                      onclick="tooltip('Finish Daily', null, 'update')"
+
                     >
                       Finish Daily
                     </span>
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
@@ -1678,14 +1678,16 @@
                     <span
                       class="btn btn-danger fightBtn"
                       id="exitSpireBtn"
-                      onclick="tooltip('Exit Spire', null, 'update')"
+
                     >
                       Exit Spire
                     </span>
                   </div>
                 </div>
+
                 <div class="col-xs-10" id="gridContainer">
                   <div id="grid"></div>
+
                   <div id="preMaps" style="display: none">
                     <div style="display: none" id="mapsCreateRow" class="row">
                       <div id="openTutorialContainer2" style="display: none">
@@ -2024,11 +2026,13 @@
                     <div id="mapsHere" class="mapSize1 niceScroll"></div>
                     <div id="voidMapsHere" class="niceScroll"></div>
                   </div>
+
                   <div
                     id="mapGrid"
                     class="gridShrunk"
                     style="display: none"
                   ></div>
+
                   <div id="extraGridInfo" style="display: none">
                     <div id="extraGridInfoTitle"></div>
                     <div id="extraGridInfoSummary"></div>
@@ -2040,6 +2044,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div id="extraMapBtns" class="col-xs-off">
                   <div class="battleSideBtnContainer">
                     <span
