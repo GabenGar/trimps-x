@@ -1669,7 +1669,6 @@
                         <span
                           id="openTutorialBtn2"
                           class="flashNo icomoon icon-star pointer tutorialStar"
-                          onclick="tutorial.popup()"
                           style="color: gold"
                         ></span>
                       </div>
@@ -1677,189 +1676,141 @@
                         <span
                           id="advMapsHideBtn"
                           class="icomoon icon-minus-circle pointer"
-                          onclick="hideAdvMaps()"
-                          onmouseover="tooltip('Show/Hide Map Config', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                         ></span>
                         <span
                           id="advMapsPreset1"
                           class="pointer mapPreset presetSelectionOff"
-                          onclick="selectAdvMapsPreset(1)"
-                          onmouseover="tooltip('Map Preset', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                           >1</span
                         >
                         <span
                           id="advMapsPreset2"
                           class="pointer mapPreset presetSelectionOff"
-                          onclick="selectAdvMapsPreset(2)"
-                          onmouseover="tooltip('Map Preset', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                           >2</span
                         >
                         <span
                           id="advMapsPreset3"
                           class="pointer mapPreset presetSelectionOff"
-                          onclick="selectAdvMapsPreset(3)"
-                          onmouseover="tooltip('Map Preset', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                           >3</span
                         >
                         <span
                           id="advMapsPreset4"
                           class="pointer mapPreset presetSelectionOff"
-                          onclick="selectAdvMapsPreset(4)"
-                          onmouseover="tooltip('Map Preset', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                           >4</span
                         >
                         <span
                           id="advMapsPreset5"
                           class="pointer mapPreset presetSelectionOff"
-                          onclick="selectAdvMapsPreset(5)"
-                          onmouseover="tooltip('Map Preset', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                           >5</span
                         >
                         <span
                           id="advMapsSaveBtn"
                           class="icomoon icon-save pointer"
-                          onclick="saveAdvMaps()"
-                          onmouseover="tooltip('Save Map Settings', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                         ></span>
                         <span
                           id="advMapsResetBtn"
                           class="icomoon icon-refresh pointer"
-                          onclick="resetAdvMaps(true)"
-                          onmouseover="tooltip('Reset Map Settings', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                         ></span>
                         <span
                           id="advMapsRecycleBtn"
                           class="icomoon icon-trash-o pointer iconStateBad"
-                          onmouseover="tooltip('Recycle All', null, event)"
-                          onmouseout="tooltip('hide')"
-                          onclick="recycleBelow(false)"
                         ></span>
                       </div>
                       <div id="mapLevelContainer" class="col-xs-4">
                         Level
                         <span
+                          id="incrementMapLevelBtn"
                           class="pointer noselect incrementBtn"
-                          onclick="incrementMapLevel(-1)"
                           ><span
                             class="glyphicon glyphicon-download"
                           ></span></span
-                        ><input
-                          onkeyup="updateMapCost()"
-                          type="number"
-                          id="mapLevelInput"
-                          onfocusout="checkMapLevelInput(this)"
-                        /><span
+                        ><input id="mapLevelInput" type="number" /><span
+                          id="decrementMapLevelBtn"
                           class="pointer noselect incrementBtn"
-                          onclick="incrementMapLevel(1)"
                           ><span class="glyphicon glyphicon-upload"></span
                         ></span>
                       </div>
+
                       <div id="mapCostContainer" class="col-xs-4 lowPad">
                         <span id="mapCostFragmentCost"></span
                         ><span id="mapCostFragmentText"> Fragments</span>
                       </div>
+
                       <div
                         id="mapCreateBtn"
-                        onclick="buyMap()"
                         class="workBtn primaryColor pointer noselect col-xs-4"
                       >
                         Create
                       </div>
                     </div>
+
                     <div id="advMapsRow" class="row">
                       <div
                         id="advLootContainer"
                         class="col-xs-3 mapConfigContainer lowPad"
                       >
-                        <div
-                          class="advMapsTitle"
-                          onmouseover="tooltip('Loot', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
-                        >
+                        <div id="advLootContainerTitle" class="advMapsTitle">
                           Loot
                         </div>
                         <br />
                         <input
-                          value="0"
                           id="lootAdvMapsRange"
                           class="mapSelector mapInput"
                           type="range"
                           min="0"
                           max="9"
-                          oninput="updateMapNumbers()"
-                          onchange="updateMapNumbers()"
+                          value="0"
                         />
                         <div id="lootAdvMapsText"></div>
                       </div>
+
                       <div
                         id="advSizeContainer"
                         class="col-xs-3 mapConfigContainer lowPad"
                       >
-                        <div
-                          class="advMapsTitle"
-                          onmouseover="tooltip('Size', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
-                        >
+                        <div id="advSizeContainerTitle" class="advMapsTitle">
                           Size
                         </div>
                         <br />
                         <input
-                          value="0"
                           id="sizeAdvMapsRange"
+                          value="0"
                           class="mapSelector mapInput"
                           type="range"
                           min="0"
                           max="9"
-                          oninput="updateMapNumbers()"
-                          onchange="updateMapNumbers()"
                         />
                         <div id="sizeAdvMapsText"></div>
                       </div>
+
                       <div
                         id="advDifficultyContainer"
                         class="col-xs-3 mapConfigContainer lowPad"
                       >
                         <div
+                          id="advDifficultyContainerTitle"
                           class="advMapsTitle"
-                          onmouseover="tooltip('Difficulty', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                         >
                           Difficulty
                         </div>
                         <br />
                         <input
-                          value="0"
                           id="difficultyAdvMapsRange"
                           class="mapSelector mapInput"
                           type="range"
                           min="0"
                           max="9"
-                          oninput="updateMapNumbers()"
-                          onchange="updateMapNumbers()"
+                          value="0"
                         />
                         <div id="difficultyAdvMapsText"></div>
                       </div>
+
                       <div
                         id="advBiomeContainer"
                         class="col-xs-3 mapConfigContainer lowPad"
-                        onmouseover="tooltip('Biome', 'advMaps', event)"
-                        onmouseout="tooltip('hide')"
                       >
                         <div class="advMapsTitle">Biome</div>
                         <br />
-                        <select
-                          id="biomeAdvMapsSelect"
-                          class="advSelect"
-                          onchange="updateMapCost()"
-                        >
+                        <select id="biomeAdvMapsSelect" class="advSelect">
                           <option value="Random">Random</option>
                           <option value="Mountain">Mountain</option>
                           <option value="Forest">Forest</option>
@@ -1868,13 +1819,14 @@
                         </select>
                       </div>
                     </div>
+
                     <div id="advMapsRow2" class="row">
                       <div class="col-xs-2 mapConfigContainer lowPad"></div>
+
                       <div class="col-xs-3 mapConfigContainer lowPad">
                         <div
+                          id="advMapsRow2SpecialModifier"
                           class="advMapsTitle"
-                          onmouseover="tooltip('Special Modifier', 'advMaps', event)"
-                          onmouseout="tooltip('hide')"
                         >
                           Special Modifier
                         </div>
@@ -1882,9 +1834,9 @@
                         <select
                           id="advSpecialSelect"
                           class="advSelect"
-                          onchange="updateMapCost()"
                         ></select>
                       </div>
+
                       <div class="col-xs-2 mapConfigContainer lowPad">
                         <div
                           id="advPerfectLocked"
@@ -1897,9 +1849,8 @@
                         </div>
                         <div id="advPerfectUnlocked" style="display: none">
                           <div
+                            id="advPerfectUnlockedTitle"
                             class="advMapsTitle"
-                            onmouseover="tooltip('Perfect Sliders', 'advMaps', event)"
-                            onmouseout="tooltip('hide')"
                           >
                             Perfect Sliders
                           </div>
@@ -1908,10 +1859,10 @@
                             id="advPerfectCheckbox"
                             class="icomoon icon-checkbox-unchecked niceCheckbox"
                             data-checked="false"
-                            onclick="swapNiceCheckbox(this); updateMapNumbers()"
                           ></span>
                         </div>
                       </div>
+
                       <div class="col-xs-3 mapConfigContainer lowPad">
                         <div
                           id="advExtraLevelLocked"
@@ -1923,24 +1874,22 @@
                           <span class="icomoon icon-lock3"></span>
                         </div>
                         <div id="advExtraLevelUnlocked" style="display: none">
-                          <div
-                            class="advMapsTitle"
-                            onmouseover="tooltip('Extra Zones', 'advMaps', event)"
-                            onmouseout="tooltip('hide')"
-                          >
+                          <div id="advExtraLevelTitle" class="advMapsTitle">
                             Extra Zones
                           </div>
                           <br />
                           <select
                             id="advExtraLevelSelect"
                             class="advSelect"
-                            onchange="updateMapCost()"
                           ></select>
                         </div>
                       </div>
+
                       <div class="col-xs-2 mapConfigContainer lowPad"></div>
                     </div>
+
                     <div id="heirRare" style="display: none"></div>
+
                     <div id="selectedMapContainer" class="row">
                       <div id="selectedMapCol" class="col-xs-3 lowPad">
                         <div id="selectedMapName"></div>
@@ -1970,7 +1919,6 @@
                             id="selectMapBtn"
                             class="workBtn pointer noselect infoColor selectMapBtn"
                             style="visibility: hidden"
-                            onclick="runMap()"
                           >
                             Run Map
                           </span>
@@ -1978,17 +1926,18 @@
                             id="recycleMapBtn"
                             class="workBtn pointer noselect dangerColor selectMapBtn"
                             style="visibility: hidden"
-                            onclick="recycleMap()"
                           >
                             Recycle Map
                           </span>
                         </div>
                       </div>
+
                       <div id="mapStatsCol1" class="col-xs-2 mapStatsCol">
                         <div class="mapStatsTitle">Size</div>
                         <div class="mapStatsTitle">Difficulty</div>
                         <div class="mapStatsTitle">Loot</div>
                       </div>
+
                       <div id="mapStatsCol2" class="col-xs-2 mapStatsCol">
                         <div class="mapStatsValue" id="mapStatsSize"></div>
                         <div
@@ -1998,7 +1947,9 @@
                         <div class="mapStatsValue" id="mapStatsLoot"></div>
                       </div>
                     </div>
+
                     <div id="mapsHere" class="mapSize1 niceScroll"></div>
+
                     <div id="voidMapsHere" class="niceScroll"></div>
                   </div>
 
@@ -2013,7 +1964,7 @@
                     <div id="extraGridInfoSummary"></div>
                     <div id="extraGridInfoSub"></div>
                     <div id="extraGridInfoBtns">
-                      <span class="btn btn-info" onclick="restoreGrid()"
+                      <span id="extraGridInfoBtnsContinue" class="btn btn-info"
                         >Continue</span
                       >
                     </div>
@@ -2022,14 +1973,10 @@
 
                 <div id="extraMapBtns" class="col-xs-off">
                   <div class="battleSideBtnContainer">
-                    <span
-                      class="btn settingBtn1 fightBtn"
-                      id="togglemapLoot2"
-                      onmouseout="tooltip('hide')"
-                      onclick="toggleSetting('mapLoot')"
-                    >
+                    <span id="togglemapLoot2" class="btn settingBtn1 fightBtn">
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
                       class="btn settingBtn1 fightBtn"
@@ -2039,48 +1986,38 @@
                     >
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
-                    <span
-                      class="btn settingBtn1 fightBtn"
-                      id="toggleexitTo"
-                      onmouseout="tooltip('hide')"
-                      onclick="toggleSetting('exitTo')"
-                    >
+                    <span id="toggleexitTo" class="btn settingBtn1 fightBtn">
                     </span>
                   </div>
+
                   <div class="battleSideBtnContainer">
                     <span
-                      class="btn settingBtn1 fightBtn"
                       id="togglemapAtZone2"
-                      onmouseout="tooltip('hide')"
-                      onclick="toggleSetting('mapAtZone')"
+                      class="btn settingBtn1 fightBtn"
                     >
                     </span>
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
                     id="repeatVoidsContainer"
                   >
                     <span
-                      class="btn settingBtn1 fightBtn"
                       id="togglerepeatVoids"
-                      onmouseout="tooltip('hide')"
-                      onclick="toggleSetting('repeatVoids')"
+                      class="btn settingBtn1 fightBtn"
                     >
                     </span>
                   </div>
+
                   <div
                     class="battleSideBtnContainer"
                     style="display: none"
                     id="climbBwContainer"
                   >
-                    <span
-                      class="btn settingBtn1 fightBtn"
-                      id="toggleclimbBw2"
-                      onmouseout="tooltip('hide')"
-                      onclick="toggleSetting('climbBw')"
-                    >
+                    <span id="toggleclimbBw2" class="btn settingBtn1 fightBtn">
                     </span>
                   </div>
                 </div>
@@ -2143,6 +2080,7 @@
               </td>
             </tr>
           </table>
+
           <div id="settingsHere" style="display: none">
             <div id="searchSettingsWindow">
               <div id="settingTitleBar">

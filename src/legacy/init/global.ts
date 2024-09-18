@@ -12,7 +12,7 @@ declare global {
   function tooltip(title: "hide"): void;
   function tooltip(
     title: string,
-    secondArg: null | "customText",
+    secondArg: null | "customText" | "advMaps",
     thirdArg: ITooltipThirdArg,
     fourthArg?: string,
     fifthArg?: string,
@@ -125,6 +125,36 @@ declare global {
   function toggleHeirlooms(): void;
 
   function showBones(): void;
+
+  function hideAdvMaps(): void;
+
+  function selectAdvMapsPreset(preset: 1 | 2 | 3 | 4 | 5): void;
+
+  function saveAdvMaps(): void;
+
+  function resetAdvMaps(val: true): void;
+
+  function recycleBelow(val: false): void;
+
+  function incrementMapLevel(val: -1 | 1): void;
+
+  function updateMapCost(): void;
+
+  function buyMap(): void;
+
+  function updateMapNumbers(): void;
+
+  function swapNiceCheckbox(target: GlobalEventHandlers): void;
+
+  function runMap(): void;
+
+  function recycleMap(): void;
+
+  function restoreGrid(): void;
+
+  function toggleSetting(
+    name: "mapLoot" | "exitTo" | "mapAtZone" | "repeatVoids" | "climbBw",
+  ): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

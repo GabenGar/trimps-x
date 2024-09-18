@@ -687,5 +687,319 @@ function initGridRow() {
     exitSpireBtn.onclick = () => tooltip("Exit Spire", null, "update");
   }
 
+  {
+    const openTutorialBtn2 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("openTutorialBtn2");
 
+    openTutorialBtn2.onclick = () => tutorial.popup();
+  }
+
+  {
+    const advMapsHideBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsHideBtn");
+
+    advMapsHideBtn.onclick = () => hideAdvMaps();
+    advMapsHideBtn.onmouseover = (event) =>
+      tooltip("Show/Hide Map Config", "advMaps", event);
+    advMapsHideBtn.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsPreset1 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsPreset1");
+
+    advMapsPreset1.onclick = () => selectAdvMapsPreset(1);
+    advMapsPreset1.onmouseover = (event) =>
+      tooltip("Map Preset", "advMaps", event);
+    advMapsPreset1.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsPreset2 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsPreset2");
+
+    advMapsPreset2.onclick = () => selectAdvMapsPreset(2);
+    advMapsPreset2.onmouseover = (event) =>
+      tooltip("Map Preset", "advMaps", event);
+    advMapsPreset2.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsPreset3 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsPreset3");
+
+    advMapsPreset3.onclick = () => selectAdvMapsPreset(3);
+    advMapsPreset3.onmouseover = (event) =>
+      tooltip("Map Preset", "advMaps", event);
+    advMapsPreset3.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsPreset4 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsPreset4");
+
+    advMapsPreset4.onclick = () => selectAdvMapsPreset(4);
+    advMapsPreset4.onmouseover = (event) =>
+      tooltip("Map Preset", "advMaps", event);
+    advMapsPreset4.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsPreset5 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsPreset5");
+
+    advMapsPreset5.onclick = () => selectAdvMapsPreset(5);
+    advMapsPreset5.onmouseover = (event) =>
+      tooltip("Map Preset", "advMaps", event);
+    advMapsPreset5.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsSaveBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsSaveBtn");
+
+    advMapsSaveBtn.onclick = () => saveAdvMaps();
+    advMapsSaveBtn.onmouseover = (event) =>
+      tooltip("Save Map Settings", "advMaps", event);
+    advMapsSaveBtn.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsResetBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsResetBtn");
+
+    advMapsResetBtn.onclick = () => resetAdvMaps(true);
+    advMapsResetBtn.onmouseover = (event) =>
+      tooltip("Reset Map Settings", "advMaps", event);
+    advMapsResetBtn.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advMapsRecycleBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("advMapsRecycleBtn");
+
+    advMapsRecycleBtn.onmouseover = (event) =>
+      tooltip("Recycle All", null, event);
+    advMapsRecycleBtn.onmouseout = () => tooltip("hide");
+    advMapsRecycleBtn.onclick = () => recycleBelow(false);
+  }
+
+  {
+    const incrementMapLevelBtn = ensureIDSelector<
+      HTMLElementTagNameMap["span"]
+    >("incrementMapLevelBtn");
+
+    incrementMapLevelBtn.onclick = () => incrementMapLevel(-1);
+  }
+
+  {
+    const mapLevelInput =
+      ensureIDSelector<HTMLElementTagNameMap["input"]>("mapLevelInput");
+
+    mapLevelInput.onkeyup = () => updateMapCost();
+    // @ts-expect-error it clearly exists https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
+    mapLevelInput.onfocusout = () => checkMapLevelInput(this);
+  }
+
+  {
+    const decrementMapLevelBtn = ensureIDSelector<
+      HTMLElementTagNameMap["span"]
+    >("decrementMapLevelBtn");
+
+    decrementMapLevelBtn.onclick = () => incrementMapLevel(1);
+  }
+
+  {
+    const mapCreateBtn =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("mapCreateBtn");
+
+    mapCreateBtn.onclick = () => buyMap();
+  }
+
+  {
+    const advLootContainerTitle = ensureIDSelector<
+      HTMLElementTagNameMap["div"]
+    >("advLootContainerTitle");
+
+    advLootContainerTitle.onmouseover = (event) =>
+      tooltip("Loot", "advMaps", event);
+    advLootContainerTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const lootAdvMapsRange =
+      ensureIDSelector<HTMLElementTagNameMap["input"]>("lootAdvMapsRange");
+
+    lootAdvMapsRange.oninput = () => updateMapNumbers();
+    lootAdvMapsRange.onchange = () => updateMapNumbers();
+  }
+
+  {
+    const advSizeContainerTitle = ensureIDSelector<
+      HTMLElementTagNameMap["div"]
+    >("advSizeContainerTitle");
+
+    advSizeContainerTitle.onmouseover = (event) =>
+      tooltip("Size", "advMaps", event);
+    advSizeContainerTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const sizeAdvMapsRange =
+      ensureIDSelector<HTMLElementTagNameMap["input"]>("sizeAdvMapsRange");
+
+    sizeAdvMapsRange.oninput = () => updateMapNumbers();
+    sizeAdvMapsRange.onchange = () => updateMapNumbers();
+  }
+
+  {
+    const advDifficultyContainerTitle = ensureIDSelector<
+      HTMLElementTagNameMap["div"]
+    >("advDifficultyContainerTitle");
+
+    advDifficultyContainerTitle.onmouseover = (event) =>
+      tooltip("Difficulty", "advMaps", event);
+    advDifficultyContainerTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const difficultyAdvMapsRange = ensureIDSelector<
+      HTMLElementTagNameMap["input"]
+    >("difficultyAdvMapsRange");
+
+    difficultyAdvMapsRange.oninput = () => updateMapNumbers();
+    difficultyAdvMapsRange.onchange = () => updateMapNumbers();
+  }
+
+  {
+    const advBiomeContainer =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("advBiomeContainer");
+
+    advBiomeContainer.onmouseover = (event) =>
+      tooltip("Biome", "advMaps", event);
+    advBiomeContainer.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const biomeAdvMapsSelect =
+      ensureIDSelector<HTMLElementTagNameMap["select"]>("biomeAdvMapsSelect");
+
+    biomeAdvMapsSelect.onchange = () => updateMapCost();
+  }
+
+  {
+    const advMapsRow2SpecialModifier = ensureIDSelector<
+      HTMLElementTagNameMap["div"]
+    >("advMapsRow2SpecialModifier");
+
+    advMapsRow2SpecialModifier.onmouseover = (event) =>
+      tooltip("Special Modifier", "advMaps", event);
+    advMapsRow2SpecialModifier.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advSpecialSelect =
+      ensureIDSelector<HTMLElementTagNameMap["select"]>("advSpecialSelect");
+
+    advSpecialSelect.onchange = () => updateMapCost();
+  }
+
+  {
+    const advPerfectUnlockedTitle = ensureIDSelector<
+      HTMLElementTagNameMap["div"]
+    >("advPerfectUnlockedTitle");
+
+    advPerfectUnlockedTitle.onmouseover = (event) =>
+      tooltip("Perfect Sliders", "advMaps", event);
+    advPerfectUnlockedTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advPerfectCheckbox =
+      ensureIDSelector<HTMLElementTagNameMap["input"]>("advPerfectCheckbox");
+
+    advPerfectCheckbox.onclick = function () {
+      swapNiceCheckbox(this);
+      updateMapNumbers();
+    };
+  }
+
+  {
+    const advExtraLevelTitle =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("advExtraLevelTitle");
+
+    advExtraLevelTitle.onmouseover = (event) =>
+      tooltip("Extra Zones", "advMaps", event);
+    advExtraLevelTitle.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const advExtraLevelSelect = ensureIDSelector<
+      HTMLElementTagNameMap["select"]
+    >("advExtraLevelSelect");
+
+    advExtraLevelSelect.onchange = () => updateMapCost();
+  }
+
+  {
+    const selectMapBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("selectMapBtn");
+
+    selectMapBtn.onclick = () => runMap();
+  }
+
+  {
+    const recycleMapBtn =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("recycleMapBtn");
+
+    recycleMapBtn.onclick = () => recycleMap();
+  }
+
+  {
+    const extraGridInfoBtnsContinue = ensureIDSelector<
+      HTMLElementTagNameMap["span"]
+    >("extraGridInfoBtnsContinue");
+
+    extraGridInfoBtnsContinue.onclick = () => restoreGrid();
+  }
+
+  {
+    const togglemapLoot2 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("togglemapLoot2");
+
+    togglemapLoot2.onmouseout = () => tooltip("hide");
+    togglemapLoot2.onclick = () => toggleSetting("mapLoot");
+  }
+
+  {
+    const toggleexitTo =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("toggleexitTo");
+
+    toggleexitTo.onmouseout = () => tooltip("hide");
+    toggleexitTo.onclick = () => toggleSetting("exitTo");
+  }
+
+  {
+    const togglemapAtZone2 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("togglemapAtZone2");
+
+    togglemapAtZone2.onmouseout = () => tooltip("hide");
+    togglemapAtZone2.onclick = () => toggleSetting("mapAtZone");
+  }
+
+  {
+    const togglerepeatVoids =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("togglerepeatVoids");
+
+    togglerepeatVoids.onmouseout = () => tooltip("hide");
+    togglerepeatVoids.onclick = () => toggleSetting("repeatVoids");
+  }
+
+  {
+    const toggleclimbBw2 =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("toggleclimbBw2");
+
+    toggleclimbBw2.onmouseout = () => tooltip("hide");
+    toggleclimbBw2.onclick = () => toggleSetting("climbBw");
+  }
 }
