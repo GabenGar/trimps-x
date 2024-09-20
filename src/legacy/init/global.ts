@@ -27,6 +27,13 @@ declare global {
         consume(): void;
       };
     };
+    options: {
+      menu: {
+        pauseGame: {
+          description: string;
+        };
+      };
+    };
   };
 
   function getMaxResources(name: "Food" | "Wood" | "Metal"): void;
@@ -154,6 +161,33 @@ declare global {
 
   function toggleSetting(
     name: "mapLoot" | "exitTo" | "mapAtZone" | "repeatVoids" | "climbBw",
+  ): void;
+
+  function save(first: boolean, second: boolean): void;
+
+  function toggleStats(): void;
+
+  function toggleAchievementWindow(): void;
+
+  function toggleSettingsMenu(): void;
+
+  function viewPortalUpgrades(): void;
+
+  function toggleSetting(type: "pauseGame"): void;
+
+  function toggleSettingSection(arg: boolean): void;
+
+  function searchSettings(that: GlobalEventHandlers): void;
+
+  function settingTab(
+    name:
+      | "New"
+      | "General"
+      | "Performance"
+      | "QOL"
+      | "Alerts"
+      | "Layout"
+      | "Other",
   ): void;
 }
 

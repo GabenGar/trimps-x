@@ -1,4 +1,4 @@
-import { ensureIDSelector } from "#browser/dom";
+import { ensureIDSelector, ensureOneSelector } from "#browser/dom";
 
 export function initSettingsRow() {
   initSettingsTable();
@@ -58,11 +58,18 @@ function initSettingsTable() {
   }
 
   {
+    const newUpdatesBtn =
+      ensureIDSelector<HTMLElementTagNameMap["td"]>("newUpdatesBtn");
+
+    newUpdatesBtn.onclick = () => window.open("updates.html", "_blank");
+  }
+
+  {
     const portalTimer =
       ensureIDSelector<HTMLElementTagNameMap["td"]>("portalTimer");
 
     portalTimer.onclick = () => toggleSetting("pauseGame");
-    portalTimer.onmouseover = () =>
+    portalTimer.onmouseover = (event) =>
       tooltip(
         "Pause the game",
         "customText",
@@ -73,4 +80,82 @@ function initSettingsTable() {
   }
 }
 
-function initSettingsWindow() {}
+function initSettingsWindow() {
+  {
+    const toggle = ensureOneSelector<HTMLElementTagNameMap["div"]>(
+      "#settingTitleBar > div:first",
+    );
+
+    toggle.onclick = () => toggleSettingSection(false);
+  }
+
+  {
+    const searchSettingsEl =
+      ensureIDSelector<HTMLElementTagNameMap["input"]>("searchSettings");
+
+    searchSettingsEl.onkeyup = function () {
+      searchSettings(this);
+    };
+  }
+
+  {
+    const newTab = ensureIDSelector<HTMLElementTagNameMap["li"]>("NewTab");
+
+    newTab.onclick = () => settingTab("New");
+  }
+
+  {
+    const GeneralTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("GeneralTab");
+
+    GeneralTab.onclick = () => settingTab("General");
+  }
+
+  {
+    const PerformanceTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("PerformanceTab");
+
+    PerformanceTab.onclick = () => settingTab("Performance");
+  }
+
+  {
+    const QOLTab = ensureIDSelector<HTMLElementTagNameMap["li"]>("QOLTab");
+
+    QOLTab.onclick = () => settingTab("QOL");
+  }
+
+  {
+    const AlertsTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("AlertsTab");
+
+    AlertsTab.onclick = () => settingTab("Alerts");
+  }
+
+  {
+    const LayoutTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("LayoutTab");
+
+    LayoutTab.onclick = () => settingTab("Layout");
+  }
+
+  {
+    const OtherTab = ensureIDSelector<HTMLElementTagNameMap["li"]>("OtherTab");
+
+    OtherTab.onclick = () => settingTab("Other");
+  }
+
+  {
+    const HotkeyTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("HotkeyTab");
+
+    HotkeyTab.onclick = () => tooltip("Hotkeys", null, "update");
+  }
+
+  {
+    const backToSearchBtn = ensureOneSelector<HTMLElementTagNameMap["div"]>(
+      "#allSettings > div:first",
+    );
+
+    backToSearchBtn.onclick = () => toggleSettingSection(true);
+  }
+}

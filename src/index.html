@@ -2049,10 +2049,7 @@
                 <div id="settingsText">Settings</div>
               </td>
               <td id="pastUpgradesBtn" class="btn"></td>
-              <td
-                class="btn btn-new"
-                onclick="window.open('updates.html', '_blank')"
-              >
+              <td id="newUpdatesBtn" class="btn btn-new">
                 V <span id="versionNumber"></span> | What's New
               </td>
               <td id="portalTimer" class="timerNotPaused">
@@ -2070,82 +2067,76 @@
               <div id="settingTitleBar">
                 <div
                   class="noselect optionContainer settingsBtn tealColor settingTypeBtn"
-                  onclick="toggleSettingSection(false)"
                 >
                   Browse All
                 </div>
                 <span id="searchSettingsTitle"
                   >Choose a Category Below, or Search for a
                   Setting/Keyword:</span
-                >&nbsp;
-                <input
-                  id="searchSettings"
-                  onkeyup="searchSettings(this)"
-                /><br />
+                >&nbsp; <input id="searchSettings" /><br />
                 <div id="settingsTabs">
                   <ul class="nav nav-tabs nav-justified">
                     <li
+                      id="NewTab"
+                      class="tabNotSelected settingTab"
                       role="presentation"
                       style="display: none"
-                      id="NewTab"
-                      onclick="settingTab('New')"
-                      class="tabNotSelected settingTab"
                     >
                       <a>New</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="GeneralTab"
-                      onclick="settingTab('General')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>General</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="PerformanceTab"
-                      onclick="settingTab('Performance')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Performance</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="QOLTab"
-                      onclick="settingTab('QOL')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Quality of Life</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="AlertsTab"
-                      onclick="settingTab('Alerts')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Pop-ups and Alerts</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="LayoutTab"
-                      onclick="settingTab('Layout')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Layout</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="OtherTab"
-                      onclick="settingTab('Other')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Other</a>
                     </li>
+
                     <li
-                      role="presentation"
                       id="HotkeyTab"
-                      onclick="tooltip('Hotkeys', null, 'update')"
                       class="tabNotSelected settingTab"
+                      role="presentation"
                     >
                       <a>Hotkeys</a>
                     </li>
@@ -2154,13 +2145,12 @@
               </div>
               <div id="settingSearchResults"></div>
             </div>
+
             <div id="allSettings" style="display: none">
-              <div
-                class="noselect optionContainer settingsBtn tealColor"
-                onclick="toggleSettingSection(true)"
-              >
+              <div class="noselect optionContainer settingsBtn tealColor">
                 Back to Search
               </div>
+
               <div id="allSettingsHere"></div>
             </div>
           </div>
@@ -2185,17 +2175,21 @@
             <div id="portalError" style="display: none"></div>
           </div>
         </div>
+
         <div id="titleCol2" class="titleCol">
           <div>
             <div id="portalHelium">
               <span id="portalHeliumOwned">0</span> Helium Canisters
             </div>
+
             <div id="portalTotalHelium">
               <span id="totalHeliumEarned">0</span> Earned All Time
             </div>
+
             <div id="portalTotalSpent">
               <span id="totalHeliumSpent">0</span> Spent on Perks
             </div>
+
             <div id="portalTotalPortals">
               <span id="totalPortals">0</span> Portals Used
             </div>
