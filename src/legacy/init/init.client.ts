@@ -5,6 +5,7 @@ import {
   initOfflineMapButtons,
   initOfflineZoneButton,
 } from "./offline";
+import { initPortal } from "./portal";
 import { initSettingsRow } from "./settings-row";
 import { initTopRow } from "./top-row";
 
@@ -22,4 +23,5 @@ export function init() {
   initTopRow();
   initBottomRow();
   initSettingsRow();
+  initPortal();
 }

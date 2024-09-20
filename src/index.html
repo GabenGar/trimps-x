@@ -2161,9 +2161,7 @@
     <div id="portalWrapper" style="display: none" class="portalMk0">
       <div
         id="swapPortalUniverseBtn"
-        onmouseover="tooltip('Change Universe', null, event)"
-        onmouseout="tooltip('hide')"
-        onclick="swapPortalUniverse()"
+
       >
         Change Universe
       </div>
@@ -2204,87 +2202,79 @@
           <div id="portalPresets" class="numTabs">
             <ul class="nav nav-tabs nav-justified" id="portalPresetsTabs">
               <li
+              id="presetTab1"
+              class="tabNotSelected"
                 role="presentation"
-                class="tabNotSelected"
-                id="presetTab1"
-                onclick="presetTab(1, true)"
-                onmouseover="tooltip('Perk Preset', null, event, 1)"
-                onmouseout="tooltip('hide')"
+
               >
                 <a id="presetTab1Text">Preset 1</a>
               </li>
+
               <li
+              id="presetTab2"
+              class="tabNotSelected"
                 role="presentation"
-                class="tabNotSelected"
-                id="presetTab2"
-                onclick="presetTab(2, true)"
-                onmouseover="tooltip('Perk Preset', null, event, 2)"
-                onmouseout="tooltip('hide')"
+
               >
                 <a id="presetTab2Text">Preset 2</a>
               </li>
+
               <li
+              id="presetTab3"
+              class="tabNotSelected"
                 role="presentation"
-                class="tabNotSelected"
-                id="presetTab3"
-                onclick="presetTab(3, true)"
-                onmouseover="tooltip('Perk Preset', null, event, 3)"
-                onmouseout="tooltip('hide')"
+
               >
                 <a id="presetTab3Text">Preset 3</a>
               </li>
+
               <li
+              id="presetTabSave"
+              class="tabNotEnabled"
                 role="presentation"
-                class="tabNotEnabled"
-                id="presetTabSave"
-                onclick="savePerkPreset()"
-                onmouseover="tooltip('Perk Preset', null, event, 'Save')"
-                onmouseout="tooltip('hide')"
+
               >
                 <a>Save</a>
               </li>
+
               <li
+              id="presetTabLoad"
+              class="tabNotEnabled"
                 role="presentation"
-                class="tabNotEnabled"
-                id="presetTabLoad"
-                onclick="loadPerkPreset()"
-                onmouseover="tooltip('Perk Preset', null, event, 'Load')"
-                onmouseout="tooltip('hide')"
+
               >
                 <a>Load</a>
               </li>
+
               <li
+              id="presetTabRename"
+              class="tabNotEnabled"
                 role="presentation"
-                class="tabNotEnabled"
-                id="presetTabRename"
-                onclick="renamePerkPreset(true)"
-                onmouseover="tooltip('Perk Preset', null, event, 'Rename')"
-                onmouseout="tooltip('hide')"
+
               >
                 <a>Rename</a>
               </li>
+
               <li
+              id="presetTabExport"
+              class="tabNotEnabled"
                 role="presentation"
-                class="tabNotEnabled"
-                id="presetTabExport"
-                onclick="tooltip('Export Perks', null, 'update')"
-                onmouseover="tooltip('Perk Preset', null, event, 'Export')"
-                onmouseout="tooltip('hide')"
+
               >
                 <a>Export</a>
               </li>
+
               <li
+              id="presetTabImport"
+              class="tabNotEnabled"
                 role="presentation"
-                class="tabNotEnabled"
-                id="presetTabImport"
-                onclick="tooltip('Import Perks', null, 'update')"
-                onmouseover="tooltip('Perk Preset', null, event, 'Import')"
-                onmouseout="tooltip('hide')"
+
               >
                 <a>Import</a>
               </li>
             </ul>
           </div>
+
           <div id="pnumTabs" class="numTabs">
             <ul class="nav nav-tabs nav-justified" id="portalTabs">
               <li
@@ -2295,6 +2285,7 @@
               >
                 <a id="ptab1Text">+1</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected"
@@ -2303,6 +2294,7 @@
               >
                 <a id="ptab2Text">+10</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected"
@@ -2311,6 +2303,7 @@
               >
                 <a id="ptab3Text">+25</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected"
@@ -2319,6 +2312,7 @@
               >
                 <a id="ptab4Text">+100</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected"
@@ -2327,6 +2321,7 @@
               >
                 <a id="ptab5Text">Custom</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected"
@@ -2337,6 +2332,7 @@
               >
                 <a id="ptab6Text">Max</a>
               </li>
+
               <li
                 role="presentation"
                 class="tabNotSelected pointer"
@@ -2345,6 +2341,7 @@
               >
                 <a id="ptabInfoText">More Info</a>
               </li>
+
               <li
                 role="presentation"
                 id="ptabRemove"
@@ -2355,6 +2352,7 @@
               </li>
             </ul>
           </div>
+
           <div id="portalUpgradesHere" class="niceScroll"></div>
         </div>
         <div id="challengeCol" class="col-xs-5">
