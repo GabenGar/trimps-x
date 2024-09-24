@@ -257,6 +257,10 @@ declare global {
 
   function upgradeMod(): void;
   function upgradeMod(firstArg: false, amount: 10 | 100): void;
+
+  function closeAchievementPopup(): void;
+
+  function closeHeirPopup(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

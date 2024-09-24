@@ -7,6 +7,7 @@ import {
   initOfflineMapButtons,
   initOfflineZoneButton,
 } from "./offline";
+import { initPopups } from "./popups";
 import { initPortal } from "./portal";
 import { initSettingsRow } from "./settings-row";
 import { initStats } from "./stats";
@@ -30,4 +31,5 @@ export function init() {
   initAchievements();
   initStats();
   initHeirlooms();
+  initPopups();
 }
