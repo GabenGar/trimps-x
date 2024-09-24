@@ -1,3 +1,4 @@
+import { initAchievements } from "./achievements";
 import { initBoneZone } from "./bone-zone";
 import { initBottomRow } from "./bottom-row";
 import {
@@ -24,4 +25,5 @@ export function init() {
   initBottomRow();
   initSettingsRow();
   initPortal();
+  initAchievements();
 }

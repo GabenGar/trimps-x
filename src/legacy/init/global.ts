@@ -225,6 +225,8 @@ declare global {
   function swapToCurrentChallenge(): void;
 
   function clearPerks(): void;
+
+  function toggleAchievementHelp(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;
