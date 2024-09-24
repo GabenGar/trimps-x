@@ -14,7 +14,7 @@ declare global {
     title: string,
     secondArg: null | "customText" | "advMaps",
     thirdArg: ITooltipThirdArg,
-    fourthArg?: string,
+    fourthArg?: string | 1 | 2 | 3 | true,
     fifthArg?: string,
     sixthArg?: number,
   ): void;
@@ -60,7 +60,7 @@ declare global {
     tabName: "all" | "buildings" | "jobs" | "upgrades" | "equipment",
   ): void;
 
-  function numTab(tab: 1 | 2 | 3 | 4 | 5 | 6): void;
+  function numTab(tab: 1 | 2 | 3 | 4 | 5 | 6, secondArg?: true): void;
 
   function toggleAutoStructure(): void;
 
@@ -78,6 +78,7 @@ declare global {
 
   const u2Mutations: {
     swapTab(bool: boolean): void;
+    toggleRespec(): void;
   };
 
   function respecTalents(): void;
@@ -160,7 +161,15 @@ declare global {
   function restoreGrid(): void;
 
   function toggleSetting(
-    name: "mapLoot" | "exitTo" | "mapAtZone" | "repeatVoids" | "climbBw",
+    name:
+      | "mapLoot"
+      | "exitTo"
+      | "mapAtZone"
+      | "repeatVoids"
+      | "climbBw"
+      | "detailedPerks",
+    secondArg?: null,
+    thirdArg?: true,
   ): void;
 
   function save(first: boolean, second: boolean): void;
@@ -189,6 +198,33 @@ declare global {
       | "Layout"
       | "Other",
   ): void;
+
+  function swapPortalUniverse(): void;
+
+  function presetTab(firstArg: 1 | 2 | 3, secondArg: true): void;
+
+  function savePerkPreset(): void;
+
+  function loadPerkPreset(): void;
+
+  function renamePerkPreset(arg: boolean): void;
+
+  function toggleRemovePerks(): void;
+
+  function confirmAbandonChallenge(): void;
+
+  function toggleChallengeSquared(): void;
+
+  function activateClicked(): void;
+
+  function cancelTooltip(): void;
+  function cancelPortal(): void;
+
+  function respecPerks(): void;
+
+  function swapToCurrentChallenge(): void;
+
+  function clearPerks(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

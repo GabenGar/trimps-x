@@ -2159,12 +2159,7 @@
     </div>
 
     <div id="portalWrapper" style="display: none" class="portalMk0">
-      <div
-        id="swapPortalUniverseBtn"
-
-      >
-        Change Universe
-      </div>
+      <div id="swapPortalUniverseBtn">Change Universe</div>
 
       <div id="titleRow">
         <div id="titleCol1" class="titleCol">
@@ -2201,74 +2196,46 @@
           <div id="portalStory"></div>
           <div id="portalPresets" class="numTabs">
             <ul class="nav nav-tabs nav-justified" id="portalPresetsTabs">
-              <li
-              id="presetTab1"
-              class="tabNotSelected"
-                role="presentation"
-
-              >
+              <li id="presetTab1" class="tabNotSelected" role="presentation">
                 <a id="presetTab1Text">Preset 1</a>
               </li>
 
-              <li
-              id="presetTab2"
-              class="tabNotSelected"
-                role="presentation"
-
-              >
+              <li id="presetTab2" class="tabNotSelected" role="presentation">
                 <a id="presetTab2Text">Preset 2</a>
               </li>
 
-              <li
-              id="presetTab3"
-              class="tabNotSelected"
-                role="presentation"
-
-              >
+              <li id="presetTab3" class="tabNotSelected" role="presentation">
                 <a id="presetTab3Text">Preset 3</a>
               </li>
 
-              <li
-              id="presetTabSave"
-              class="tabNotEnabled"
-                role="presentation"
-
-              >
+              <li id="presetTabSave" class="tabNotEnabled" role="presentation">
                 <a>Save</a>
               </li>
 
-              <li
-              id="presetTabLoad"
-              class="tabNotEnabled"
-                role="presentation"
-
-              >
+              <li id="presetTabLoad" class="tabNotEnabled" role="presentation">
                 <a>Load</a>
               </li>
 
               <li
-              id="presetTabRename"
-              class="tabNotEnabled"
+                id="presetTabRename"
+                class="tabNotEnabled"
                 role="presentation"
-
               >
                 <a>Rename</a>
               </li>
 
               <li
-              id="presetTabExport"
-              class="tabNotEnabled"
+                id="presetTabExport"
+                class="tabNotEnabled"
                 role="presentation"
-
               >
                 <a>Export</a>
               </li>
 
               <li
-              id="presetTabImport"
-              class="tabNotEnabled"
+                id="presetTabImport"
+                class="tabNotEnabled"
                 role="presentation"
-
               >
                 <a>Import</a>
               </li>
@@ -2277,77 +2244,39 @@
 
           <div id="pnumTabs" class="numTabs">
             <ul class="nav nav-tabs nav-justified" id="portalTabs">
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab1"
-                onclick="numTab(1, true)"
-              >
+              <li id="ptab1" class="tabNotSelected" role="presentation">
                 <a id="ptab1Text">+1</a>
               </li>
 
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab2"
-                onclick="numTab(2, true)"
-              >
+              <li id="ptab2" class="tabNotSelected" role="presentation">
                 <a id="ptab2Text">+10</a>
               </li>
 
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab3"
-                onclick="numTab(3, true)"
-              >
+              <li id="ptab3" class="tabNotSelected" role="presentation">
                 <a id="ptab3Text">+25</a>
               </li>
 
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab4"
-                onclick="numTab(4, true)"
-              >
+              <li id="ptab4" class="tabNotSelected" role="presentation">
                 <a id="ptab4Text">+100</a>
               </li>
 
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab5"
-                onclick="tooltip('Custom', null, 'update', true)"
-              >
+              <li id="ptab5" class="tabNotSelected" role="presentation">
                 <a id="ptab5Text">Custom</a>
               </li>
 
-              <li
-                role="presentation"
-                class="tabNotSelected"
-                id="ptab6"
-                onclick="numTab(6, true)"
-                onmouseover="tooltip('Buy Max', 'customText', event, 'Switching to this option will spend the majority of your Helium with each purchase. <b>Click twice to customize.</b>')"
-                onmouseout="tooltip('hide')"
-              >
+              <li id="ptab6" class="tabNotSelected" role="presentation">
                 <a id="ptab6Text">Max</a>
               </li>
 
               <li
-                role="presentation"
-                class="tabNotSelected pointer"
                 id="ptabInfo"
-                onclick="toggleSetting('detailedPerks', null, true)"
+                class="tabNotSelected pointer"
+                role="presentation"
               >
                 <a id="ptabInfoText">More Info</a>
               </li>
 
-              <li
-                role="presentation"
-                id="ptabRemove"
-                style="display: none"
-                onclick="toggleRemovePerks()"
-              >
+              <li id="ptabRemove" role="presentation" style="display: none">
                 <a id="ptabRemoveText">Remove</a>
               </li>
             </ul>
@@ -2355,15 +2284,14 @@
 
           <div id="portalUpgradesHere" class="niceScroll"></div>
         </div>
+
         <div id="challengeCol" class="col-xs-5">
           <div id="viewChallenge" style="display: none">
             <div style="text-align: center">
               <span
+                id="challengeSquaredViewBtn"
                 class="thing thingColorSquared pointer"
                 style="width: 50%; display: inline-block"
-                onmouseover="tooltip('Challenge2', null, event, true)"
-                onmouseout="tooltip('hide')"
-                id="challengeSquaredViewBtn"
                 >Challenge<sup><span id="challengeSquaredName">2</span></sup> -
                 <span id="challengeSquaredBonusAmtView">0</span>% bonus</span
               >
@@ -2373,19 +2301,20 @@
             >
             <br /><br />
             <div
+              id="cancelChallengeBtn"
               class="btn btn-warning inPortalBtn"
               style="display: none"
-              id="cancelChallengeBtn"
-              onclick="confirmAbandonChallenge()"
             >
               Abandon Challenge
             </div>
             <span id="extraChallengeStuff"></span>
           </div>
+
           <div id="challenges" style="display: none">
             <div id="challengeTitleNoSquared">
               <div class="challengeTitle">Challenges</div>
             </div>
+
             <div id="challengeTitleSquared" style="display: none">
               <div
                 class="challengeTitle"
@@ -2393,6 +2322,7 @@
               >
                 Challenges
               </div>
+
               <div
                 style="display: inline-block; width: 50%; padding: 0; margin: 0"
               >
@@ -2400,9 +2330,6 @@
                   id="inPortalC2Button"
                   class="thing thingColorSquared pointer"
                   style="width: 75%; display: inline-block"
-                  onclick="toggleChallengeSquared()"
-                  onmouseover="tooltip('Challenge2', null, event)"
-                  onmouseout="tooltip('hide')"
                   >Challenge<sup><span id="inPortalC2Name">2</span></sup> -
                   <span id="challengeSquaredBonusAmt">0</span>% bonus</span
                 >
@@ -2429,59 +2356,47 @@
                 class="challengeDescriptionLg"
               ></div>
             </div>
+
             <div id="challengesHere"></div>
           </div>
         </div>
       </div>
 
       <div id="portalBtnContainer">
-        <div
-          class="btn btn-primary inPortalBtn"
-          id="activatePortalBtn"
-          onclick="activateClicked()"
-        >
+        <div id="activatePortalBtn" class="btn btn-primary inPortalBtn">
           Activate Portal
         </div>
-        <div
-          class="btn btn-danger inPortalBtn"
-          id="cancelPortalBtn"
-          onclick="cancelTooltip(); cancelPortal()"
-        >
+
+        <div id="cancelPortalBtn" class="btn btn-danger inPortalBtn">
           Cancel
         </div>
+
         <div
+          id="respecPortalBtn"
           class="btn btn-warning inPortalBtn"
           style="display: none"
-          id="respecPortalBtn"
-          onclick="respecPerks()"
-          onmouseover="tooltip('Respec', null, event)"
-          onmouseout="tooltip('hide')"
         ></div>
+
         <div
+          id="swapToCurrentChallengeBtn"
           class="btn btn-success inPortalBtn"
           style="display: none"
-          id="swapToCurrentChallengeBtn"
-          onclick="swapToCurrentChallenge()"
-          onmouseover="tooltip('View Current Challenge', 'customText', event, 'Swap the Challenge Selection pane to instead display your current challenge, or vice versa')"
-          onmouseout="tooltip('hide')"
         >
           View Current Challenge
         </div>
+
         <div
+          id="clearPerksBtn"
           class="btn btn-warning inPortalBtn"
           style="display: none"
-          id="clearPerksBtn"
-          onclick="clearPerks()"
         >
           Clear All Perks
         </div>
+
         <div
-          class="btn inPortalBtn autoColor darkBorder"
-          onmouseover="tooltip('Respec Mutators', null, event)"
-          onmouseout="tooltip('hide')"
-          onclick="u2Mutations.toggleRespec()"
-          style="display: none"
           id="respecMutatorsBtn"
+          class="btn inPortalBtn autoColor darkBorder"
+          style="display: none"
         ></div>
       </div>
     </div>
@@ -2517,6 +2432,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-xs-6">
           <div class="maxCenter" id="achievementHeader">
             <span class="achievementMainTitle">Achievements</span><br />
@@ -2534,6 +2450,7 @@
             <b>Click on an Achievement on this screen to track it!</b>
           </div>
         </div>
+
         <div class="col-xs-1"></div>
       </div>
 
@@ -2552,6 +2469,7 @@
       <span id="statsTitle">Statistics!</span><br />
       <div class="row" id="statsBtnRow">
         <div class="col-xs-3"></div>
+
         <div
           class="col-xs-2 btn btn-info statToggleBtn"
           id="totalSelectBtn"
@@ -2559,6 +2477,7 @@
         >
           Total
         </div>
+
         <div
           class="col-xs-2 btn btn-success statToggleBtn"
           id="currentSelectBtn"
@@ -2566,6 +2485,7 @@
         >
           Current Run
         </div>
+
         <div
           class="col-xs-2 btn btn-danger statToggleBtn"
           id="customSelectBtn"
@@ -2605,11 +2525,13 @@
         <div class="col-xs-5">
           Heirlooms - Gifts to past you from future you
         </div>
+
         <div class="col-xs-5" id="nullifiumContainer">
           You have <span id="nullifiumCount"></span> Nullifium<span
             id="heirloomSpirestoneCount"
           ></span>
         </div>
+
         <div class="col-xs-2">
           <div
             onclick="lastMainHeirIndex = -1; toggleHeirloomChances()"
