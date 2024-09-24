@@ -114,6 +114,10 @@ declare global {
 
   const tutorial: {
     popup(): void;
+    toggleSize(): void;
+    closeWindow(): void;
+    back(): void;
+    next(): void;
   };
 
   function getZoneStats(event: MouseEvent): void;

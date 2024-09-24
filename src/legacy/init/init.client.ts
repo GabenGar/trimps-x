@@ -12,6 +12,7 @@ import { initPortal } from "./portal";
 import { initSettingsRow } from "./settings-row";
 import { initStats } from "./stats";
 import { initTopRow } from "./top-row";
+import { initTutorial } from "./tutorial";
 
 /**
  * A helper module to initialize callbacks off html file.
@@ -32,4 +33,5 @@ export function init() {
   initStats();
   initHeirlooms();
   initPopups();
+  initTutorial();
 }
