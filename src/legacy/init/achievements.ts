@@ -18,7 +18,7 @@ export function initAchievements() {
 
   {
     const achievementClose =
-      ensureIDSelector<HTMLElementTagNameMap["span"]>("achievementClose");
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("achievementClose2");
 
     achievementClose.onclick = () => toggleAchievementWindow();
   }

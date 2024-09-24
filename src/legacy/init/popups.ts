@@ -3,7 +3,7 @@ import { ensureOneSelector } from "#browser/dom";
 export function initPopups() {
   {
     const achieveWindow = ensureOneSelector<HTMLElementTagNameMap["span"]>(
-      `#achievementPopup > .achievementBtns > span:first`,
+      `#achievementPopup > .achievementBtns > span:first-child`,
     );
 
     achieveWindow.onclick = () => toggleAchievementWindow();
@@ -11,7 +11,7 @@ export function initPopups() {
 
   {
     const achievePopup = ensureOneSelector<HTMLElementTagNameMap["span"]>(
-      `#achievementPopup > .achievementBtns > span:last`,
+      `#achievementPopup > .achievementBtns > span:last-child`,
     );
 
     achievePopup.onclick = () => closeAchievementPopup();
@@ -19,7 +19,7 @@ export function initPopups() {
 
   {
     const heirloomPopup = ensureOneSelector<HTMLElementTagNameMap["span"]>(
-      `#heirloomsPopupBtns > span:first`,
+      `#heirloomsPopupBtns > span:first-child`,
     );
 
     heirloomPopup.onclick = () => closeHeirPopup();
@@ -27,7 +27,7 @@ export function initPopups() {
 
   {
     const heirloomPopupClose = ensureOneSelector<HTMLElementTagNameMap["span"]>(
-      `#heirloomsPopupBtns > span:last`,
+      `#heirloomsPopupBtns > span:last-child`,
     );
 
     heirloomPopupClose.onclick = () => {

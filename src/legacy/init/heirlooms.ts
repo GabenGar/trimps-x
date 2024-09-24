@@ -3,7 +3,7 @@ import { ensureIDSelector, ensureOneSelector } from "#browser/dom";
 export function initHeirlooms() {
   {
     const hierloomChances = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      `#heirloomTitleBar > .col-xs-2 > div:first`,
+      `#heirloomTitleBar > .col-xs-2 > div:first-child`,
     );
 
     hierloomChances.onclick = () => {

@@ -31,7 +31,7 @@ export function initStats() {
 
   {
     const closeStatsBtn =
-      ensureIDSelector<HTMLElementTagNameMap["div"]>("closeStatsBtn");
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("infoStatsBtn");
 
     closeStatsBtn.onclick = () => tooltip("Trimps Info", null, "update");
   }

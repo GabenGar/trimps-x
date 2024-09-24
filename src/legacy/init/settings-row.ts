@@ -83,7 +83,7 @@ function initSettingsTable() {
 function initSettingsWindow() {
   {
     const toggle = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      "#settingTitleBar > div:first",
+      "#settingTitleBar > div:first-child",
     );
 
     toggle.onclick = () => toggleSettingSection(false);
@@ -153,7 +153,7 @@ function initSettingsWindow() {
 
   {
     const backToSearchBtn = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      "#allSettings > div:first",
+      "#allSettings > div:first-child",
     );
 
     backToSearchBtn.onclick = () => toggleSettingSection(true);
