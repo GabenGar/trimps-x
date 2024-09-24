@@ -8,15 +8,9 @@ import { RemixBrowser } from "@remix-run/react";
 import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
-const rootElement = document.querySelector("#remix-app");
-
-if (!rootElement) {
-  throw new Error(`No element found for selector "#remix-app"`);
-}
-
 startTransition(() => {
   hydrateRoot(
-    rootElement,
+    document,
     <StrictMode>
       <RemixBrowser />
     </StrictMode>,
