@@ -1,6 +1,7 @@
 import { initAchievements } from "./achievements";
 import { initBoneZone } from "./bone-zone";
 import { initBottomRow } from "./bottom-row";
+import { initHeirlooms } from "./heirlooms";
 import {
   initOfflineExtraButtons,
   initOfflineMapButtons,
@@ -28,4 +29,5 @@ export function init() {
   initPortal();
   initAchievements();
   initStats();
+  initHeirlooms();
 }

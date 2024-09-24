@@ -2502,20 +2502,22 @@
 
         <div class="col-xs-2">
           <div
-            onclick="lastMainHeirIndex = -1; toggleHeirloomChances()"
+
             class="pointer noselect colorInfo heirBtn heirInfo"
           >
             Chances
           </div>
+
           <div
-            onclick="toggleHeirloomHelp()"
+
             class="pointer noselect colorPrimary heirBtn heirInfo"
           >
             Help
           </div>
+
           <div
             class="pointer noselect colorDanger heirBtn heirInfo"
-            onclick="toggleHeirlooms()"
+
           >
             Close
           </div>
@@ -2553,7 +2555,7 @@
         <div class="heirloomChanceBtnContainer">
           <span
             id="heirloomChanceLeft"
-            onclick="changeHeirloomRarityRange(-1)"
+
             class="icomoon icon-arrow-left"
           ></span>
         </div>
@@ -2562,7 +2564,7 @@
           <span
             id="heirloomChanceRight"
             class="icomoon icon-arrow-right"
-            onclick="changeHeirloomRarityRange(1)"
+
           ></span>
         </div>
       </div>
@@ -2580,6 +2582,7 @@
                 <br />
                 <span id="ShieldEquippedName"></span>
               </div>
+
               <div
                 id="CoreEquippedContainer"
                 class="col-xs-4 heirloomEquippedContainer"
@@ -2590,6 +2593,7 @@
                 <br />
                 <span id="CoreEquippedName"></span>
               </div>
+
               <div
                 id="StaffEquippedContainer"
                 class="col-xs-6 heirloomEquippedContainer"
@@ -2600,6 +2604,7 @@
                 <span id="StaffEquippedName"></span>
               </div>
             </div>
+
             <div
               id="equippedHeirloomsBtnGroup"
               class="heirloomBtnGroup"
@@ -2608,19 +2613,21 @@
               <div
                 id="unequipHeirloomBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="unequipHeirloom()"
+
               >
                 Unequip
               </div>
+
               <div
                 id="heirloomPortalBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="toggleHeirloomOnPortal()"
+
               >
                 Equip on Portal
               </div>
             </div>
           </div>
+
           <div id="carriedHeirlooms">
             Carried <span id="carriedHeirloomsText"></span>
             <div id="carriedHeirloomsHere"></div>
@@ -2632,24 +2639,26 @@
               <div
                 id="equipHeirloomBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="equipHeirloom()"
+
               >
                 Equip
               </div>
+
               <div
                 id="stopCarryHeirloomBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="stopCarryHeirloom()"
+
               >
                 Stop Carrying
               </div>
             </div>
           </div>
+
           <div id="extraHeirlooms">
             Temporary <span id="extraHeirloomsText"></span>
             <div
               id="recycleAllHeirloomsBtn"
-              onclick="recycleAllHeirloomsClicked()"
+
               class="heirloomBtnActive heirBtn noselect"
             >
               Recycle All
@@ -2657,12 +2666,13 @@
             &nbsp;
             <div
               id="sortHeirloomsBtn"
-              onclick="sortHeirlooms()"
+
               class="heirloomBtnActive heirBtn noselect"
             >
               Sort
             </div>
             <div id="extraHeirloomsHere"></div>
+
             <div
               id="extraHeirloomsBtnGroup"
               class="heirloomBtnGroup"
@@ -2671,27 +2681,30 @@
               <div
                 id="equipHeirloomBtn2"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="equipHeirloom()"
+
               >
                 Equip
               </div>
+
               <div
                 id="carryHeirloomBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="carryHeirloom()"
+
               >
                 Carry
               </div>
+
               <div
                 id="recycleHeirloomBtn"
                 class="noselect heirloomBtnActive heirBtn"
-                onclick="recycleHeirloom()"
+
               >
                 Recycle
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-xs-6">
           <div id="selectedHeirloom"></div>
           <div id="modBreakdown" style="display: none">
@@ -2704,31 +2717,35 @@
                 <div
                   id="modReplaceBtn"
                   class="heirloomBtnActive heirBtn noselect"
-                  onclick="replaceMod()"
+
                 >
                   Replace
                 </div>
               </div>
+
               <div class="col-xs-6" id="modUpgradeBox">
                 <div id="modUpgradeCost"></div>
+
                 <div
                   id="modUpgradeBtn"
                   class="heirloomBtnActive heirBtn noselect modUpgradeBtn"
-                  onclick="upgradeMod()"
+
                 >
                   x1<br />&nbsp;
                 </div>
+
                 <div
                   id="modUpgradeBtn10"
                   class="heirloomBtnActive heirBtn noselect modUpgradeBtn"
-                  onclick="upgradeMod(false, 10)"
+
                 >
                   x10<br />&nbsp;
                 </div>
+
                 <div
                   id="modUpgradeBtn100"
                   class="heirloomBtnActive heirBtn noselect modUpgradeBtn"
-                  onclick="upgradeMod(false, 100)"
+
                 >
                   x100<br />&nbsp;
                 </div>

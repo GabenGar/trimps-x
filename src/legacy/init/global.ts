@@ -228,6 +228,35 @@ declare global {
   function clearPerks(): void;
 
   function toggleAchievementHelp(): void;
+
+  let lastMainHeirIndex: number;
+
+  function toggleHeirloomChances(): void;
+
+  function toggleHeirloomHelp(): void;
+
+  function changeHeirloomRarityRange(offset: number): void;
+
+  function unequipHeirloom(): void;
+
+  function toggleHeirloomOnPortal(): void;
+
+  function equipHeirloom(): void;
+
+  function stopCarryHeirloom(): void;
+
+  function recycleAllHeirloomsClicked(): void;
+
+  function sortHeirlooms(): void;
+
+  function carryHeirloom(): void;
+
+  function recycleHeirloom(): void;
+
+  function replaceMod(): void;
+
+  function upgradeMod(): void;
+  function upgradeMod(firstArg: false, amount: 10 | 100): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;
