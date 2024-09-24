@@ -8,6 +8,7 @@ import {
 } from "./offline";
 import { initPortal } from "./portal";
 import { initSettingsRow } from "./settings-row";
+import { initStats } from "./stats";
 import { initTopRow } from "./top-row";
 
 /**
@@ -26,4 +27,5 @@ export function init() {
   initSettingsRow();
   initPortal();
   initAchievements();
+  initStats();
 }

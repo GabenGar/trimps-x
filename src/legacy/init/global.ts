@@ -175,6 +175,7 @@ declare global {
   function save(first: boolean, second: boolean): void;
 
   function toggleStats(): void;
+  function toggleStats(stat: "total" | "current" | "custom"): void;
 
   function toggleAchievementWindow(): void;
 
