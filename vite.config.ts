@@ -5,6 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [
     remix({
+      basename: "/trimps-x/",
       appDirectory: "src",
       buildDirectory: "dist",
       ignoredRouteFiles: ["**/*.scss"],
@@ -17,4 +18,5 @@ export default defineConfig({
     }),
     // tsconfigPaths(),
   ],
+  base: "/trimps-x/",
 });
