@@ -20,14 +20,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="stylesheet" href="fonts/icomoon/style.css" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <script src="Playfab/PlayFabSDK/PlayFabClientApi.js"></script>
-        <script src="lz-string.js"></script>
-        <script src="decimal.min.js"></script>
-        <script src="config.js"></script>
-        <script src="updates.js"></script>
-        <script src="playerSpire.js"></script>
-        <script src="objects.js"></script>
-        <script src="main.js"></script>
+        <script defer src="Playfab/PlayFabSDK/PlayFabClientApi.js"></script>
+        <script defer src="lz-string.js"></script>
+        <script defer src="decimal.min.js"></script>
+        <script defer src="config.js"></script>
+        <script defer src="updates.js"></script>
+        <script defer src="playerSpire.js"></script>
+        <script defer src="objects.js"></script>
+        <script defer src="main.js"></script>
         <Meta />
         <Links />
       </head>
