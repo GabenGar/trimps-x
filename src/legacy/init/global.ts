@@ -57,7 +57,14 @@ declare global {
   function toggleAutoTrap(): void;
 
   function filterTabs(
-    tabName: "all" | "buildings" | "jobs" | "upgrades" | "equipment",
+    tabName:
+      | "all"
+      | "buildings"
+      | "jobs"
+      | "upgrades"
+      | "equipment"
+      | "talents"
+      | "nature",
   ): void;
 
   function numTab(tab: 1 | 2 | 3 | 4 | 5 | 6, secondArg?: true): void;
@@ -171,7 +178,8 @@ declare global {
       | "mapAtZone"
       | "repeatVoids"
       | "climbBw"
-      | "detailedPerks",
+      | "detailedPerks"
+      | "repeatUntil",
     secondArg?: null,
     thirdArg?: true,
   ): void;
@@ -265,6 +273,18 @@ declare global {
   function closeAchievementPopup(): void;
 
   function closeHeirPopup(): void;
+
+  const playerSpire: { openPopup(): void };
+
+  const alchObj: {
+    openPopup(): void;
+  };
+
+  const autoBattle: {
+    popup(): void;
+  };
+
+  function toggleAutoGolden(): void;
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;
