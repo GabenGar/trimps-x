@@ -1,15 +1,11 @@
 import path from "node:path";
-import http from "node:http";
-import serveStatic from "serve-static";
-import finalhandler from "finalhandler";
 import { cwd } from "node:process";
+import express from "express";
+import serveStatic from "serve-static";
 
-const serve = serveStatic(path.join(cwd(), "dist"), { index: ["index.html"] });
+const serve = serveStatic(path.join(cwd(), "dist"));
+const app = express();
 
-// Create server
-const server = http.createServer(function onRequest(req, res) {
-  serve(req, res, finalhandler(req, res));
-});
+app.use("/trimps-x", serve);
 
-// Listen
-server.listen(3000);
+app.listen(4173);

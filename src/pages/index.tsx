@@ -1,14 +1,10 @@
-import { useEffect } from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { init } from "#legacy";
 
 import styles from "./_index.module.scss";
 
 function Home() {
-  useEffect(() => {
-    init();
-  }, []);
-
   return (
     <>
       <Head>
@@ -18,17 +14,6 @@ function Home() {
         <meta name="author" content="Greensatellite" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="fonts/icomoon/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        {/* <script defer src="Playfab/PlayFabSDK/PlayFabClientApi.js"></script>
-        <script defer src="lz-string.js"></script>
-        <script defer src="decimal.min.js"></script>
-        <script defer src="config.js"></script>
-        <script defer src="updates.js"></script>
-        <script defer src="playerSpire.js"></script>
-        <script defer src="objects.js"></script>
-        <script defer src="main.js"></script> */}
       </Head>
 
       <noscript>
@@ -1856,7 +1841,7 @@ function Home() {
                             type="range"
                             min="0"
                             max="9"
-                            value="0"
+                            defaultValue="0"
                           />
                           <div id="lootAdvMapsText"></div>
                         </div>
@@ -1874,7 +1859,7 @@ function Home() {
                           <br />
                           <input
                             id="sizeAdvMapsRange"
-                            value="0"
+                            defaultValue="0"
                             className="mapSelector mapInput"
                             type="range"
                             min="0"
@@ -1900,7 +1885,7 @@ function Home() {
                             type="range"
                             min="0"
                             max="9"
-                            value="0"
+                            defaultValue="0"
                           />
                           <div id="difficultyAdvMapsText"></div>
                         </div>
@@ -2160,39 +2145,41 @@ function Home() {
 
           <div id="settingsRow">
             <table id="settingsTable">
-              <tr>
-                <td id="settingTableSave" className="btn btn-info">
-                  Save <span id="saveIndicator"></span>
-                  <span id="playFabIndicator"></span>
-                </td>
-                <td id="settingTableExport" className="btn btn-info">
-                  <div>Export</div>
-                </td>
-                <td id="settingTableImport" className="btn btn-info">
-                  <div>Import</div>
-                </td>
-                <td id="settingTableStats" className="btn btn-success">
-                  <div>Stats</div>
-                </td>
-                <td id="settingTableAchievments" className="btn tealColor">
-                  <div>Achieves</div>
-                </td>
-                <td id="settingTableSettings" className="btn btn-default">
-                  <div id="settingsText">Settings</div>
-                </td>
-                <td id="pastUpgradesBtn" className="btn"></td>
-                <td id="newUpdatesBtn" className="btn btn-new">
-                  V <span id="versionNumber"></span> | What&apos;s New
-                </td>
-                <td id="portalTimer" className="timerNotPaused">
-                  <span id="portalTime">&nbsp;</span>&nbsp;&nbsp;
-                  <span
-                    style={{ fontSize: "0.85em", lineHeight: "0.85em" }}
-                    className="icomoon icon-pause3"
-                  ></span>
-                  &nbsp;
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td id="settingTableSave" className="btn btn-info">
+                    Save <span id="saveIndicator"></span>
+                    <span id="playFabIndicator"></span>
+                  </td>
+                  <td id="settingTableExport" className="btn btn-info">
+                    <div>Export</div>
+                  </td>
+                  <td id="settingTableImport" className="btn btn-info">
+                    <div>Import</div>
+                  </td>
+                  <td id="settingTableStats" className="btn btn-success">
+                    <div>Stats</div>
+                  </td>
+                  <td id="settingTableAchievments" className="btn tealColor">
+                    <div>Achieves</div>
+                  </td>
+                  <td id="settingTableSettings" className="btn btn-default">
+                    <div id="settingsText">Settings</div>
+                  </td>
+                  <td id="pastUpgradesBtn" className="btn"></td>
+                  <td id="newUpdatesBtn" className="btn btn-new">
+                    V <span id="versionNumber"></span> | What&apos;s New
+                  </td>
+                  <td id="portalTimer" className="timerNotPaused">
+                    <span id="portalTime">&nbsp;</span>&nbsp;&nbsp;
+                    <span
+                      style={{ fontSize: "0.85em", lineHeight: "0.85em" }}
+                      className="icomoon icon-pause3"
+                    ></span>
+                    &nbsp;
+                  </td>
+                </tr>
+              </tbody>
             </table>
 
             <div id="settingsHere" style={{ display: "none" }}>
@@ -2521,8 +2508,8 @@ function Home() {
                 <span id="flagMustRestart" style={{ display: "none" }}>
                   <b>
                     If you abandon this challenge, the portal will become
-                    unstable and the world will restart (you&apos;ll keep permanent
-                    bonuses like helium)
+                    unstable and the world will restart (you&apos;ll keep
+                    permanent bonuses like helium)
                   </b>
                 </span>
 
@@ -2714,12 +2701,12 @@ function Home() {
           rarities if you complete the Void Map at higher zones.
           <br />
           <br />
-          You can click on the icon of any Heirloom to select it. Once you&apos;ve
-          selected an Heirloom, you can Equip, Carry, or Recycle it. Only
-          equipped Heirlooms give you stats, and you can only have one of each
-          type of Heirloom equipped at a time. You can click a stat to upgrade
-          or replace it. You can also click on the Heirloom&apos;s name on this menu
-          to rename it, or click on the icon to change it.
+          You can click on the icon of any Heirloom to select it. Once
+          you&apos;ve selected an Heirloom, you can Equip, Carry, or Recycle it.
+          Only equipped Heirlooms give you stats, and you can only have one of
+          each type of Heirloom equipped at a time. You can click a stat to
+          upgrade or replace it. You can also click on the Heirloom&apos;s name
+          on this menu to rename it, or click on the icon to change it.
           <br />
           <br />
           The currency to upgrade and replace stats,
@@ -2735,8 +2722,8 @@ function Home() {
           Your Equipped Heirlooms will always stay with you when you Portal,
           along with any Heirlooms in your &quot;Carried&quot; slots.
           <b style={{ color: "red" }}>
-            Any Heirlooms in the &quot;Temporary&quot; section will be recycled for
-            Nullifium on portal.
+            Any Heirlooms in the &quot;Temporary&quot; section will be recycled
+            for Nullifium on portal.
           </b>
         </div>
 
@@ -3048,6 +3035,15 @@ function Home() {
           &nbsp;
         </div>
       </div>
+
+      <Script defer src="Playfab/PlayFabSDK/PlayFabClientApi.js" />
+      <Script defer src="lz-string.js" />
+      <Script defer src="decimal.min.js" />
+      <Script defer src="config.js" />
+      <Script defer src="updates.js" />
+      <Script defer src="playerSpire.js" />
+      <Script defer src="objects.js" />
+      <Script defer src="main.js" onLoad={() => init()} />
     </>
   );
 }

@@ -12,7 +12,7 @@
   "scripts": {
     "build": "next build",
     "start": "node ./scripts/start.mjs",
-    "dev": "next dev",
+    "dev": "next dev --port=5173",
     "lint": "next lint",
     "format": "prettier --write ./src",
     "check": "npm run lint && npx prettier --check ./src && tsc"
@@ -21,7 +21,7 @@
     "#*": "./src/*/index.ts"
   },
   "dependencies": {
-    "finalhandler": "^1.3.1",
+    "express": "^4.21.0",
     "next": "14.2.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
