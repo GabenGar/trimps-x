@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Script from "next/script";
-import { init } from "#legacy";
+import { LegacyScripts } from "#components/legacy-scripts";
 
 import styles from "./_index.module.scss";
 
@@ -3036,16 +3035,11 @@ function Home() {
         </div>
       </div>
 
-      <Script defer src="Playfab/PlayFabSDK/PlayFabClientApi.js" />
-      <Script defer src="lz-string.js" />
-      <Script defer src="decimal.min.js" />
-      <Script defer src="config.js" />
-      <Script defer src="updates.js" />
-      <Script defer src="playerSpire.js" />
-      <Script defer src="objects.js" />
-      <Script defer src="main.js" onLoad={() => init()} />
+      <LegacyScripts />
     </>
   );
 }
+
+
 
 export default Home;
