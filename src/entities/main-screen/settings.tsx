@@ -1,6 +1,8 @@
+import styles from "./settings.module.scss";
+
 export function Settings() {
   return (
-    <div id="settingsRow">
+    <div id="settingsRow" className={styles.block}>
       <table id="settingsTable">
         <tbody>
           <tr>

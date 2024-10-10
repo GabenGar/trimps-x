@@ -14,8 +14,6 @@ h6 {
 }
 body {
   background-color: black;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 .spire ul li.spireCell.cellColorNotBeaten {
   background-color: #928dad;
@@ -65,12 +63,6 @@ body {
 #wrapper {
   height: 100vh;
   background-size: auto 100%;
-}
-
-#topRow {
-  /*height: 285px;*/
-  height: 18vw;
-  margin-bottom: 10px;
 }
 
 #talentsContainer,
@@ -1087,16 +1079,6 @@ body {
   height: calc(99% - 140px);
   padding-left: 0;
   margin-left: 0;
-}
-
-#settingsRow {
-  position: fixed;
-  bottom: 0;
-  background-color: #545353;
-  width: 100%;
-  left: 0;
-  color: white;
-  z-index: 7;
 }
 
 #settingsTable > tbody > tr > td {

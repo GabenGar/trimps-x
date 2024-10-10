@@ -1,8 +1,10 @@
 import clsx from "clsx";
 
+import styles from "./top-row.module.scss"
+
 export function TopRow() {
   return (
-    <div id="topRow" className={clsx("row")}>
+    <div id="topRow" className={clsx("row", styles.block)}>
       <div className="col-xs-4" id="resourceColumn">
         <div className="row resourceRow">
           <div className="col-xs-6 maxH">
