@@ -27,7 +27,8 @@
     "next": "14.2.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "serve-static": "^1.16.2"
+    "serve-static": "^1.16.2",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "^20",
