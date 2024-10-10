@@ -1,3 +1,22 @@
 .block {
-  height: 18vw;
+  display: flex;
+  flex-flow: row now;
+  justify-content: space-between;
+  min-height: 25em;
+}
+
+.logs {
+  max-width: 50em;
+  height: 100%;
+}
+
+.resources {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+  height: 100%;
+}
+
+.miscelaneous {
+
 }
