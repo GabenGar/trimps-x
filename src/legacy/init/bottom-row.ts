@@ -55,6 +55,57 @@ function initBuyTabs() {
 
     equipmentTab.onclick = () => filterTabs("equipment");
   }
+
+  {
+    const talentsTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("talentsTab");
+
+    talentsTab.onclick = () => filterTabs("talents");
+    talentsTab.onmouseover = (event) => tooltip("Mastery", null, event);
+    talentsTab.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const equalityTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("equalityTab");
+
+    equalityTab.onclick = () =>
+      tooltip("Scale Equality Scaling", null, "update", true);
+    equalityTab.onmouseover = (event) =>
+      tooltip("Equality Scaling", null, event, true);
+    equalityTab.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const natureTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("natureTab");
+
+    natureTab.onclick = () => filterTabs("nature");
+    natureTab.onmouseover = (event) =>
+      tooltip("Empowerments of Nature", null, event);
+    natureTab.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const playerSpireTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("playerSpireTab");
+
+    playerSpireTab.onclick = () => playerSpire.openPopup();
+  }
+
+  {
+    const alchemyTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("alchemyTab");
+
+    alchemyTab.onclick = () => alchObj.openPopup();
+  }
+
+  {
+    const autoBattleTab =
+      ensureIDSelector<HTMLElementTagNameMap["li"]>("autoBattleTab");
+
+    autoBattleTab.onclick = () => autoBattle.popup();
+  }
 }
 
 function initNumTabs() {
@@ -163,6 +214,15 @@ function initBuyContainer() {
   }
 
   {
+    const configureAutoJobs = ensureOneSelector<HTMLElementTagNameMap["div"]>(
+      `#autoJobsBtn > div:last-child`,
+    );
+
+    configureAutoJobs.onclick = () =>
+      tooltip("Configure AutoJobs", null, "update");
+  }
+
+  {
     const fireBtn = ensureIDSelector<HTMLDivElement>("fireBtn");
 
     fireBtn.onclick = () => fireMode();
@@ -175,6 +235,13 @@ function initBuyContainer() {
 
     autoGoldenBtn.onmouseover = (event) => tooltip("AutoGold", null, event);
     autoGoldenBtn.onmouseout = () => tooltip("hide");
+  }
+
+  {
+    const autoGoldenText =
+      ensureIDSelector<HTMLElementTagNameMap["div"]>("autoGoldenText");
+
+    autoGoldenText.onclick = () => toggleAutoGolden();
   }
 
   {
@@ -969,6 +1036,14 @@ function initGridRow() {
 
     togglemapLoot2.onmouseout = () => tooltip("hide");
     togglemapLoot2.onclick = () => toggleSetting("mapLoot");
+  }
+
+  {
+    const togglerepeatUntil =
+      ensureIDSelector<HTMLElementTagNameMap["span"]>("togglerepeatUntil");
+
+    togglerepeatUntil.onclick = () => toggleSetting("repeatUntil");
+    togglerepeatUntil.onmouseout = () => tooltip("hide");
   }
 
   {
