@@ -18,6 +18,7 @@
     "check": "npm run lint && npx prettier --check ./src && tsc"
   },
   "imports": {
+    "#assets/*": "./src/assets/*",
     "#*": "./src/*/index.ts"
   },
   "dependencies": {
