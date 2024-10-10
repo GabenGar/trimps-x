@@ -323,12 +323,6 @@ body {
   height: 100%;
 }
 
-#trimpsColumn {
-  padding-right: 0.25vw;
-  padding-left: 0;
-  height: 100%;
-}
-
 #trimpsTimeToFill {
   color: black;
   margin-top: 4%;
@@ -520,10 +514,6 @@ body {
 .noPad {
   padding-left: 0;
   padding-right: 0;
-}
-
-#science {
-  padding-top: 3.5%;
 }
 
 .psText {
@@ -5393,10 +5383,6 @@ input::-webkit-inner-spin-button {
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-}
-
-#miscColumn span {
-  font-size: 1.2vw !important;
 }
 
 .mapElementSelected {

@@ -858,7 +858,7 @@ export function BottomRow() {
           <div className="row" id="gridRow">
             <div className="col-xs-2" id="battleBtnsColumn">
               <div id="battleSideTitle">
-                <span id="worldName">Zone</span>
+                <span id="worldName">Zone</span>{" "}
                 <span id="worldNumber">1</span>
                 <br />
                 <span id="mapBonus"></span>

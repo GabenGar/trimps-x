@@ -1,6 +1,6 @@
 .block {
   display: flex;
-  flex-flow: row now;
+  flex-flow: row nowrap;
   justify-content: space-between;
   min-height: 25em;
 }
@@ -19,4 +19,8 @@
 
 .miscelaneous {
 
+}
+
+.trimps {
+  height: 100%;
 }
