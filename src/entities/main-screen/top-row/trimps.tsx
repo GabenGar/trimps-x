@@ -38,6 +38,7 @@ export function Trimps() {
             </div>
           </div>
         </div>
+
         <span className="ownedArea pointer noselect bdHover">
           <span id="trimpsOwned">0</span> /<span id="trimpsMax">10</span>
         </span>
@@ -51,6 +52,7 @@ export function Trimps() {
             <span id="trimpsTimeToFill"></span>
           </div>
         </div>
+
         <div id="unempHide" style={{ visibility: "hidden" }}>
           <span id="trimpsUnemployed">0</span>&nbsp;
           <span id="trimpsBreedingTitle">breeding</span>
@@ -63,10 +65,12 @@ export function Trimps() {
           </span>
           <br />
         </div>
+
         <div id="empHide" style={{ visibility: "hidden" }}>
           <span id="trimpsEmployed">0</span>/<span id="maxEmployed">0</span>
           employed
         </div>
+
         <div id="trapArea">
           <div
             id="trimpsCollectBtn"
