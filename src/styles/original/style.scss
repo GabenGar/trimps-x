@@ -230,11 +230,8 @@ body {
 .playerGather {
   font-size: 1.1vw;
   text-align: center;
-  width: 100%;
-  height: 100%;
   border: 2px solid white;
   background: rgba(121, 121, 123, 0.5);
-  margin-bottom: 3%;
   color: white;
 }
 
@@ -329,19 +326,7 @@ body {
 }
 
 .resProgress {
-  height: 12%;
-}
-
-.playerGatherSm {
-  height: 32.5%;
-}
-
-.playerGatherSm > .title {
-  font-size: 1.2vw;
-}
-
-#trimps {
-  height: 100%;
+  height: 2em;
 }
 
 .title {
@@ -1291,12 +1276,12 @@ body {
   text-align: center;
 }
 
+// @TODO: move into css module once it's done
 #log {
-  height: calc(100% - 2.1vw);
+  height: 25em;
   width: 100%;
   overflow-y: scroll;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
 }
 
 #tooltipDiv,

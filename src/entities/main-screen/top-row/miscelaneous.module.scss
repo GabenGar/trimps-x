@@ -1,3 +1,11 @@
-.block {
+@use "../../../styles/sass/variables.scss" as *;
 
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+
+  & > * {
+    flex: 0 0 8em;
+  }
 }

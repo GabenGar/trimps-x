@@ -3,4 +3,9 @@
   flex-flow: row nowrap;
   gap: 1em;
   height: 100%;
+
+  & > * {
+    flex: 0 0 10em;
+    min-height: 12em;
+  }
 }
