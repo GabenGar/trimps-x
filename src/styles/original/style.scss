@@ -61,7 +61,6 @@ body {
 }
 
 #wrapper {
-  height: 100vh;
   background-size: auto 100%;
 }
 
@@ -228,13 +227,10 @@ body {
 }
 
 .playerGather {
-  font-size: 1.1vw;
+  font-size: 1.5em;
   text-align: center;
-  width: 100%;
-  height: 100%;
   border: 2px solid white;
   background: rgba(121, 121, 123, 0.5);
-  margin-bottom: 3%;
   color: white;
 }
 
@@ -329,19 +325,7 @@ body {
 }
 
 .resProgress {
-  height: 12%;
-}
-
-.playerGatherSm {
-  height: 32.5%;
-}
-
-.playerGatherSm > .title {
-  font-size: 1.2vw;
-}
-
-#trimps {
-  height: 100%;
+  height: 2em;
 }
 
 .title {
@@ -350,12 +334,11 @@ body {
 }
 
 #logBtnGroup {
-  height: 2vw;
-  font-size: 1vw;
+  font-size: 1.3em;
 }
 
 #logBtnGroup div button {
-  font-size: 0.8vw;
+  font-size: 1em;
 }
 
 .workBtn {
@@ -524,13 +507,6 @@ body {
 
 .bdHover {
   cursor: pointer;
-}
-
-#innerWrapper {
-  margin: 0;
-  padding: 0;
-  padding: 0.5%;
-  height: 100%;
 }
 
 .psText:hover,
@@ -800,14 +776,6 @@ body {
   overflow-y: auto;
 }
 
-.buyContainerSizeSm {
-  height: calc(99vh - 20vw - 195px);
-}
-
-.buyContainerSizeLg {
-  height: calc(99vh - 22.2vw - 175px);
-}
-
 #outerBuyContainer {
   border: 2px solid white;
   margin: 0 0 5px 0;
@@ -960,16 +928,6 @@ body {
   background: radial-gradient(#444 45%, rgba(140, 35, 0, 0.4) 60%);
 }
 
-#battleContainer {
-  border: 2px solid white;
-  background: rgba(121, 121, 123, 0.5);
-  color: white;
-  padding: 0.25vw;
-  height: 100%;
-  width: 100%;
-  font-size: 1vw;
-}
-
 .fightBar {
   height: 1.4vw;
   font-size: 1.6vw !important;
@@ -979,10 +937,6 @@ body {
 .innerFightBar {
   font-size: 1.4vw !important;
   line-height: 1.4vw !important;
-}
-
-#battleHeadContainer {
-  margin-bottom: 0.3vw;
 }
 
 #battleHead {
@@ -998,12 +952,6 @@ body {
 #actualBadName {
   display: inline-block;
   min-width: 8vw;
-}
-
-#gridRow {
-  height: calc(99% - 140px);
-  padding-left: 0;
-  margin-left: 0;
 }
 
 #settingsTable > tbody > tr > td {
@@ -1243,11 +1191,6 @@ body {
   margin-bottom: 0;
 }
 
-#rightCol {
-  height: calc(100vh - 18vw - 58px);
-  padding-left: 0.25vw;
-}
-
 .ownedArea {
   font-size: 1.3em;
 }
@@ -1298,12 +1241,12 @@ body {
   text-align: center;
 }
 
+// @TODO: move into css module once it's done
 #log {
-  height: calc(100% - 2.1vw);
+  height: 25em;
   width: 100%;
   overflow-y: scroll;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
 }
 
 #tooltipDiv,
@@ -1379,8 +1322,6 @@ body {
 
 .fightBtn {
   width: 100%;
-  font-size: 1.1vw !important;
-  padding: 0.15vw 0.3vw;
   display: block;
 }
 
@@ -1401,11 +1342,8 @@ body {
   border: 1px solid white;
 }
 
-#pauseFight {
-  font-size: 1vw;
-}
-
 .battleStatsTitle {
+  cursor: default;
   overflow: hidden;
   font-size: 1.1em;
   max-height: 1.55em;
@@ -1464,26 +1402,9 @@ body {
   color: red;
 }
 
-.battleSideBtnContainer {
-  margin-top: 0.2vw;
-}
-
 #battleTimer {
   text-align: center;
   font-size: 1.5em;
-}
-
-#battleBtnsColumn {
-  padding-right: 1px;
-  padding-left: 0;
-}
-
-#battleSideTitle {
-  font-size: 1.1vw;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .brokenUpgrade {
@@ -1522,10 +1443,6 @@ body {
 
 .logFlt {
   border-radius: 0;
-}
-
-.battleStatsTitle {
-  cursor: default;
 }
 
 #preMapsTitle {
@@ -3296,15 +3213,12 @@ body {
 }
 
 #chainHolder {
-  width: 100%;
+  width: 6em;
   border-radius: 25px;
   display: inline-block;
   background-color: grey;
   border: 1px solid black;
-  line-height: 0.9em;
-  font-size: 0.9em;
   color: black;
-  padding-top: 0.1em;
 }
 
 #achievementHelpContainer {
@@ -4302,7 +4216,6 @@ body {
 #mapsBtn {
   overflow: hidden;
   padding: 0;
-  height: 1.9em;
 }
 
 #mapsBtn div {
@@ -4626,10 +4539,6 @@ body {
 #importsPreview1 {
   margin-top: 1vw;
   margin-bottom: 1vw;
-}
-
-#boneBtnText {
-  font-size: 0.9vw;
 }
 
 .boneBtn {
@@ -7981,12 +7890,6 @@ input[type="range"] {
   }
 }
 
-@media screen and (max-height: 800px) {
-  .fightBtn {
-    font-size: 0.95vw !important;
-  }
-}
-
 @media (max-width: 1000px) {
   #tooltipDiv.tooltipExtraEquality {
     width: 80%;
@@ -8061,22 +7964,12 @@ input[type="range"] {
   .heirloomEquippedContainer.col-xs-4 {
     font-size: 1.4vw;
   }
-  .buyContainerSizeSm {
-    height: calc(99vh - 19vw - 165px);
-  }
-  .buyContainerSizeLg {
-    height: calc(99vh - 22.2vw - 161px);
-  }
   .infoSpanNature {
     font-size: 1vw;
   }
   .natureTitle {
     text-align: right;
     padding-right: 20%;
-  }
-  .battleStatsTitle {
-    height: 3.2em;
-    max-height: unset;
   }
   .talentTierRow {
     line-height: 0;

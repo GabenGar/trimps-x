@@ -4779,11 +4779,8 @@ function setTrimpColSize(){
 	var colGoodGuyName = document.getElementById('colGoodGuyName');
 	var colStances = document.getElementById('colStances');
 	if (game.global.universe == 1){
-		swapClass('col', 'col-xs-9', colGoodGuyName);
-		swapClass('col', 'col-xs-3', colStances);
 	}
 	else{
-		swapClass('col', 'col-xs-12', colGoodGuyName);
 		swapClass('col', 'col-hidden', colStances);
 	}
 }

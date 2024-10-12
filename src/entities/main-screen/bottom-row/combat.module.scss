@@ -1,0 +1,44 @@
+@use "../../../styles/sass/variables.scss" as *;
+
+.block {
+  border: 2px solid white;
+  background: rgba(121, 121, 123, 0.5);
+  color: white;
+  padding: $size-little;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.head {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $size-normal;
+}
+
+.good {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+  justify-content: space-between;
+}
+
+.stances {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.stance {
+  flex: 0 0 4em;
+}

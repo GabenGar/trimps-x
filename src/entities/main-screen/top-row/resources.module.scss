@@ -1,6 +1,11 @@
 .block {
+  flex: 1 1 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 1em;
-  height: 100%;
+
+  & > * {
+    flex: 0 0 10em;
+    min-height: 12em;
+  }
 }

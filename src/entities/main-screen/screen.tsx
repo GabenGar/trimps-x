@@ -1,5 +1,5 @@
 import bgImage from "#assets/images/bg2.png";
-import { BottomRow } from "./bottom-row";
+import { BottomRow } from "./bottom-row/bottom-row";
 import { Settings } from "./settings";
 import { TopRow } from "./top-row/top-row";
 
