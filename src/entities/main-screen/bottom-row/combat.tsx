@@ -34,8 +34,8 @@ function BattleHead() {
             </div>
 
             <div id="colStances">
-              <div className="noPad">
-                <div id="form0Container" className="formFifth noPad">
+              <div className={styles.stances}>
+                <div id="form0Container" className={styles.stance}>
                   <div
                     id="formation0"
                     className="formationBtn pointer formationStateDisabled"
@@ -43,7 +43,7 @@ function BattleHead() {
                     X
                   </div>
                 </div>
-                <div id="form1Container" className="formFifth noPad">
+                <div id="form1Container" className={styles.stance}>
                   <div
                     id="formation1"
                     className="formationBtn pointer formationStateDisabled"
@@ -51,7 +51,7 @@ function BattleHead() {
                     H
                   </div>
                 </div>
-                <div id="form2Container" className="formFifth noPad">
+                <div id="form2Container" className={styles.stance}>
                   <div
                     id="formation2"
                     className="formationBtn pointer formationStateDisabled"
@@ -59,7 +59,7 @@ function BattleHead() {
                     D
                   </div>
                 </div>
-                <div id="form3Container" className="formFifth noPad">
+                <div id="form3Container" className={styles.stance}>
                   <div
                     id="formation3"
                     className="formationBtn pointer formationStateDisabled"
@@ -67,7 +67,7 @@ function BattleHead() {
                     B
                   </div>
                 </div>
-                <div id="form4Container" className="formFifth noPad">
+                <div id="form4Container" className={styles.stance}>
                   <div
                     id="formation4"
                     className="formationBtn pointer formationStateDisabled"
@@ -75,7 +75,7 @@ function BattleHead() {
                     S
                   </div>
                 </div>
-                <div id="form5Container" className="formSixth noPad">
+                <div id="form5Container" className={styles.stance}>
                   <div
                     id="formation5"
                     className="formationBtn pointer formationStateDisabled"
@@ -166,11 +166,7 @@ function BattleHead() {
           </div>
         </div>
 
-        <div
-          className="col-xs-6"
-          id="badGuyCol"
-          style={{ visibility: "hidden" }}
-        >
+        <div id="badGuyCol" style={{ visibility: "hidden" }}>
           <div>
             <div className="row">
               <div className="col-xs-11">
