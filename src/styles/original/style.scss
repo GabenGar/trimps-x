@@ -954,12 +954,6 @@ body {
   min-width: 8vw;
 }
 
-#gridRow {
-  height: calc(99% - 140px);
-  padding-left: 0;
-  margin-left: 0;
-}
-
 #settingsTable > tbody > tr > td {
   width: 9.1% !important;
   border: 1px solid black;
@@ -1328,8 +1322,6 @@ body {
 
 .fightBtn {
   width: 100%;
-  font-size: 1.1vw !important;
-  padding: 0.15vw 0.3vw;
   display: block;
 }
 
@@ -1350,11 +1342,8 @@ body {
   border: 1px solid white;
 }
 
-#pauseFight {
-  font-size: 1vw;
-}
-
 .battleStatsTitle {
+  cursor: default;
   overflow: hidden;
   font-size: 1.1em;
   max-height: 1.55em;
@@ -1413,26 +1402,9 @@ body {
   color: red;
 }
 
-.battleSideBtnContainer {
-  margin-top: 0.2vw;
-}
-
 #battleTimer {
   text-align: center;
   font-size: 1.5em;
-}
-
-#battleBtnsColumn {
-  padding-right: 1px;
-  padding-left: 0;
-}
-
-#battleSideTitle {
-  font-size: 1.1vw;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .brokenUpgrade {
@@ -1471,10 +1443,6 @@ body {
 
 .logFlt {
   border-radius: 0;
-}
-
-.battleStatsTitle {
-  cursor: default;
 }
 
 #preMapsTitle {
@@ -4248,7 +4216,6 @@ body {
 #mapsBtn {
   overflow: hidden;
   padding: 0;
-  height: 1.9em;
 }
 
 #mapsBtn div {
@@ -4572,10 +4539,6 @@ body {
 #importsPreview1 {
   margin-top: 1vw;
   margin-bottom: 1vw;
-}
-
-#boneBtnText {
-  font-size: 0.9vw;
 }
 
 .boneBtn {
@@ -7927,12 +7890,6 @@ input[type="range"] {
   }
 }
 
-@media screen and (max-height: 800px) {
-  .fightBtn {
-    font-size: 0.95vw !important;
-  }
-}
-
 @media (max-width: 1000px) {
   #tooltipDiv.tooltipExtraEquality {
     width: 80%;
@@ -8013,10 +7970,6 @@ input[type="range"] {
   .natureTitle {
     text-align: right;
     padding-right: 20%;
-  }
-  .battleStatsTitle {
-    height: 3.2em;
-    max-height: unset;
   }
   .talentTierRow {
     line-height: 0;
