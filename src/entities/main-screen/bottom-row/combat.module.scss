@@ -9,3 +9,30 @@
   width: 100%;
   font-size: 2em;
 }
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.head {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $size-normal;
+}
+
+.good {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+  justify-content: space-between;
+}
+
+.battle {
+  width: 100%;
+}

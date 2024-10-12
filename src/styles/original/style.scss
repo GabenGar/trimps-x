@@ -61,7 +61,6 @@ body {
 }
 
 #wrapper {
-  height: 100vh;
   background-size: auto 100%;
 }
 
@@ -938,10 +937,6 @@ body {
 .innerFightBar {
   font-size: 1.4vw !important;
   line-height: 1.4vw !important;
-}
-
-#battleHeadContainer {
-  margin-bottom: 0.3vw;
 }
 
 #battleHead {
@@ -3250,15 +3245,12 @@ body {
 }
 
 #chainHolder {
-  width: 100%;
+  width: 6em;
   border-radius: 25px;
   display: inline-block;
   background-color: grey;
   border: 1px solid black;
-  line-height: 0.9em;
-  font-size: 0.9em;
   color: black;
-  padding-top: 0.1em;
 }
 
 #achievementHelpContainer {
