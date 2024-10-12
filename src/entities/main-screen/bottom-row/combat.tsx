@@ -1,6 +1,8 @@
+import styles from "./combat.module.scss";
+
 export function Combat() {
   return (
-    <div className="col-xs-7" id="rightCol">
+    <div id="rightCol" className={styles.block}>
       <div id="battleContainer" style={{ visibility: "hidden" }}>
         <div id="battleHeadContainer">
           <div className="row" id="battleStatsRow">

@@ -1,0 +1,11 @@
+@use "../../../styles/sass/variables.scss" as *;
+
+.block {
+  border: 2px solid white;
+  background: rgba(121, 121, 123, 0.5);
+  color: white;
+  padding: $size-little;
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+}

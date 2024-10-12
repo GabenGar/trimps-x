@@ -228,7 +228,7 @@ body {
 }
 
 .playerGather {
-  font-size: 1.1vw;
+  font-size: 1.5em;
   text-align: center;
   border: 2px solid white;
   background: rgba(121, 121, 123, 0.5);
@@ -335,12 +335,11 @@ body {
 }
 
 #logBtnGroup {
-  height: 2vw;
-  font-size: 1vw;
+  font-size: 1.3em;
 }
 
 #logBtnGroup div button {
-  font-size: 0.8vw;
+  font-size: 1em;
 }
 
 .workBtn {
@@ -778,14 +777,6 @@ body {
   overflow-y: auto;
 }
 
-.buyContainerSizeSm {
-  height: calc(99vh - 20vw - 195px);
-}
-
-.buyContainerSizeLg {
-  height: calc(99vh - 22.2vw - 175px);
-}
-
 #outerBuyContainer {
   border: 2px solid white;
   margin: 0 0 5px 0;
@@ -936,16 +927,6 @@ body {
 
 #Geneticistassist.stateFiring.thingColorCtrl {
   background: radial-gradient(#444 45%, rgba(140, 35, 0, 0.4) 60%);
-}
-
-#battleContainer {
-  border: 2px solid white;
-  background: rgba(121, 121, 123, 0.5);
-  color: white;
-  padding: 0.25vw;
-  height: 100%;
-  width: 100%;
-  font-size: 1vw;
 }
 
 .fightBar {
@@ -1219,11 +1200,6 @@ body {
 
 .progress {
   margin-bottom: 0;
-}
-
-#rightCol {
-  height: calc(100vh - 18vw - 58px);
-  padding-left: 0.25vw;
 }
 
 .ownedArea {
@@ -8038,12 +8014,6 @@ input[type="range"] {
   }
   .heirloomEquippedContainer.col-xs-4 {
     font-size: 1.4vw;
-  }
-  .buyContainerSizeSm {
-    height: calc(99vh - 19vw - 165px);
-  }
-  .buyContainerSizeLg {
-    height: calc(99vh - 22.2vw - 161px);
   }
   .infoSpanNature {
     font-size: 1vw;
