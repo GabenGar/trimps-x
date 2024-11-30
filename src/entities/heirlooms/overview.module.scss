@@ -1,0 +1,16 @@
+@use "../../styles/sass/variables.scss" as *;
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: $size-normal;
+}
+
+.button {
+  flex: 0 0 5em;
+  display: inline-block;
+  border: 0.1vw solid #777;
+  border-radius: 50px;
+  padding: $size-little $size-small;
+  cursor: pointer;
+}

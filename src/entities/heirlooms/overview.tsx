@@ -1,28 +1,42 @@
+import clsx from "clsx";
+import styles from "./overview.module.scss";
+import { Button } from "#components/buttons";
+
 export function HeirloomsOverview() {
   return (
     <div id="heirloomWrapper" style={{ display: "none" }}>
       <div id="heirloomTitleBar" className="row">
-        <div className="col-xs-5">
-          Heirlooms - Gifts to past you from future you
-        </div>
+        <div>Heirlooms - Gifts to past you from future you</div>
 
-        <div className="col-xs-5" id="nullifiumContainer">
+        <div id="nullifiumContainer">
           You have <span id="nullifiumCount"></span> Nullifium
           <span id="heirloomSpirestoneCount"></span>
         </div>
 
-        <div className="col-xs-2">
-          <div className="pointer noselect colorInfo heirBtn heirInfo">
+        <div className={styles.buttons}>
+          <Button
+            className={clsx("colorInfo", "heirBtn", styles.button)}
+            onClick={() => {
+              lastMainHeirIndex = -1;
+              toggleHeirloomChances();
+            }}
+          >
             Chances
-          </div>
+          </Button>
 
-          <div className="pointer noselect colorPrimary heirBtn heirInfo">
+          <Button
+            className={clsx("colorPrimary", "heirBtn", styles.button)}
+            onClick={() => toggleHeirloomHelp()}
+          >
             Help
-          </div>
+          </Button>
 
-          <div className="pointer noselect colorDanger heirBtn heirInfo">
+          <Button
+            className={clsx("colorDanger", "heirBtn", styles.button)}
+            onClick={() => toggleHeirlooms()}
+          >
             Close
-          </div>
+          </Button>
         </div>
       </div>
 

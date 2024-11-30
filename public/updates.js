@@ -4102,7 +4102,6 @@ function resetGame(keepPortal, resetting) {
 	document.getElementById("energyShieldLayer2").style.width = "0%";
 	document.getElementById("openTutorialContainer").style.display = "none";
 	lookingAtCurrentChallenge = false;
-	swapClass("col-xs", "col-xs-10", document.getElementById("gridContainer"));
 	swapClass("col-xs", "col-xs-off", document.getElementById("extraMapBtns"));
 	mutations.Magma.multiplier = -1;
 	mutations.Magma.lastCalculatedMultiplier = -1;

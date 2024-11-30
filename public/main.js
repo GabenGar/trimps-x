@@ -10013,9 +10013,6 @@ function drawGrid(maps) { //maps t or f. This function overwrites the current gr
 			cell.setAttribute("id", idText + counter);
 			row.appendChild(cell);
 			cell.style.width = (100 / cols) + "%";
-			cell.style.paddingTop = ((100 / cols) / 19)+ "vh";
-			cell.style.paddingBottom = ((100 / cols) / 19) + "vh";
-			cell.style.fontSize = ((cols / 14) + 1) + "vh";
 			var className = "battleCell cellColorNotBeaten"
 			if (maps && game.global.mapGridArray[counter].name == "Pumpkimp") className += " mapPumpkimp";
 			if (maps && map.location == "Void") className += " voidCell";
@@ -10385,7 +10382,6 @@ function toggleMapGridHtml(on, currentMapObj){
 	document.getElementById("mapGrid").style.display = settings[0];
 	if (game.options.menu.extraMapBtns.enabled){
 		swapClass("col-xs", "col-xs-" + settings[1], document.getElementById("extraMapBtns"));
-		swapClass("col-xs", "col-xs-" + settings[2], document.getElementById("gridContainer"));
 	}
 	document.getElementById("repeatBtn").style.display = settings[3];
 	if (!on) return;
