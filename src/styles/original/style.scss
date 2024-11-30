@@ -33,7 +33,6 @@ body {
 }
 
 .smallEnemyName {
-  font-size: 0.8em;
 }
 
 .liquid ul li {
@@ -129,54 +128,45 @@ body {
 }
 
 .talentItem {
-  display: inline-block;
+  display: grid;
+  align-content: center;
   width: 16.666666%;
   text-align: center;
   border: 1px solid white;
-  padding: 2% 0%;
   cursor: pointer;
 }
 
 #talentsTitle {
   text-align: center;
-  font-size: 1.9vw;
 }
 
 #talentsAffordable {
-  font-size: 1.5vw;
   padding-top: 0.2vw;
 }
 
 #talentsCost {
   text-align: center;
-  font-size: 1.5vw;
 }
 
 #talentRespecBtn {
   text-align: center;
   border: 1px solid white;
   padding: 0.5vw 0;
-  font-size: 0.95vw;
 }
 
 .talentIcon {
-  font-size: 1.1vw;
 }
 
 .talentIcon .icomoon {
-  font-size: 1.15vw;
-  line-height: 1.15vw;
 }
 
 #addChallenge {
   display: block;
   text-align: center;
-  font-size: 1.05em;
   font-weight: bold;
 }
 
 .talentName {
-  font-size: 0.58vw;
 }
 
 .talentPurchased {
@@ -195,7 +185,6 @@ body {
 
 .talentLocked {
   cursor: default;
-  font-size: 1.75vw;
 }
 
 .talentRowLocked .talentNotPurchased {
@@ -227,7 +216,6 @@ body {
 }
 
 .playerGather {
-  font-size: 1.5em;
   text-align: center;
   border: 2px solid white;
   background: rgba(121, 121, 123, 0.5);
@@ -247,7 +235,6 @@ body {
 #mapAtZoneErrorText {
   text-align: center;
   color: red;
-  font-size: 1.2em;
 }
 
 .holidaySaleDesc {
@@ -264,13 +251,11 @@ body {
 
 .saleStrike {
   text-decoration: line-through;
-  font-size: 0.8em;
   color: red;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .titleSpan {
-  font-size: 0.9vw;
   display: block;
 }
 
@@ -279,7 +264,6 @@ body {
 }
 
 #jobsTitleUnemployed {
-  font-size: 0.9vw;
   display: block;
 }
 
@@ -330,21 +314,17 @@ body {
 
 .title {
   font-weight: bold;
-  font-size: 1.4em;
 }
 
 #logBtnGroup {
-  font-size: 1.3em;
 }
 
 #logBtnGroup div button {
-  font-size: 1em;
 }
 
 .workBtn {
   border: 1px solid white;
   background: rgba(0, 0, 0, 1);
-  font-size: 1.12em;
   text-align: center;
   padding: 0.2vw;
 }
@@ -374,8 +354,6 @@ body {
 }
 
 .toggleConfigBtn div span {
-  line-height: 1.2em;
-  font-size: 1.1em;
 }
 
 #autoGoldenChoices {
@@ -425,7 +403,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 1.3vw;
   margin-top: 0.1vw;
 }
 
@@ -435,7 +412,6 @@ body {
 
 #autoPurchaseConfigTable {
   width: 100%;
-  font-size: 1.2vw;
 }
 
 #autoPurchaseConfigTable tbody tr td div div select {
@@ -448,7 +424,6 @@ body {
   display: inline-block;
   width: 50%;
   padding: 1%;
-  line-height: normal;
   border-width: 1px;
   margin-right: 10%;
 }
@@ -461,17 +436,14 @@ body {
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.75);
   color: black;
-  font-size: 1vw;
   text-align: center;
   padding: 4px;
 }
 
 #scienceCollectBtn {
-  font-size: 1em;
 }
 
 .portalBtn {
-  font-size: 0.6vw;
 }
 
 #portalTimer {
@@ -500,7 +472,6 @@ body {
 }
 
 .psText {
-  font-size: 1.2em;
   display: block;
   text-align: center;
 }
@@ -519,13 +490,11 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   width: 10%;
-  font-size: 0.8em;
   background-color: blue;
   padding: 1.75% 4%;
 }
 
 .bdTableSm {
-  font-size: 0.85vw;
   text-align: center;
 }
 
@@ -534,7 +503,6 @@ body {
 }
 
 .bdTable {
-  font-size: 1.1em;
   text-align: center;
 }
 
@@ -575,12 +543,11 @@ body {
 
 #empHide,
 #unempHide {
-  font-size: 1.2em;
 }
 
 #buyCol {
   height: 100%;
-  padding-right: 0.25vw;
+  width: 100%;
 }
 
 #mutRing1 {
@@ -596,7 +563,6 @@ body {
   color: black;
   min-width: initial;
   padding: 1% 4%;
-  font-size: 1em;
   border-radius: 100%;
 }
 
@@ -615,7 +581,6 @@ body {
 
 #foremenCount,
 #buildSpeed {
-  font-size: 1.12em;
   margin-top: 5px;
 }
 
@@ -630,7 +595,6 @@ body {
 
 .queueItem {
   display: inline-block;
-  font-size: 1.1em;
   color: white;
   border: 1px solid white;
   cursor: pointer;
@@ -664,7 +628,6 @@ body {
 
 #queueRow {
   color: white;
-  font-size: 1.2em;
   text-align: center;
 }
 
@@ -678,19 +641,16 @@ body {
 }
 
 #noQueue {
-  font-size: 1.4em;
   color: white;
   padding-left: 5px;
 }
 
 #fireBtn {
   border: 1px solid white;
-  font-size: 0.9vw;
 }
 
 #viewChallengeText,
 #extraChallengeStuff {
-  font-size: 1.3vw;
   color: white;
 }
 
@@ -724,7 +684,6 @@ body {
 
 .nav-tabs > li > a {
   color: white;
-  font-size: 1vw;
   padding: 4px;
 }
 
@@ -743,7 +702,6 @@ body {
 }
 
 .titleDiv {
-  font-size: 1.5em;
   padding: 5px 0 5px 0;
   text-align: center;
   width: calc(100% - 10px);
@@ -756,7 +714,6 @@ body {
 
 #buyMaxUl li {
   display: inline-block;
-  font-size: 1.1vw;
   width: calc(20% - 2px - 0.2vw);
   text-align: center;
   border: 1px solid black;
@@ -790,21 +747,18 @@ body {
 }
 
 .thing {
-  display: inline-block;
-  width: 24.2%;
-  margin-left: 0.25%;
-  margin-right: 0.25%;
-  padding: 0.2vh;
+  display: grid;
+  align-content: center;
+  min-width: 6em;
+  min-height: 5em;
   text-align: center;
   background-color: grey;
   color: white;
-  font-size: 0.85vw;
   border: 1px solid white;
 }
 
 #GeneticistassistContainer {
-  display: inline-block;
-  width: 48.9%;
+  display: flex;
   border: 0;
   padding: 0;
   background-color: rgba(0, 0, 102, 1);
@@ -835,7 +789,6 @@ body {
 
 #buyHere.buttonSizeSmall div .buyBox .thing {
   width: 19.5%;
-  font-size: 0.68vw;
   margin-left: 0.15%;
   margin-right: 0.15%;
 }
@@ -846,14 +799,12 @@ body {
 
 #buyHere.buttonSizeSmall div .buyBox #generatorWindow {
   width: 98.7%;
-  font-size: 0.85vw;
 }
 
 /* Tiny Buttons */
 
 #buyHere.buttonSizeTiny div .buyBox .thing {
   width: 16.4666666%;
-  font-size: 0.58vw;
   margin-left: 0.1%;
   margin-right: 0.1%;
 }
@@ -864,7 +815,6 @@ body {
 
 #buyHere.buttonSizeTiny div .buyBox #generatorWindow {
   width: 99.7999996%;
-  font-size: 0.85vw;
 }
 
 .noBotMarg {
@@ -878,30 +828,14 @@ body {
 #disableOnUnlockCheck {
   height: 1vw;
   width: 1vw;
-  line-height: 1vw;
   margin: 0;
   transform: scale(1.25);
 }
 
 #GADisableCheck {
-  font-size: 1vw;
-  line-height: 1vw;
   height: 1vw;
   width: 100%;
   margin-top: 0.5vw;
-}
-
-#GeneticistassistContainer div {
-  width: 50% !important;
-  margin: 0 !important;
-}
-
-#GeneticistassistContainer #Geneticist {
-  border-right: 0;
-}
-
-#GeneticistassistContainer #Geneticistassist {
-  border-left: 0;
 }
 
 #Geneticistassist.stateHappy {
@@ -929,14 +863,11 @@ body {
 }
 
 .fightBar {
-  height: 1.4vw;
-  font-size: 1.6vw !important;
+  height: 1.5em;
   font-weight: bold;
 }
 
 .innerFightBar {
-  font-size: 1.4vw !important;
-  line-height: 1.4vw !important;
 }
 
 #battleHead {
@@ -978,7 +909,6 @@ body {
 }
 
 .settingsBtn {
-  font-size: 1.3vw;
   border: 1px solid black !important;
   cursor: pointer;
   text-align: center;
@@ -1088,8 +1018,6 @@ body {
 }
 
 #talentsEssenceTotal {
-  line-height: 1em;
-  font-size: 0.8em;
 }
 
 .optionContainer.settingFit12 {
@@ -1100,7 +1028,6 @@ body {
 .optionItemDescription {
   padding-left: 0.5vw;
   padding-right: 0.5vw;
-  font-size: 1vw;
 }
 
 #settingTitleBar {
@@ -1114,14 +1041,11 @@ body {
 }
 
 #searchSettingsTitle {
-  font-size: 1.5vw;
   margin: 0 3vw;
 }
 
 #searchSettings {
   color: black;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
   width: 30%;
 }
 
@@ -1134,8 +1058,6 @@ body {
 }
 
 .settingTypeBtn {
-  font-size: 1.5vw;
-  line-height: 1.5vw;
   margin-top: 0.4vw;
   margin-bottom: 0.5vw;
   margin-right: 0;
@@ -1152,22 +1074,12 @@ body {
 }
 
 .buyTab {
-  font-size: 1vw;
 }
 
 #mapsHere,
 #voidMapsHere {
-  height: calc(100vh - 31.5vw - 90px);
   overflow-y: auto;
   width: 100%;
-}
-
-#mapsHere.mapSize0 {
-  height: calc(100vh - 31.5vw + 3.25vw - 90px);
-}
-
-#mapsHere.mapSize2 {
-  height: calc(100vh - 31.5vw - 2.5vw - 90px);
 }
 
 #equipmentTitleDiv .lowPad,
@@ -1192,7 +1104,6 @@ body {
 }
 
 .ownedArea {
-  font-size: 1.3em;
 }
 
 #leftMenu {
@@ -1202,14 +1113,12 @@ body {
 }
 
 .buyTitle {
-  font-size: 1.5em;
   cursor: pointer;
 }
 
 .message {
   display: block;
   margin-top: 5px;
-  font-size: 0.9vw;
   margin-bottom: 0;
 }
 
@@ -1257,7 +1166,6 @@ body {
   display: none;
   padding: 10px;
   border: 2px solid blue;
-  font-size: 0.9vw;
   z-index: 7;
 }
 
@@ -1271,11 +1179,9 @@ body {
 }
 
 #tooltipDiv .selectedHeirloomItem {
-  font-size: 1.5vw;
 }
 
 #tooltipDiv .selectedHeirloomItem.heirloomRare11 {
-  font-size: 1.25vw;
 }
 
 #tooltipDiv.tooltipExtraHeirloom hr {
@@ -1290,7 +1196,6 @@ body {
 
 .heirloomRenameTip {
   margin-top: 0.2vw;
-  font-size: 0.8vw;
   color: white;
   display: block;
 }
@@ -1306,7 +1211,6 @@ body {
 }
 
 .onMapIcon {
-  width: 5%;
   display: inline-block;
 }
 
@@ -1316,7 +1220,6 @@ body {
 
 #tipTitle,
 #tipTitle2 {
-  font-size: 1.2em;
   text-align: center;
 }
 
@@ -1326,12 +1229,10 @@ body {
 }
 
 #mapsBtnText {
-  margin-top: 0.08em;
 }
 
 .shrinkBtnText div:first-child {
   margin-top: 0.3em !important;
-  font-size: 0.9vw !important;
 }
 
 #lootBdTabs {
@@ -1345,27 +1246,22 @@ body {
 .battleStatsTitle {
   cursor: default;
   overflow: hidden;
-  font-size: 1.1em;
   max-height: 1.55em;
   display: inline-block;
 }
 
 .badBadge {
-  font-size: 0.8em;
 }
 
 #badCanCrit {
-  font-size: 0.88em;
 }
 
 .trimpBadge {
-  font-size: 0.8em;
   background-color: yellow;
   color: black;
 }
 
 .antiBadge {
-  font-size: 0.8em;
 }
 
 .sugarRushBadge {
@@ -1387,13 +1283,11 @@ body {
   background-color: #5cb85c;
   border-radius: 25px;
   padding: 0.25em;
-  font-size: 0.9em;
 }
 
 .notAutosaving {
   color: white;
   background-color: #d9534f;
-  font-size: 0.9em;
   border-radius: 25px;
   padding: 0.25em;
 }
@@ -1404,7 +1298,6 @@ body {
 
 #battleTimer {
   text-align: center;
-  font-size: 1.5em;
 }
 
 .brokenUpgrade {
@@ -1447,7 +1340,6 @@ body {
 
 #preMapsTitle {
   text-align: center;
-  font-size: 1.3em;
 }
 
 #mapChamberTitleRow {
@@ -1455,12 +1347,10 @@ body {
 }
 
 #selectedMapContainer {
-  font-size: 1.1vw;
   text-align: center;
   margin-bottom: 5px;
 }
 .selectMapBtn {
-  font-size: 1.1vw;
 }
 .mapStatsValue {
   text-align: left;
@@ -1472,7 +1362,6 @@ body {
 
 #mapsCreateRow {
   text-align: center;
-  font-size: 1vw;
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 1.1vw;
   margin-right: 1px;
@@ -1487,28 +1376,15 @@ body {
   transform: scale(1.5);
 }
 
-#advMapsControlBtns {
-  position: absolute;
-  left: 0.1vw;
-  top: 0;
-  cursor: default;
-}
-
-#advMapsControlBtns span {
-  width: 25%;
-}
-
 #advMapsRow,
 #advMapsRow2 {
   text-align: center;
-  font-size: 0.9vw;
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 1vw;
   margin-right: 1px;
 }
 
 #advMapsTitle {
-  font-size: 1.2vw;
 }
 
 .advMapsTitle {
@@ -1616,7 +1492,6 @@ body {
   width: 30%;
   height: 5vw;
   padding-top: 1.9vw;
-  font-size: 1vw;
 }
 
 .portalTitleBtn:hover {
@@ -1734,18 +1609,14 @@ body {
 }
 
 .portalThing.detailed {
-  font-size: 0.96vw;
-  line-height: 1.1vw;
 }
 
 .portalThing {
   width: 19.3%;
-  font-size: 1.1vw;
 }
 
 .portalThing.tinyPerk {
   width: 13.78%;
-  font-size: 0.96vw;
   height: 3.3em;
 }
 
@@ -1765,18 +1636,15 @@ body {
 }
 
 .portalThing.smallPerk.changingOn {
-  line-height: 0.85em;
   padding-top: calc(0.2vh + 0.05em);
 }
 
 .portalThing.tinyPerk.changingOn {
-  line-height: 0.78em;
   padding-top: calc(0.2vh + 0.16em);
 }
 
 .portalThing.smallPerk.detailed.changingOn,
 .portalThing.tinyPerk.detailed.changingOn {
-  line-height: 0.88em;
   padding-top: calc(0.2vh + 0.06em);
   padding-bottom: calc(0.2vh + 0.09em);
 }
@@ -1786,16 +1654,13 @@ body {
 }
 
 .portalThing.detailed.tinyPerk {
-  font-size: 0.96vw;
 }
 
 .portalThing .thingName {
-  font-size: 1em;
   font-weight: bold;
 }
 
 .portalThing .thingOwned {
-  font-size: 0.9em;
 }
 
 .portalThing.additive.perkColorOn {
@@ -1817,7 +1682,6 @@ body {
   text-align: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  font-size: 1.5vw;
   color: white;
 }
 
@@ -1886,7 +1750,6 @@ body {
   top: 0;
   left: 90vw;
   position: absolute;
-  font-size: 2.7em;
   cursor: pointer;
   color: #921707;
 }
@@ -1903,7 +1766,6 @@ body {
   border: 1px solid white;
   display: inline-block;
   padding-top: 0.55vh;
-  font-size: 2.5vh;
 }
 
 #mutZoomOut {
@@ -1916,7 +1778,6 @@ body {
 	left: -3.25em;
 	display: inline-block;
 	width: 8em;
-	font-size: 0.75em;
 	text-align: center;
 	pointer-events: none;
 } */
@@ -1927,7 +1788,6 @@ body {
   left: -2.6em;
   display: inline-block;
   width: 8em;
-  font-size: 0.45em;
   text-align: center;
   pointer-events: none;
 }
@@ -1935,7 +1795,6 @@ body {
 #modReplaceBox,
 #modUpgradeBox {
   border: 0.1vw solid #777;
-  font-size: 1.05vw;
   padding: 0.2vw;
   padding-top: 0.55vw;
   height: 6vw;
@@ -1946,13 +1805,11 @@ body {
 #sortHeirloomsBtn {
   display: inline-block;
   width: initial;
-  font-size: 0.9vw;
   padding: 0.1vw 0.2vw;
   margin: 0;
 }
 
 .heirloomEquippedContainer.col-xs-4 {
-  font-size: 1.7vw;
 }
 
 .heirloomEquippedContainer.col-xs-4 div {
@@ -1963,16 +1820,6 @@ body {
 .heirloomBtnGroup {
   background-color: #333;
   border-top: 0.1vw solid #555;
-  font-size: 1.3vw;
-}
-
-.heirBtn {
-  display: inline-block;
-  padding: 0.2vw 0.5vw;
-  margin-top: 0.1vw;
-  margin-bottom: 0.1vw;
-  border: 0.1vw solid #777;
-  cursor: pointer;
 }
 
 .heirBtn.heirloomBtnActive:hover {
@@ -1993,7 +1840,6 @@ body {
 .modUpgradeBtn {
   width: 30%;
   display: inline-block;
-  font-size: 0.8em;
   padding: 0.25vw;
 }
 
@@ -2052,8 +1898,6 @@ body {
 
 .heirloomThing {
   color: white;
-  font-size: 2vw;
-  line-height: 2vw;
   text-align: center;
   width: 2vw;
   display: inline-block;
@@ -2062,7 +1906,6 @@ body {
 
 .portalHeirloom {
   position: absolute;
-  font-size: 0.2em;
   color: yellow;
   top: 0%;
   left: 90%;
@@ -2070,7 +1913,6 @@ body {
 
 .heirloomChangeIcon {
   display: inline-block;
-  font-size: 2.5vw;
   width: 20%;
   padding: 2%;
   text-align: center;
@@ -2550,11 +2392,9 @@ body {
 }
 
 .selectedHeirloomItem.heirloomRare10 {
-  font-size: 1.55vw;
 }
 
 .selectedHeirloomItem.heirloomRare11 {
-  font-size: 1.35vw;
 }
 
 .rarityBdBox.heirloomRare11,
@@ -2718,13 +2558,11 @@ body {
 }
 
 .upgradeCostTextMax {
-  font-size: 0.7em;
   margin-top: -2.5%;
   display: block;
 }
 
 .upgradeCostTextMax span:first-child {
-  font-size: 1.1em;
   display: block;
 }
 
@@ -2733,13 +2571,11 @@ body {
 }
 
 #specialModDescription {
-  font-size: 0.8vw;
   margin-bottom: 0.45vw;
 }
 
 #heirRare {
   background-color: #111;
-  font-size: 1.1vw;
   text-align: center;
 }
 
@@ -2751,7 +2587,6 @@ body {
 
 #heirloomRarityMisc {
   margin-top: 0.25vw;
-  line-height: 0.8em;
 }
 
 #buyHeirloomArea .miscDesc {
@@ -2773,9 +2608,7 @@ body {
 }
 
 .selectedHeirloomIcon {
-  font-size: 3.5vw;
   text-align: center;
-  line-height: 2vw;
 }
 
 #ShieldEquipped,
@@ -2786,8 +2619,6 @@ body {
   padding: 1vw;
   width: 4.6vw;
   height: 4.6vw;
-  font-size: 2.5vw;
-  line-height: 2.5vw;
   margin-bottom: -0.25vw;
   -webkit-box-shadow: inset 0px 0px 0px 0.2vw #646473;
   -moz-box-shadow: inset 0px 0px 0px 0.2vw #646473;
@@ -2797,8 +2628,6 @@ body {
 #ShieldEquippedName,
 #StaffEquippedName,
 #CoreEquippedName {
-  font-size: 1.4vw;
-  line-height: 1.4vw;
 }
 
 .renameHeirloomBtn {
@@ -2808,7 +2637,6 @@ body {
   border: 1px solid white;
   padding: 0.25vw;
   border-radius: 25px;
-  font-size: 1vw;
   display: inline-block;
   position: relative;
   top: -0.4vw;
@@ -2823,14 +2651,12 @@ body {
 }
 
 #equippedHeirlooms {
-  font-size: 2vw;
   margin-bottom: 1vw;
   background-color: #111;
   border: 0.3vw solid #555;
 }
 
 #carriedHeirlooms {
-  font-size: 1.3vw;
   background-color: #111;
   border: 0.3vw solid #555;
   margin-bottom: 1vw;
@@ -2838,8 +2664,6 @@ body {
 
 #carriedHeirloomsText,
 #extraHeirloomsText {
-  font-size: 1vw;
-  line-height: 1.3vw;
   display: inline-block;
 }
 
@@ -2943,7 +2767,6 @@ body {
 .heirloomMod.innate {
   cursor: initial;
   border: initial;
-  font-size: 1.3vw;
   text-align: center;
   display: block;
   margin-bottom: -0.6vw;
@@ -2980,7 +2803,6 @@ body {
 }
 
 #extraHeirlooms {
-  font-size: 1.3vw;
   background-color: #111;
   border: 0.3vw solid #555;
   margin-bottom: 1vw;
@@ -2989,7 +2811,6 @@ body {
 }
 
 .selectedHeirloomItem {
-  font-size: 1.8vw;
   border: 0.3vw solid #555;
   padding: 0.4vw;
   padding-left: 2vw;
@@ -3008,16 +2829,7 @@ body {
   color: #8a008a;
 }
 
-.heirInfo {
-  font-size: 1vw;
-  line-height: 1vw;
-  padding: 0.3vw 0.5vw 0.3vw 0.5vw;
-  border-radius: 50px;
-}
-
 #heirloomHelp {
-  font-size: 1vw;
-  line-height: 1vw;
   margin-bottom: 0.5vw;
 }
 
@@ -3026,7 +2838,6 @@ body {
 }
 
 #selectedHeirloomTitle {
-  font-size: 2.3vw;
   cursor: pointer;
 }
 
@@ -3060,7 +2871,6 @@ body {
 }
 
 #achievementGoldenBonusContainer {
-  font-size: 0.65em;
   color: #ffd700;
 }
 
@@ -3074,8 +2884,6 @@ body {
   margin: 0.5%;
   display: inline-block;
   color: black;
-  font-size: 1.22vw;
-  line-height: 1.45vw;
   text-align: center;
   padding-top: 0.15vw;
   border-style: solid;
@@ -3090,9 +2898,7 @@ body {
   background-color: white;
   text-align: center;
   display: inline-block;
-  font-size: 1.1vw;
   color: black;
-  line-height: 1.4vw;
   display: inline-block;
   vertical-align: top;
   margin-top: 0.4vw;
@@ -3103,19 +2909,15 @@ body {
 }
 
 .doubleTall {
-  line-height: 4.1vw;
 }
 
 .tripleTall {
-  line-height: 6.52vw;
 }
 
 .quadTall {
-  line-height: 9.2vw;
 }
 
 .quinTall {
-  line-height: 11.59vw;
 }
 
 #achievementPopup {
@@ -3125,7 +2927,6 @@ body {
   left: 32.5%;
   background: rgba(220, 220, 220, 0.95);
   color: #3f3f3f;
-  font-size: 1.5vw;
   text-align: center;
   border-radius: 25px;
   border: 4px outset #536373;
@@ -3137,7 +2938,6 @@ body {
   top: 40%;
   width: 35%;
   left: 32.5%;
-  font-size: 1.5vw;
   background-color: #111;
   border: 0.2vw solid #ccc;
   z-index: 10;
@@ -3174,7 +2974,6 @@ body {
   width: 100%;
   background: rgba(220, 220, 220, 0.95);
   color: #3f3f3f;
-  font-size: 1.5vw;
   text-align: center;
   border-radius: 25px;
   border: 4px outset #536373;
@@ -3194,7 +2993,6 @@ body {
 
 #achievementMainButtons {
   position: absolute;
-  font-size: 2vw;
   left: 95%;
   z-index: 999999;
 }
@@ -3205,7 +3003,6 @@ body {
 }
 
 .bdZoneTitle {
-  font-size: 1.1em;
 }
 
 #roboTrimpBtn {
@@ -3222,7 +3019,6 @@ body {
 }
 
 #achievementHelpContainer {
-  font-size: 1.3vw;
 }
 
 #achievementMainClose,
@@ -3232,7 +3028,6 @@ body {
 }
 
 #achievementClose2 {
-  font-size: 2.5vw;
 }
 
 #steamAchieveSync {
@@ -3242,33 +3037,27 @@ body {
 }
 
 #achievementHeader {
-  font-size: 1.5vw;
 }
 
 .achievementMainTitle {
   font-weight: bold;
-  font-size: 1.3em;
 }
 
 .achievementPopupIcon {
-  font-size: 3.8em;
 }
 
 #achievementPopupDescription,
 #achievementHoverDescription,
 #achievementTrackerDescription {
-  font-size: 0.85em;
 }
 
 #achievementPopupReward,
 #achievementHoverReward,
 #achievementTrackerReward {
-  font-size: 0.85em;
 }
 
 #achievementHoverProgress,
 #achievementTrackerProgress {
-  font-size: 0.75em;
   font-weight: bold;
 }
 
@@ -3289,7 +3078,6 @@ body {
 .achievementBtnClose {
   cursor: pointer;
   color: #6f1f1f;
-  font-size: 1.15em;
 }
 
 .achievementBtnGo {
@@ -3578,17 +3366,14 @@ body {
 }
 
 #statsTitle {
-  font-size: 3vw;
 }
 
 .activatePortalBtn {
-  font-size: 1.3vw;
   margin: 15px;
 }
 
 #portalStory {
   display: inline-block;
-  font-size: 1.15vw;
 }
 
 .dailyTopRow {
@@ -3599,7 +3384,6 @@ body {
 }
 
 #challengeDescriptionPre {
-  font-size: 1.25vw;
 }
 
 #perkCol,
@@ -3609,35 +3393,27 @@ body {
 
 #portalUpgradesHere {
   display: inline-block;
-  max-height: calc(100vh - 21.3vw);
   overflow-y: auto;
 }
 
 #portalTitle {
   width: 100%;
-  font-size: 3.3vw;
   text-align: center;
   margin-top: 0.9vw;
 }
 
 #portalHelium {
-  font-size: 2vw;
-  line-height: 2.8vw;
 }
 
 #portalTotalPortals,
 #portalTotalSpent,
 #portalTotalHelium {
-  font-size: 1.3vw;
-  line-height: 1.7vw;
 }
 
 .inPortalBtn {
-  font-size: 2vw !important;
 }
 
 .inPortalBtnSm {
-  font-size: 1.3vw !important;
   margin-bottom: 0.5vw;
 }
 
@@ -3694,7 +3470,6 @@ body {
 }
 
 .statToggleBtn {
-  font-size: 1.5vw;
   border: 5px solid black;
 }
 
@@ -3895,7 +3670,6 @@ body {
   text-align: center;
   background-color: #740774;
   color: white;
-  font-size: 1.1em;
   font-weight: bold;
 }
 
@@ -4017,23 +3791,19 @@ body {
   display: inline-block;
   text-align: center;
   font-weight: bold;
-  font-size: 1.2em;
 }
 
 #fluffyLevelBreakdownContainer {
   max-height: 50vh;
   overflow-y: auto;
   width: 100%;
-  font-size: 1vw;
 }
 
 #fluffyTooltipTopContainer {
-  font-size: 1vw;
 }
 
 #fluffyLevelBreakdown {
   border: 1px solid black;
-  font-size: 0.8em;
   width: 100%;
 }
 
@@ -4056,13 +3826,11 @@ body {
   text-align: center;
   background: rgba(102, 51, 0, 0.7);
   color: #cc6600;
-  font-size: 0.8em;
   padding-top: 0.2vw;
   height: 3em;
 }
 
 #fluffyBox {
-  font-size: 0.7em;
   height: 3.44em;
   font-weight: bold;
   cursor: pointer;
@@ -4170,7 +3938,6 @@ body {
 }
 
 .sizeSecReduced {
-  font-size: 1.1em !important;
   margin-top: 0.2em;
 }
 
@@ -4189,7 +3956,6 @@ body {
 
 #gemsPs .sizeSecReduced,
 #fragmentsPs .sizeSecReduced {
-  font-size: 0.85em !important;
 }
 
 .planetBreakDescription {
@@ -4215,7 +3981,6 @@ body {
 
 #mapsBtn {
   overflow: hidden;
-  padding: 0;
 }
 
 #mapsBtn div {
@@ -4225,7 +3990,6 @@ body {
 
 #mapsBtn div:first-child {
   width: 80%;
-  padding: 0.15vw 0.3vw;
   float: left;
 }
 
@@ -4233,8 +3997,6 @@ body {
   width: 20%;
   background-color: grey;
   float: right;
-  padding-top: 0.2em;
-  height: 1.9em;
 }
 
 #mapsBtn div:nth-child(2):hover {
@@ -4242,12 +4004,9 @@ body {
 }
 
 #mapsBtn div:nth-child(2) span {
-  line-height: 1.2em;
-  font-size: 1.1em;
 }
 
 .voidBadge {
-  font-size: 0.9em;
 }
 
 .successColor,
@@ -4401,19 +4160,11 @@ body {
 }
 
 #permaBoneBonuses {
-  font-size: 0.57em;
   width: 100%;
-  line-height: 1.25;
 }
 
 #permaBoneBonuses .singleBonusBox {
-  height: 14.3em;
   vertical-align: top;
-}
-
-#permaBoneBonuses #exoticpermaBonusBox,
-#permaBoneBonuses #multitaskingpermaBonusBox {
-  height: 12.5em;
 }
 
 #boneShrineBtn {
@@ -4421,7 +4172,6 @@ body {
   width: 30%;
   top: 0;
   left: 0;
-  font-size: 0.7em;
   color: black;
   background-color: white;
   cursor: pointer;
@@ -4446,7 +4196,6 @@ body {
   margin: 5vh 5vw 5vh 5vw;
   z-index: 5;
   text-align: center;
-  font-size: 1.3vw;
   padding: 0.5vw 2vw;
 }
 
@@ -4457,7 +4206,6 @@ body {
 }
 
 #singleRunBonuses div .boneBtn {
-  font-size: 0.95em;
 }
 
 .singleBonusBox {
@@ -4470,7 +4218,6 @@ body {
 #minusRes {
   color: red;
   border: 1px solid red;
-  font-size: 0.8em;
 }
 
 #boostPreviewContainer {
@@ -4480,7 +4227,6 @@ body {
 }
 
 .boostSpacer {
-  font-size: 0.8em;
 }
 
 .importsPreview {
@@ -4491,7 +4237,6 @@ body {
 }
 
 .bundleBtn {
-  font-size: 0.8em;
 }
 
 .boneBtnStateOff {
@@ -4527,12 +4272,10 @@ body {
 .importLocation {
   text-align: center;
   text-decoration: underline;
-  font-size: 0.8em;
   font-weight: bold;
 }
 
 #bundleTitle {
-  font-size: 2vw;
   margin-bottom: 0.5vw;
 }
 
@@ -4561,7 +4304,6 @@ body {
 }
 
 .boneBuyDesc {
-  font-size: 0.8em;
   background-color: #d0d0d0;
 }
 
@@ -4569,31 +4311,24 @@ body {
   background-color: #d0d0d0;
   margin-top: 0.5vw;
   margin-bottom: 1vw;
-  font-size: 0.9vw;
 }
 
 #boneFlavorRow {
-  font-size: 1.2vw;
   margin-top: 0.6vw;
   margin-bottom: 0.6vw;
 }
 #boneTopRow {
-  font-size: 4vw;
 }
 #boneTitleContainer {
   font-weight: bold;
-  font-size: 3vw;
 }
 #boneOwnedContainer {
-  font-size: 2vw;
 }
 #purchaseBonesTitle,
 #purchasingBonesTitle {
-  font-size: 3vw;
 }
 
 #importBuyDesc {
-  font-size: 0.9em;
 }
 
 .messageCheckboxHolder input {
@@ -4603,26 +4338,21 @@ body {
 }
 
 .messageConfigTitle {
-  font-size: 2vw;
   font-weight: bold;
 }
 
 .messageNameHolder {
-  font-size: 1.3vw;
 }
 
 #messageConfigMessage {
   height: 3vw;
-  font-size: 1.2vw;
 }
 
 .messageConfigCheckbox {
-  font-size: 1.1vw;
 }
 
 .thingSmall {
   display: inline-block;
-  font-size: 1.3em;
   border: 1px solid black;
   width: 25%;
   color: white;
@@ -4697,10 +4427,6 @@ body {
   padding-right: 0;
 }
 
-#boneBuyRow .boneBuyColumn {
-  height: 29vw;
-}
-
 .boneBuyColumn {
   background-color: #e1e1e1;
   border: 0.5vw solid white;
@@ -4722,7 +4448,6 @@ body {
 
 .importsTable > tbody > tr {
   background-color: #d0d0d0;
-  font-size: 0.75vw;
 }
 
 .importOwned {
@@ -4731,7 +4456,6 @@ body {
 }
 
 #mapBonus {
-  font-size: 0.8em;
 }
 
 #blockDiv {
@@ -4754,12 +4478,10 @@ body {
 
 .keybindsTitle {
   text-align: center;
-  font-size: 1.1em;
 }
 
 #heirloomChanceRight,
 #heirloomChanceLeft {
-  font-size: 3em;
   cursor: pointer;
 }
 
@@ -4781,7 +4503,6 @@ body {
 .critSpan {
   font-weight: bold;
   color: yellow;
-  font-size: 0.9em;
 }
 
 .critTier4 {
@@ -4808,7 +4529,6 @@ body {
 #critSpan .critTier4 .icomoon {
   position: absolute;
   top: 12%;
-  font-size: 1.1vw;
 }
 
 #tab5 {
@@ -4837,7 +4557,6 @@ body {
   margin-top: 0.5vw;
   margin-left: -4px;
   border: 1px solid black;
-  font-size: 0.8em !important;
   color: white !important;
   background-color: #4692a8;
   padding: 0.25vw;
@@ -4851,12 +4570,7 @@ body {
   margin-bottom: 1vw;
 }
 
-#portalBtnContainer {
-  margin-top: 0.5em;
-}
-
 .tinyTextTip table tbody tr td {
-  font-size: 0.75em;
 }
 
 #specificChallengeDescription {
@@ -4868,35 +4582,14 @@ body {
   background-color: #d0d0d0;
 }
 
-#specificChallengeDescription.challengeDescriptionLg {
-  max-height: 14.3vw;
-}
-
-#specificChallengeDescription.challengeDescriptionSm {
-  max-height: 14.05vw;
-  margin-top: -0.1vw;
-}
-
-#challenges {
-  margin: 0 1vw;
-}
-
 .challengeTitle {
   text-align: center;
-  font-size: 1.3vw;
   font-weight: bold;
-}
-
-#challengeDescription {
-  font-size: 1vw;
-  height: 22.5vw;
 }
 
 #portalTabs {
   background: black;
   border: 1px solid white;
-  margin-bottom: 0.5vw;
-  margin-top: 0.5vw;
 }
 
 #ptabRemove > a {
@@ -4908,14 +4601,12 @@ body {
   color: red;
   display: block;
   padding: 2%;
-  font-size: 0.9vw;
   margin-top: -3%;
 }
 
 .challengeThing {
   background-color: #318696;
   color: white;
-  font-size: 1.1vw;
   width: 19.4%;
   height: 1.8vw;
 }
@@ -4942,18 +4633,15 @@ body {
 }
 
 #extraGridInfo {
-  font-size: 1vw;
 }
 
 #extraGridInfoTitle {
   text-align: center;
   font-weight: bold;
-  font-size: 1.2vw;
 }
 
 #extraGridInfoSummary {
   margin-top: 1vw;
-  font-size: 1.1vw;
 }
 
 #extraGridInfoSub {
@@ -4964,7 +4652,6 @@ body {
 #extraGridInfoBtns {
   margin-top: 1vw;
   text-align: center;
-  font-size: 1.3vw;
 }
 
 .finishedChallenge {
@@ -4994,12 +4681,10 @@ body {
 }
 
 #helpContainer {
-  font-size: 1.1vw;
 }
 
 .pauseMsg {
   background-color: black;
-  font-size: 1.5vw;
   padding: 0.6vw;
   border: 0.2vw solid white;
 }
@@ -5012,7 +4697,6 @@ body {
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
-  font-size: 1.6vw;
 }
 
 #lootBdBtn:hover {
@@ -5075,7 +4759,6 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1vh;
   color: white;
-  font-size: 1.2vw;
   z-index: 4;
 }
 
@@ -5096,7 +4779,6 @@ body {
 }
 
 #tutorialText {
-  font-size: 0.9vw;
   position: relative;
   height: 65%;
 }
@@ -5104,7 +4786,6 @@ body {
 #tutorialTextInner {
   overflow-y: auto;
   height: 100%;
-  font-size: 0.9vw;
   vertical-align: top;
 }
 
@@ -5137,13 +4818,11 @@ body {
 }
 
 #tutorialGoal {
-  font-size: 1vw;
   font-weight: bold;
 }
 
 #tutorialTitle {
   text-align: center;
-  font-size: 1.2em;
 }
 
 #tutorialDiv hr {
@@ -5154,7 +4833,6 @@ body {
   position: absolute;
   left: 83%;
   top: 2.1%;
-  font-size: 1.8vw;
   cursor: pointer;
 }
 
@@ -5162,7 +4840,6 @@ body {
   position: absolute;
   left: 92%;
   top: 1.5%;
-  font-size: 2.2vw;
   cursor: pointer;
   color: red;
 }
@@ -5272,8 +4949,6 @@ input::-webkit-inner-spin-button {
   position: absolute;
   display: block;
   width: 100%;
-  font-size: 1vw;
-  line-height: 1vw;
   margin: 0;
   padding: 0;
   color: black;
@@ -5426,16 +5101,21 @@ input::-webkit-inner-spin-button {
   background: rgba(255, 255, 255, 0.25);
 }
 
+.talentTierRow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  min-height: 5em;
+}
+
 .natureUpgradeLevel {
   position: absolute;
-  font-size: 1vw;
   top: 2%;
   left: 2%;
 }
 
 .natureUpgradeCost {
   position: absolute;
-  font-size: 1vw;
   top: 50%;
   left: 2%;
 }
@@ -5443,7 +5123,6 @@ input::-webkit-inner-spin-button {
 .natureBuyIconMini .natureUpgradeCost {
   top: 2%;
   left: 0%;
-  font-size: 0.9vw;
   width: 100%;
   text-align: center;
 }
@@ -5538,7 +5217,6 @@ input::-webkit-inner-spin-button {
 
 .infoSpanNature {
   display: inline-block;
-  font-size: 0.7vw;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 4vw;
@@ -5550,13 +5228,10 @@ input::-webkit-inner-spin-button {
 }
 
 .infoSpanNature span {
-  font-size: 0.6vw;
   color: yellow;
 }
 
 .natureColDescription {
-  font-size: 0.8vw;
-  line-height: 0.8vw;
   display: block;
   margin-bottom: 2vw;
   display: none;
@@ -5564,13 +5239,11 @@ input::-webkit-inner-spin-button {
 
 .tabColNature {
   text-align: center;
-  font-size: 1.5vw;
   padding-bottom: 0.78vw;
   height: 100%;
 }
 
 .natureBuyIcon {
-  font-size: 2vw;
   display: block;
   width: 88%;
   margin-left: 6%;
@@ -5596,7 +5269,6 @@ input::-webkit-inner-spin-button {
 }
 
 .natureBuyIconMini {
-  font-size: 1.5vw;
   float: left;
   width: 43%;
   margin-left: 2%;
@@ -5621,7 +5293,6 @@ input::-webkit-inner-spin-button {
 
 .natureBackgroundIcon {
   position: absolute;
-  font-size: 13vw;
   top: 27%;
   left: 5%;
   z-index: 2;
@@ -5630,7 +5301,6 @@ input::-webkit-inner-spin-button {
 
 .natureBackgroundIcon.icon-air {
   left: 6%;
-  font-size: 12vw;
   top: 30%;
 }
 
@@ -5639,7 +5309,6 @@ input::-webkit-inner-spin-button {
 }
 
 #natureA span {
-  font-size: 0.8vw;
 }
 
 #natureContainer .row {
@@ -5647,7 +5316,6 @@ input::-webkit-inner-spin-button {
 }
 
 .natureUberName {
-  font-size: 0.9vw;
 }
 
 .natureMessage {
@@ -5716,7 +5384,6 @@ sup {
 .autoUpgradeBtn {
   border: 1px solid white;
   display: none;
-  font-size: 0.9vw;
 }
 
 .heirloomsBtnColor {
@@ -5741,7 +5408,6 @@ sup {
 }
 
 #heliumPh.heliumPh {
-  font-size: 0.9em !important;
 }
 
 .playFabRow div:nth-child(2) {
@@ -5750,7 +5416,6 @@ sup {
 
 #playFabLoginError {
   color: red;
-  font-size: 1.1em;
   text-align: center;
   font-weight: bold;
 }
@@ -5797,7 +5462,6 @@ sup {
 }
 
 #playFabIndicator {
-  font-size: 1.2em;
 }
 
 .iconStateGood {
@@ -5845,7 +5509,6 @@ sup {
 
 .dgChangeBtn {
   border: 1px solid white;
-  font-size: 1.12em;
   text-align: center;
   padding: 0.09vw 0.2vw 0 0.2vw;
   height: 100%;
@@ -5870,7 +5533,6 @@ sup {
 }
 
 #generatorStateConfigBtn .glyphicon::before {
-  font-size: 0.8vw;
 }
 
 #generatorStateConfigBtn:hover {
@@ -5878,7 +5540,6 @@ sup {
 }
 
 #generatorPauseBtn {
-  font-size: 0.8em;
   display: inline-block;
   padding: 0 5%;
 }
@@ -5889,7 +5550,6 @@ sup {
 
 #magmiteOwned,
 #generatorUpgradeTitle {
-  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
   display: inline-block;
@@ -5906,7 +5566,6 @@ sup {
 
 .generatorUpgradeTitle {
   text-align: center;
-  font-size: 1.1em;
   font-weight: bold;
   padding: 1%;
 }
@@ -5914,7 +5573,6 @@ sup {
 #magmiteCost,
 #generatorUpgradeName {
   text-align: center;
-  font-size: 1.2em;
   display: inline-block;
   width: 50%;
 }
@@ -5942,7 +5600,6 @@ sup {
 #generatorNextTick {
   position: absolute;
   top: 60%;
-  font-size: 1.5em;
   color: black;
   text-shadow:
     -1px -1px 0 #fff,
@@ -5955,7 +5612,6 @@ sup {
 }
 
 #generatorProducingContainer {
-  font-size: 1.1em;
   padding-top: 10%;
 }
 
@@ -6004,12 +5660,10 @@ sup {
 
 #generatorTitle {
   margin-bottom: 0.25vw;
-  font-size: 1.2em;
 }
 
 #generatorUpgradeBtn {
   margin-top: 0.5vw;
-  font-size: 1.1em;
   display: inline-block;
   width: 70%;
 }
@@ -6061,7 +5715,6 @@ sup {
 
 #overclockerTargetTime {
   text-align: center;
-  font-size: 1.3em;
   padding: 0.5%;
 }
 
@@ -6118,11 +5771,9 @@ sup {
 }
 
 .icon-controller-play {
-  font-size: 1.4em;
 }
 
 .patchNotice {
-  font-size: 1.1vw;
   border: 0.2vw solid white;
 }
 
@@ -6180,7 +5831,6 @@ sup {
   height: 100%;
   display: inline-block;
   color: #dadada;
-  font-size: 1vw;
   vertical-align: top;
   background-color: black;
   pointer-events: auto;
@@ -6197,7 +5847,6 @@ sup {
   color: #dadada;
   background-color: black;
   vertical-align: top;
-  font-size: 1vw;
   pointer-events: auto;
   position: relative;
   border: 2px solid #dadada;
@@ -6229,7 +5878,6 @@ sup {
   border: 0.1vw solid #5a5a5a;
   font-weight: bold;
   color: white;
-  font-size: 0.8vw;
   background-clip: padding-box;
   cursor: pointer;
   position: relative;
@@ -6253,7 +5901,6 @@ sup {
   position: absolute;
   top: 10%;
   left: 82%;
-  font-size: 0.45vw;
   color: #5c5c5c;
   z-index: 0;
 }
@@ -6323,19 +5970,16 @@ sup {
 #playerSpireTitle {
   padding: 1vw;
   font-weight: bold;
-  font-size: 1.5vw;
 }
 
 #playerSpireHelp {
   border: 2px solid blue;
-  font-size: 0.8vw;
   padding: 0.5vw;
   display: block;
 }
 
 #playerSpireInfoTop {
   text-align: center;
-  margin-top: 1vw;
 }
 
 .floatingCombatText {
@@ -6346,7 +5990,6 @@ sup {
     1px 1px 0 white;
   font-weight: bold;
   z-index: 9999999999;
-  font-size: 0.8vw;
 }
 
 #playerSpireCloseBtnSm,
@@ -6355,7 +5998,6 @@ sup {
   top: 1.5%;
   left: 97%;
   color: red;
-  font-size: 1.5vw;
   cursor: pointer;
 }
 
@@ -6364,7 +6006,6 @@ sup {
   top: 1.5%;
   left: 95%;
   color: blue;
-  font-size: 1.5vw;
   cursor: pointer;
 }
 
@@ -6398,13 +6039,11 @@ sup {
   font-weight: bold;
   margin-top: 5%;
   display: inline-block;
-  font-size: 0.9vw;
 }
 
 .spireQuest {
   border: 1px solid blue;
   padding: 2%;
-  font-size: 1.2vw;
 }
 
 .spirePresetBtns {
@@ -6443,7 +6082,6 @@ sup {
   top: 25%;
   left: 1%;
   color: #dadada;
-  font-size: 1vw;
   text-shadow:
     -1px -1px 0 black,
     1px -1px 0 black,
@@ -6474,7 +6112,6 @@ sup {
 }
 
 #spireSettingsTooltip b {
-  font-size: 1.4vw;
   display: block;
   margin-bottom: 0.5vw;
   margin-top: 0.5vw;
@@ -6483,11 +6120,9 @@ sup {
 .spireOption {
   width: 25%;
   display: inline-block;
-  font-size: 1.1vw;
 }
 
 .spireOption span {
-  font-size: 1.5vw;
   float: right;
   margin-right: 1.5vw;
   margin-bottom: 1vw;
@@ -6519,7 +6154,6 @@ sup {
 }
 
 .screenReaderAchievements {
-  font-size: 0.8vw;
 }
 
 .screenReaderAchievements tbody tr td {
@@ -6528,7 +6162,6 @@ sup {
 }
 
 .screenReaderPerk {
-  font-size: 0.5em;
 }
 
 #swapPortalUniverseBtn {
@@ -6540,7 +6173,6 @@ sup {
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size: 1vw;
   border: 1px solid white;
   cursor: pointer;
 }
@@ -6559,8 +6191,6 @@ sup {
 }
 
 .progress > #soldierHealthTextContainer > span{
-	font-size: 1.4vw !important;
-	line-height: 1.4vw !important;
 
 } */
 
@@ -6616,7 +6246,11 @@ sup {
 }
 
 #upgradesContainer {
-  min-height: calc(4vw + 1vh + 5px);
+  min-height: 20em
+}
+
+#equipmentContainer {
+  min-height: 20em
 }
 
 #gammaSpan .badge {
@@ -6655,17 +6289,14 @@ sup {
 }
 
 .heirloomSpent {
-  font-size: 0.8em;
   text-decoration: italic;
 }
 
 #challengeTrappapalooza .thingName,
 #challengePandemonium .thingName {
-  font-size: 0.9vw;
 }
 
 .questMessage {
-  font-size: 1.1vw;
   padding: 2%;
   background-color: black;
 }
@@ -6701,7 +6332,6 @@ sup {
 .toggleAllBtn {
   padding: 2%;
   font-weight: bold;
-  font-size: 1.2vw;
 }
 
 #autoEquipMiscTable {
@@ -6719,7 +6349,6 @@ sup {
 }
 
 #autoEquipMiscTable tbody tr td .toggleAllBtn {
-  font-size: 0.9vw;
   padding: 0.5vw 0;
   width: 100%;
 }
@@ -6732,7 +6361,6 @@ sup {
 
 .obsidianMessage {
   padding: 1vw;
-  font-size: 1.1vw;
   border: 0.5vw solid #8c0000;
   background-color: black;
   color: white;
@@ -6743,7 +6371,6 @@ sup {
   color: #00ffff;
   background-color: #000;
   padding: 2%;
-  font-size: 1.5vw;
 }
 
 #offlineWrapper {
@@ -6778,14 +6405,12 @@ sup {
 }
 
 #offlineTitle {
-  font-size: 2vw;
   text-align: center;
 }
 
 #offlineInnerWrapper {
   width: 50%;
   margin-left: 25%;
-  font-size: 1.5vw;
   padding-top: 10%;
 }
 
@@ -6795,7 +6420,6 @@ sup {
 }
 
 #offlineExtraInfo {
-  font-size: 1.2vw;
   text-align: right;
 }
 
@@ -6807,13 +6431,11 @@ sup {
   font-weight: bold;
   text-align: center;
   color: black;
-  font-size: 1.7vw;
 }
 
 .offlineMapBtn {
   width: 47%;
   margin: 1%;
-  font-size: 1vw;
 }
 
 #offlineTimeOffline {
@@ -6824,14 +6446,12 @@ sup {
 
 #offlineTimeOffline div input {
   margin: 0.5vw 0;
-  font-size: 1vw;
 }
 
 .offlineExtraBtn {
   width: 45%;
   margin: 0.2vw 2%;
   display: inline-block;
-  font-size: 1.2vw;
   padding: 0.4vw 0.64vw;
 }
 
@@ -6855,7 +6475,6 @@ sup {
   background-color: black;
   color: red;
   font-weight: bold;
-  font-size: 0.9em;
   text-align: center;
 }
 
@@ -6916,7 +6535,6 @@ sup {
   left: -0.55vw;
   color: red;
   font-weight: bold;
-  font-size: 2vw;
 }
 
 #mazError {
@@ -7019,7 +6637,6 @@ sup {
   width: 100%;
   z-index: 2;
   color: #3f3f3f;
-  font-size: 1.5em;
   text-align: center;
   border-radius: 25px;
   border: 4px outset #536373;
@@ -7028,12 +6645,10 @@ sup {
 }
 
 #achievementTrackerIconContainer {
-  font-size: 1vw;
 }
 
 #achievementTrackerProgress,
 #achievementTrackerReward {
-  font-size: 0.82em;
   margin-top: 0.2vw;
 }
 
@@ -7092,7 +6707,6 @@ sup {
 }
 
 #achievementTrackerTitle {
-  font-size: 1.4vw;
 }
 
 #mayhemPoisonStacks span {
@@ -7222,7 +6836,6 @@ sup {
 .alchemyPopupHerb {
   display: inline-block;
   width: 20%;
-  font-size: 1.3vw;
   border: 1px solid black;
   text-align: center;
 }
@@ -7244,7 +6857,6 @@ sup {
 }
 
 .alchemyPopupCraft .btn {
-  font-size: 0.8em;
   border: 1px solid white;
 }
 
@@ -7263,7 +6875,6 @@ sup {
   color: white;
   background-color: black;
   padding: 1%;
-  font-size: 1.1em;
 }
 
 .alchemyPopupName {
@@ -7274,7 +6885,6 @@ sup {
 .alchemyTitle {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5vw;
   margin-top: 0.5%;
   margin-bottom: 0.25%;
 }
@@ -7285,7 +6895,6 @@ sup {
 
 .alchemyPotionEffect {
   font-style: italic;
-  font-size: 0.9em;
 }
 
 .alchemyCraftCost {
@@ -7298,7 +6907,6 @@ sup {
 #alchemyDropsTable {
   width: 100%;
   text-align: center;
-  font-size: 1.2em;
 }
 
 #alchemyDropsTable tbody tr:first-child td {
@@ -7351,7 +6959,6 @@ sup {
 
 .presetItems {
   min-height: 6vw;
-  font-size: 0.9em;
 }
 
 .abMiscBox.preset {
@@ -7437,7 +7044,6 @@ sup {
 .autoColorGrey.btn-md,
 .autoItemUpgrade.btn-md,
 .colorVoidy.btn-md {
-  font-size: 0.75vw;
   padding: 0.25vw 0.5vw;
 }
 
@@ -7447,7 +7053,6 @@ sup {
 .autoColorGrey.btn-lg,
 .autoItemHide.btn-lg,
 .colorVoidy.btn-lg {
-  font-size: 1vw;
   padding: 0.3vw 0.5vw;
 }
 
@@ -7463,7 +7068,6 @@ sup {
 
 #autoDust {
   text-align: center;
-  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -7524,7 +7128,6 @@ sup {
 }
 
 #autoBattleNotes {
-  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
   height: 4em;
@@ -7536,7 +7139,6 @@ sup {
   display: inline-block;
   width: 50%;
   padding: 1%;
-  font-size: 0.9vw;
   vertical-align: top;
 }
 
@@ -7573,7 +7175,6 @@ sup {
   display: inline-block;
   width: 50%;
   text-align: center;
-  font-size: 1.5em;
 }
 
 .autoBonusBox {
@@ -7587,7 +7188,6 @@ sup {
   vertical-align: top;
   height: 9.5em;
   border-color: #918f8f;
-  font-size: 0.9vw;
 }
 
 #Extra_LimbsBonusBox {
@@ -7641,12 +7241,10 @@ sup {
 
 .contractTitle {
   font-weight: bold;
-  font-size: 1.3em;
 }
 
 .contractDescription {
   height: 60%;
-  font-size: 0.95em;
 }
 
 .equalityTabScalingOff a {
@@ -7664,13 +7262,11 @@ sup {
 }
 
 .contractDescription.descriptionSm {
-  font-size: 0.9em;
 }
 
 #autoBattleMenuButtons .btn {
   border-radius: 12px 12px 0 0;
   padding: 0.35vw 1.5vw;
-  font-size: 0.95vw;
 }
 
 .darkBorder.btn.autoColorOrange {
@@ -7690,7 +7286,6 @@ sup {
 }
 
 .contractBox .btn {
-  font-size: 1em;
 }
 
 .abTabNone a {
@@ -7735,7 +7330,6 @@ sup {
   top: 0.05em;
   left: 84vw;
   position: absolute;
-  font-size: 2.5em;
   color: #090792;
   cursor: pointer;
 }
@@ -7744,7 +7338,6 @@ sup {
   top: 0;
   left: 87vw;
   position: absolute;
-  font-size: 2.7em;
   cursor: pointer;
   color: #921707;
 }
@@ -7773,7 +7366,6 @@ sup {
   left: 25%;
   background-color: black;
   color: white;
-  font-size: 1vw;
   padding: 2%;
   z-index: 99999;
   border: 2px solid white;
@@ -7784,7 +7376,6 @@ sup {
   width: 60%;
   display: inline-block;
   border: 1px solid white;
-  font-size: 1.1em;
   border-radius: 25px;
   padding: 0.3em;
   margin-left: 20%;
@@ -7804,7 +7395,6 @@ sup {
   display: inline-block;
   border: 1px solid white;
   background-color: #441817;
-  font-size: 0.9em;
   border-radius: 25px;
   padding: 0.3em;
   margin-left: 27.5%;
@@ -7886,7 +7476,6 @@ input[type="range"] {
 
 @media screen and (max-width: 1200px) {
   #tooltipDiv {
-    font-size: 1.1vw;
   }
 }
 
@@ -7896,7 +7485,6 @@ input[type="range"] {
     left: 10% !important;
   }
   #settingsTable > tbody > tr > td {
-    font-size: 1.2vw !important;
   }
   /* SPIRE TD */
   #floatingCombatText {
@@ -7909,15 +7497,12 @@ input[type="range"] {
     width: 50vw !important;
   }
   .playerSpireEnemy {
-    font-size: 1.1vw;
   }
   .floatingCombatText {
-    font-size: 1.1vw;
   }
 
   /* LOG */
   #logBtnGroup div button {
-    font-size: 1.1vw;
     padding: 0.3vw 12px;
   }
   #logBtnGroup {
@@ -7930,8 +7515,6 @@ input[type="range"] {
     height: calc(100% - 2.7vw);
   }
   .message {
-    font-size: 1.1vw;
-    line-height: 1.1vw;
     margin-top: 2px;
   }
 
@@ -7947,45 +7530,22 @@ input[type="range"] {
     height: 65px;
   }
   #queueRow {
-    font-size: 0.7em; /* 1.2 em */
   }
   #noQueue {
-    font-size: 1em;
   }
   .queueItem {
-    font-size: 0.7em;
   }
   #queueItemsHere {
-    line-height: 1.2;
   }
   #dgChangeBtnContainer {
     height: auto;
   }
   .heirloomEquippedContainer.col-xs-4 {
-    font-size: 1.4vw;
   }
   .infoSpanNature {
-    font-size: 1vw;
   }
   .natureTitle {
     text-align: right;
     padding-right: 20%;
-  }
-  .talentTierRow {
-    line-height: 0;
-  }
-  .talentItem {
-    padding: 0.5% 0%;
-  }
-  .talentIcon {
-    font-size: 1.1vw;
-    line-height: 2vw;
-  }
-  .talentName {
-    font-size: 1vw;
-    height: 3vw;
-    line-height: 1vw;
-    overflow: hidden;
-    padding: 0.1vw;
   }
 }

@@ -1,3 +1,6 @@
+import clsx from "clsx";
+import styles from "./portal.module.scss";
+
 export function Portal() {
   return (
     <div id="portalWrapper" style={{ display: "none" }} className="portalMk0">
@@ -209,14 +212,18 @@ export function Portal() {
               >
                 <span
                   id="inPortalC2Button"
-                  className="thing thingColorSquared pointer"
-                  style={{ width: "75%", display: "inline-block" }}
+                  className={clsx(
+                    "thing",
+                    "thingColorSquared",
+                    "pointer",
+                    styles.c2button,
+                  )}
                 >
                   Challenge
                   <sup>
                     <span id="inPortalC2Name">2</span>
                   </sup>{" "}
-                  -<span id="challengeSquaredBonusAmt">0</span>% bonus
+                  - <span id="challengeSquaredBonusAmt">0</span>% bonus
                 </span>
               </div>
             </div>
@@ -247,7 +254,7 @@ export function Portal() {
         </div>
       </div>
 
-      <div id="portalBtnContainer">
+      <div id="portalBtnContainer" className={styles.buttons}>
         <div id="activatePortalBtn" className="btn btn-primary inPortalBtn">
           Activate Portal
         </div>

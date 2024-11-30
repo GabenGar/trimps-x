@@ -1,33 +1,6 @@
-import { ensureIDSelector, ensureOneSelector } from "#browser/dom";
+import { ensureIDSelector } from "#browser/dom";
 
 export function initHeirlooms() {
-  {
-    const hierloomChances = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      `#heirloomTitleBar > .col-xs-2 > div:first-child`,
-    );
-
-    hierloomChances.onclick = () => {
-      lastMainHeirIndex = -1;
-      toggleHeirloomChances();
-    };
-  }
-
-  {
-    const hierloomHelp = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      `#heirloomTitleBar > .col-xs-2 > div:nth-child(2)`,
-    );
-
-    hierloomHelp.onclick = () => toggleHeirloomHelp();
-  }
-
-  {
-    const hierloomToggle = ensureOneSelector<HTMLElementTagNameMap["div"]>(
-      `#heirloomTitleBar > .col-xs-2 > div:nth-child(3)`,
-    );
-
-    hierloomToggle.onclick = () => toggleHeirlooms();
-  }
-
   {
     const heirloomChanceLeft =
       ensureIDSelector<HTMLElementTagNameMap["span"]>("heirloomChanceLeft");

@@ -1664,7 +1664,6 @@ function portalClicked(noUniChange) {
 	document.getElementById('inPortalC2Name').innerHTML = (game.global.highestRadonLevelCleared >= 49) ? "<span class='icomoon icon-infinity'></span>" : "2";
 	var className = (game.global.highestRadonLevelCleared >= 49) ? "thingColorInfinite" : "thingColorSquared";
 	swapClass("thingColor", className, document.getElementById('inPortalC2Button'))
-	document.getElementById("challengeDescription").style.height = (getSLevel(true) >= 1) ? "19vw" : "22.5vw";
 	document.getElementById("challengeDescriptionPre").innerHTML = (getSLevel(true) >= 1) ? "Don't forget to bring a challenge<br/>" : 'You can also choose to activate a challenge before using your portal. Completing a challenge will earn you a permanent reward. You can abandon or view an active challenge at any time by clicking the "View Perks" button.';
 	if (game.global.canRespecPerks) {
 		document.getElementById("respecPortalBtn").innerHTML = "Respec";
@@ -5743,7 +5742,6 @@ function hideAdvMaps(displayOnly, hideForVoid){
 	document.getElementById('mapsCreateRow').style.paddingBottom = (hidden) ? "1vw" : "0";
 	var maps2 = checkAdvMaps2(hidden);
 	var mapSize = (hidden) ? "0" : ((maps2) ? "2" : "1");
-	swapClass('mapSize', 'mapSize' + mapSize, document.getElementById('mapsHere'));
 }
 
 function getUnlockZone(what){
@@ -10013,9 +10011,6 @@ function drawGrid(maps) { //maps t or f. This function overwrites the current gr
 			cell.setAttribute("id", idText + counter);
 			row.appendChild(cell);
 			cell.style.width = (100 / cols) + "%";
-			cell.style.paddingTop = ((100 / cols) / 19)+ "vh";
-			cell.style.paddingBottom = ((100 / cols) / 19) + "vh";
-			cell.style.fontSize = ((cols / 14) + 1) + "vh";
 			var className = "battleCell cellColorNotBeaten"
 			if (maps && game.global.mapGridArray[counter].name == "Pumpkimp") className += " mapPumpkimp";
 			if (maps && map.location == "Void") className += " voidCell";
@@ -10385,7 +10380,6 @@ function toggleMapGridHtml(on, currentMapObj){
 	document.getElementById("mapGrid").style.display = settings[0];
 	if (game.options.menu.extraMapBtns.enabled){
 		swapClass("col-xs", "col-xs-" + settings[1], document.getElementById("extraMapBtns"));
-		swapClass("col-xs", "col-xs-" + settings[2], document.getElementById("gridContainer"));
 	}
 	document.getElementById("repeatBtn").style.display = settings[3];
 	if (!on) return;
@@ -16872,7 +16866,9 @@ function toggleVoidMaps(updateOnly){
 	else if (!game.global.preMapsActive) game.global.voidMapsToggled = false;
 	if (!game.global.voidMapsToggled){
 		voidMapsHere.style.display = "none";
-		mapsHere.style.display = "block";
+		mapsHere.style.display = "flex";
+		mapsHere.style.flexFlow = "row wrap";
+		mapsHere.style.gap = "1em";
 		mapsCreate.style.display = "block";
 		heirRare.style.display = "none";
 		elem.innerHTML = "Void Maps (" + game.global.totalVoidMaps + ")";

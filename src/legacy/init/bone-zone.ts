@@ -1,16 +1,6 @@
-import { ensureIDSelector, ensureOneSelector } from "#browser/dom";
+import { ensureIDSelector } from "#browser/dom";
 
 export function initBoneZone() {
-  const boneWrapper0 = ensureIDSelector<HTMLDivElement>("boneWrapper0");
-  {
-    const hideBonesButton = ensureOneSelector<HTMLDivElement>(
-      ".row > .col-xs-2 > .boneBtn.dangerColor.pointer.noselect",
-      boneWrapper0,
-    );
-
-    hideBonesButton.onclick = () => hideBones();
-  }
-
   {
     const importPurchaseBtn =
       ensureIDSelector<HTMLDivElement>("importPurchaseBtn");

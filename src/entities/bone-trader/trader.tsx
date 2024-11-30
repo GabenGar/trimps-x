@@ -2,7 +2,7 @@ export function BoneTrader() {
   return (
     <div id="boneWrapper" style={{ display: "none" }}>
       <div id="boneWrapper0">
-        <div className="row">
+        <div>
           <div className="col-xs-2"></div>
           <div className="col-xs-8">
             <div id="boneTitleContainer">Bone Trader</div>
@@ -20,7 +20,12 @@ export function BoneTrader() {
           </div>
 
           <div className="col-xs-2">
-            <div className="boneBtn dangerColor pointer noselect">Close</div>
+            <div
+              className="boneBtn dangerColor pointer noselect"
+              onClick={() => hideBones()}
+            >
+              Close
+            </div>
           </div>
         </div>
         <div id="boneBuyRow" className="row">
