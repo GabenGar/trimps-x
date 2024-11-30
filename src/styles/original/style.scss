@@ -128,11 +128,11 @@ body {
 }
 
 .talentItem {
-  display: inline-block;
+  display: grid;
+  align-content: center;
   width: 16.666666%;
   text-align: center;
   border: 1px solid white;
-  padding: 2% 0%;
   cursor: pointer;
 }
 
@@ -547,7 +547,7 @@ body {
 
 #buyCol {
   height: 100%;
-  padding-right: 0.25vw;
+  width: 100%;
 }
 
 #mutRing1 {
@@ -747,11 +747,10 @@ body {
 }
 
 .thing {
-  display: inline-block;
-  width: 24.2%;
-  margin-left: 0.25%;
-  margin-right: 0.25%;
-  padding: 0.2vh;
+  display: grid;
+  align-content: center;
+  min-width: 6em;
+  min-height: 5em;
   text-align: center;
   background-color: grey;
   color: white;
@@ -759,8 +758,7 @@ body {
 }
 
 #GeneticistassistContainer {
-  display: inline-block;
-  width: 48.9%;
+  display: flex;
   border: 0;
   padding: 0;
   background-color: rgba(0, 0, 102, 1);
@@ -838,19 +836,6 @@ body {
   height: 1vw;
   width: 100%;
   margin-top: 0.5vw;
-}
-
-#GeneticistassistContainer div {
-  width: 50% !important;
-  margin: 0 !important;
-}
-
-#GeneticistassistContainer #Geneticist {
-  border-right: 0;
-}
-
-#GeneticistassistContainer #Geneticistassist {
-  border-left: 0;
 }
 
 #Geneticistassist.stateHappy {
@@ -1095,12 +1080,6 @@ body {
 #voidMapsHere {
   overflow-y: auto;
   width: 100%;
-}
-
-#mapsHere.mapSize0 {
-}
-
-#mapsHere.mapSize2 {
 }
 
 #equipmentTitleDiv .lowPad,
@@ -1669,18 +1648,15 @@ body {
 }
 
 .portalThing.smallPerk.changingOn {
-
   padding-top: calc(0.2vh + 0.05em);
 }
 
 .portalThing.tinyPerk.changingOn {
-
   padding-top: calc(0.2vh + 0.16em);
 }
 
 .portalThing.smallPerk.detailed.changingOn,
 .portalThing.tinyPerk.detailed.changingOn {
-
   padding-top: calc(0.2vh + 0.06em);
   padding-bottom: calc(0.2vh + 0.09em);
 }
@@ -2945,19 +2921,15 @@ body {
 }
 
 .doubleTall {
-
 }
 
 .tripleTall {
-
 }
 
 .quadTall {
-
 }
 
 .quinTall {
-
 }
 
 #achievementPopup {
@@ -3068,7 +3040,6 @@ body {
 }
 
 #achievementClose2 {
-
 }
 
 #steamAchieveSync {
@@ -3078,33 +3049,27 @@ body {
 }
 
 #achievementHeader {
-
 }
 
 .achievementMainTitle {
   font-weight: bold;
-
 }
 
 .achievementPopupIcon {
-
 }
 
 #achievementPopupDescription,
 #achievementHoverDescription,
 #achievementTrackerDescription {
-
 }
 
 #achievementPopupReward,
 #achievementHoverReward,
 #achievementTrackerReward {
-
 }
 
 #achievementHoverProgress,
 #achievementTrackerProgress {
-
   font-weight: bold;
 }
 
@@ -4365,22 +4330,17 @@ body {
   margin-bottom: 0.6vw;
 }
 #boneTopRow {
-
 }
 #boneTitleContainer {
   font-weight: bold;
-
 }
 #boneOwnedContainer {
-
 }
 #purchaseBonesTitle,
 #purchasingBonesTitle {
-
 }
 
 #importBuyDesc {
-
 }
 
 .messageCheckboxHolder input {
@@ -4390,21 +4350,17 @@ body {
 }
 
 .messageConfigTitle {
-
   font-weight: bold;
 }
 
 .messageNameHolder {
-
 }
 
 #messageConfigMessage {
   height: 3vw;
-
 }
 
 .messageConfigCheckbox {
-
 }
 
 .thingSmall {
@@ -5157,6 +5113,13 @@ input::-webkit-inner-spin-button {
   background: rgba(255, 255, 255, 0.25);
 }
 
+.talentTierRow {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  min-height: 5em;
+}
+
 .natureUpgradeLevel {
   position: absolute;
   top: 2%;
@@ -5281,7 +5244,6 @@ input::-webkit-inner-spin-button {
 }
 
 .natureColDescription {
-
   display: block;
   margin-bottom: 2vw;
   display: none;
@@ -5821,7 +5783,6 @@ sup {
 }
 
 .icon-controller-play {
-
 }
 
 .patchNotice {
@@ -6031,7 +5992,6 @@ sup {
 
 #playerSpireInfoTop {
   text-align: center;
-  margin-top: 1vw;
 }
 
 .floatingCombatText {
@@ -6298,7 +6258,11 @@ sup {
 }
 
 #upgradesContainer {
-  min-height: calc(4vw + 1vh + 5px);
+  min-height: 20em
+}
+
+#equipmentContainer {
+  min-height: 20em
 }
 
 #gammaSpan .badge {
@@ -7547,12 +7511,10 @@ input[type="range"] {
   .playerSpireEnemy {
   }
   .floatingCombatText {
-
   }
 
   /* LOG */
   #logBtnGroup div button {
-
     padding: 0.3vw 12px;
   }
   #logBtnGroup {
@@ -7565,8 +7527,6 @@ input[type="range"] {
     height: calc(100% - 2.7vw);
   }
   .message {
-
-
     margin-top: 2px;
   }
 
@@ -7584,10 +7544,8 @@ input[type="range"] {
   #queueRow {
   }
   #noQueue {
-
   }
   .queueItem {
-
   }
   #queueItemsHere {
   }
@@ -7601,21 +7559,5 @@ input[type="range"] {
   .natureTitle {
     text-align: right;
     padding-right: 20%;
-  }
-  .talentTierRow {
-
-  }
-  .talentItem {
-    padding: 0.5% 0%;
-  }
-  .talentIcon {
-
-  }
-  .talentName {
-
-    height: 3vw;
-
-    overflow: hidden;
-    padding: 0.1vw;
   }
 }

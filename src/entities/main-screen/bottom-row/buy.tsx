@@ -1,3 +1,7 @@
+import clsx from "clsx";
+
+import styles from "./buy.module.scss";
+
 export function BuyColumn() {
   return (
     <div id="buyCol" className="col-xs-5" style={{ visibility: "hidden" }}>
@@ -229,7 +233,10 @@ function BuyContainer() {
             </div>
           </div>
 
-          <div className="buyBox" id="buildingsHere"></div>
+          <div
+            id="buildingsHere"
+            className={clsx("buyBox", styles.buildings)}
+          ></div>
         </div>
         <div id="jobsContainer">
           <div
@@ -260,6 +267,7 @@ function BuyContainer() {
                   </div>
                 </div>
               </div>
+
               <div className="col-xs-3" style={{ paddingLeft: "5px" }}>
                 <div id="fireBtn" className="pointer noselect fireBtnNotFiring">
                   Fire
@@ -267,7 +275,8 @@ function BuyContainer() {
               </div>
             </div>
           </div>
-          <div className="buyBox" id="jobsHere"></div>
+
+          <div id="jobsHere" className={clsx("buyBox", styles.jobs)}></div>
         </div>
         <div id="upgradesContainer">
           <div
@@ -309,7 +318,10 @@ function BuyContainer() {
               </div>
             </div>
           </div>
-          <div className="buyBox" id="upgradesHere"></div>
+          <div
+            id="upgradesHere"
+            className={clsx("buyBox", styles.upgrades)}
+          ></div>
         </div>
         <div id="equipmentContainer">
           <div
@@ -339,7 +351,10 @@ function BuyContainer() {
             </div>
           </div>
 
-          <div className="buyBox" id="equipmentHere"></div>
+          <div
+            id="equipmentHere"
+            className={clsx("buyBox", styles.equipment)}
+          ></div>
         </div>
 
         <div id="talentsContainer" style={{ display: "none" }}>

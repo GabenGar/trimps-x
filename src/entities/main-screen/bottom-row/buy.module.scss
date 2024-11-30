@@ -1,0 +1,25 @@
+@use "../../../styles/sass/variables.scss" as *;
+
+.buildings {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.jobs {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.upgrades {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.equipment {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
