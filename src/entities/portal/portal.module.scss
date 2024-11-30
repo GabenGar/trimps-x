@@ -1,0 +1,13 @@
+@use "../../styles/sass/variables.scss" as *;
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: $size-normal;
+  justify-content: center;
+}
+
+.c2button {
+  display: inline-block;
+  width: 75%;
+}
