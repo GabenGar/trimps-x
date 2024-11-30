@@ -1211,7 +1211,6 @@ body {
 }
 
 .onMapIcon {
-  width: 5%;
   display: inline-block;
 }
 
@@ -1375,17 +1374,6 @@ body {
 
 #advPerfectCheckbox {
   transform: scale(1.5);
-}
-
-#advMapsControlBtns {
-  position: absolute;
-  left: 0.1vw;
-  top: 0;
-  cursor: default;
-}
-
-#advMapsControlBtns span {
-  width: 25%;
 }
 
 #advMapsRow,

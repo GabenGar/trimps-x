@@ -114,7 +114,7 @@ export function Battle() {
         <div id="grid"></div>
 
         <div id="preMaps" style={{ display: "none" }}>
-          <div style={{ display: "none" }} id="mapsCreateRow" className="row">
+          <div style={{ display: "none" }} id="mapsCreateRow">
             <div id="openTutorialContainer2" style={{ display: "none" }}>
               <span
                 id="openTutorialBtn2"
@@ -122,7 +122,8 @@ export function Battle() {
                 style={{ color: "gold" }}
               ></span>
             </div>
-            <div id="advMapsControlBtns">
+
+            <div id="advMapsControlBtns" className={styles.map_controls}>
               <span
                 id="advMapsHideBtn"
                 className="icomoon icon-minus-circle pointer"
@@ -170,6 +171,7 @@ export function Battle() {
                 className="icomoon icon-trash-o pointer iconStateBad"
               ></span>
             </div>
+
             <div id="mapLevelContainer" className="col-xs-4">
               Level
               <span
@@ -200,7 +202,7 @@ export function Battle() {
             </div>
           </div>
 
-          <div id="advMapsRow" className="row">
+          <div id="advMapsRow">
             <div
               id="advLootContainer"
               className="col-xs-3 mapConfigContainer lowPad"

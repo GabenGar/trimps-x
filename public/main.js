@@ -5742,7 +5742,6 @@ function hideAdvMaps(displayOnly, hideForVoid){
 	document.getElementById('mapsCreateRow').style.paddingBottom = (hidden) ? "1vw" : "0";
 	var maps2 = checkAdvMaps2(hidden);
 	var mapSize = (hidden) ? "0" : ((maps2) ? "2" : "1");
-	swapClass('mapSize', 'mapSize' + mapSize, document.getElementById('mapsHere'));
 }
 
 function getUnlockZone(what){
@@ -16867,7 +16866,9 @@ function toggleVoidMaps(updateOnly){
 	else if (!game.global.preMapsActive) game.global.voidMapsToggled = false;
 	if (!game.global.voidMapsToggled){
 		voidMapsHere.style.display = "none";
-		mapsHere.style.display = "block";
+		mapsHere.style.display = "flex";
+		mapsHere.style.flexFlow = "row wrap";
+		mapsHere.style.gap = "1em";
 		mapsCreate.style.display = "block";
 		heirRare.style.display = "none";
 		elem.innerHTML = "Void Maps (" + game.global.totalVoidMaps + ")";

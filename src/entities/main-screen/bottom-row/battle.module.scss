@@ -20,3 +20,11 @@
 .button {
   flex: 0 0 7em;
 }
+
+.map_controls {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: $size-normal;
+  justify-content: center;
+  align-items: baseline;
+}
