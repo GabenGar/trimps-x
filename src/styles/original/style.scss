@@ -670,10 +670,6 @@ body {
   color: white;
 }
 
-#portalRow {
-  margin-top: 1vw;
-}
-
 .nav > li > a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -696,9 +692,6 @@ body {
 #buyHere {
   width: 100%;
   overflow-y: auto;
-  padding: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
 }
 
 .titleDiv {
@@ -740,12 +733,6 @@ body {
   color: white;
 }
 
-#buyHere {
-  padding: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
 .thing {
   display: grid;
   align-content: center;
@@ -785,37 +772,8 @@ body {
   background: linear-gradient(to right, #318696 14%, #000040 55%);
 }
 
-/* Small Buttons */
-
-#buyHere.buttonSizeSmall div .buyBox .thing {
-  width: 19.5%;
-  margin-left: 0.15%;
-  margin-right: 0.15%;
-}
-
-#buyHere.buttonSizeSmall div .buyBox #GeneticistassistContainer {
-  width: 39.3%;
-}
-
-#buyHere.buttonSizeSmall div .buyBox #generatorWindow {
-  width: 98.7%;
-}
 
 /* Tiny Buttons */
-
-#buyHere.buttonSizeTiny div .buyBox .thing {
-  width: 16.4666666%;
-  margin-left: 0.1%;
-  margin-right: 0.1%;
-}
-
-#buyHere.buttonSizeTiny div .buyBox #GeneticistassistContainer {
-  width: 33.1333333%;
-}
-
-#buyHere.buttonSizeTiny div .buyBox #generatorWindow {
-  width: 99.7999996%;
-}
 
 .noBotMarg {
   margin-bottom: 0;
@@ -3383,38 +3341,9 @@ body {
   margin: 0;
 }
 
-#challengeDescriptionPre {
-}
-
-#perkCol,
-#challengeCol {
-  padding: 0 1%;
-}
-
-#portalUpgradesHere {
-  display: inline-block;
-  overflow-y: auto;
-}
-
 #portalTitle {
   width: 100%;
   text-align: center;
-  margin-top: 0.9vw;
-}
-
-#portalHelium {
-}
-
-#portalTotalPortals,
-#portalTotalSpent,
-#portalTotalHelium {
-}
-
-.inPortalBtn {
-}
-
-.inPortalBtnSm {
-  margin-bottom: 0.5vw;
 }
 
 .NoticesMessage {
@@ -3482,7 +3411,6 @@ body {
 
 .badNameMutation {
   font-weight: bold;
-  padding: 0px 0.2vw;
 }
 
 /* VISUAL MUTATIONS HERE */
@@ -4549,35 +4477,27 @@ body {
 }
 
 #bonesFrom {
-  margin-top: 0.5vw;
   display: inline-block;
 }
 
 #getBundleBtn {
-  margin-top: 0.5vw;
   margin-left: -4px;
   border: 1px solid black;
   color: white !important;
   background-color: #4692a8;
-  padding: 0.25vw;
 }
 
 #getBundleBtn:hover {
   background-color: #2a5866;
 }
 
-#challengesHere {
-  margin-bottom: 1vw;
-}
-
 .tinyTextTip table tbody tr td {
 }
 
 #specificChallengeDescription {
-  min-height: 10vw;
+  min-height: 15em;
   overflow-y: auto;
   overflow-x: hidden;
-  margin: 0.5vw;
   color: #318696;
   background-color: #d0d0d0;
 }
@@ -4607,8 +4527,6 @@ body {
 .challengeThing {
   background-color: #318696;
   color: white;
-  width: 19.4%;
-  height: 1.8vw;
 }
 
 .challengeThing:hover {
@@ -6243,14 +6161,6 @@ sup {
   position: absolute;
   top: 12%;
   left: -14%;
-}
-
-#upgradesContainer {
-  min-height: 20em
-}
-
-#equipmentContainer {
-  min-height: 20em
 }
 
 #gammaSpan .badge {

@@ -4,6 +4,7 @@
   display: flex;
   flex-flow: row nowrap;
   gap: $size-normal;
+  justify-content: flex-end;
 }
 
 .button {

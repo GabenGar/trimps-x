@@ -35,8 +35,8 @@ export function Portal() {
         </div>
       </div>
 
-      <div className="row" id="portalRow">
-        <div id="perkCol" className="col-xs-7">
+      <div id="portalRow" className={styles.row}>
+        <div id="perkCol">
           <div className="challengeTitle">Perks</div>
           <div id="portalStory"></div>
           <div id="portalPresets" className="numTabs">
@@ -151,10 +151,13 @@ export function Portal() {
             </ul>
           </div>
 
-          <div id="portalUpgradesHere" className="niceScroll"></div>
+          <div
+            id="portalUpgradesHere"
+            className={clsx("niceScroll", styles.upgrades)}
+          ></div>
         </div>
 
-        <div id="challengeCol" className="col-xs-5">
+        <div id="challengeCol">
           <div id="viewChallenge" style={{ display: "none" }}>
             <div style={{ textAlign: "center" }}>
               <span
@@ -249,7 +252,7 @@ export function Portal() {
               ></div>
             </div>
 
-            <div id="challengesHere"></div>
+            <div id="challengesHere" className={styles.challenges}></div>
           </div>
         </div>
       </div>

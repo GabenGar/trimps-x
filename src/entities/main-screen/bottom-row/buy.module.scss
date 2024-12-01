@@ -4,22 +4,34 @@
   display: flex;
   flex-flow: row wrap;
   gap: $size-normal;
+  align-items: flex-start;
+  min-height: 20em;
+  padding: 0 $size-normal;
 }
 
 .jobs {
   display: flex;
   flex-flow: row wrap;
   gap: $size-normal;
+  align-items: flex-start;
+  min-height: 20em;
+  padding: 0 $size-normal;
 }
 
 .upgrades {
   display: flex;
   flex-flow: row wrap;
   gap: $size-normal;
+  align-items: flex-start;
+  min-height: 20em;
+  padding: 0 $size-normal;
 }
 
 .equipment {
   display: flex;
   flex-flow: row wrap;
   gap: $size-normal;
+  align-items: flex-start;
+  min-height: 20em;
+  padding: 0 $size-normal;
 }

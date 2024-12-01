@@ -1,5 +1,10 @@
 @use "../../styles/sass/variables.scss" as *;
 
+.row {
+  display: grid;
+  gap: $size-normal;
+}
+
 .buttons {
   display: flex;
   flex-flow: row nowrap;
@@ -10,4 +15,16 @@
 .c2button {
   display: inline-block;
   width: 75%;
+}
+
+.upgrades {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
+}
+
+.challenges {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $size-normal;
 }
