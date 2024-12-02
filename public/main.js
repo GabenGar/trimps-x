@@ -16877,7 +16877,7 @@ function toggleVoidMaps(updateOnly){
 		return;
 	}
 	elem.style.display = "block";
-	voidMapsHere.style.display = "block";
+	voidMapsHere.style.display = "flex";
 	mapsHere.style.display = "none";
 	mapsCreate.style.display = "none";
 	heirRare.style.display = "block";

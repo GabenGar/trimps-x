@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import styles from "./battle.module.scss";
 
 export function Battle() {
@@ -385,7 +387,7 @@ export function Battle() {
 
           <div id="mapsHere" className="mapSize1 niceScroll"></div>
 
-          <div id="voidMapsHere" className="niceScroll"></div>
+          <div id="voidMapsHere" className={clsx("niceScroll", styles.void_maps)}></div>
         </div>
 
         <div

@@ -1,6 +1,7 @@
 import clsx from "clsx";
-import styles from "./overview.module.scss";
 import { Button } from "#components/buttons";
+
+import styles from "./overview.module.scss";
 
 export function HeirloomsOverview() {
   return (
@@ -195,7 +196,7 @@ export function HeirloomsOverview() {
             <div id="extraHeirloomsHere"></div>
             <div
               id="extraHeirloomsBtnGroup"
-              className="heirloomBtnGroup"
+              className={clsx("heirloomBtnGroup", styles.heirlooms)}
               style={{ visibility: "hidden" }}
             >
               <div

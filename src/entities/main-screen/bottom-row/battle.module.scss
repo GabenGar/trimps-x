@@ -28,3 +28,10 @@
   justify-content: center;
   align-items: baseline;
 }
+
+.void_maps {
+  flex-flow: row wrap;
+  gap: $size-normal;
+  justify-content: flex-start;
+  align-items: stretch;
+}
