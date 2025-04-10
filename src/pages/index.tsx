@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Trimps 5.9.2</title>
+        <title>Trimps 5.10.1</title>
         <meta name="description" content="TrimpsX" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Greensatellite" />

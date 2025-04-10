@@ -295,9 +295,15 @@ function BuyContainer() {
               <div className="col-xs-3 lowPad">
                 <div
                   id="autoGoldenBtn"
-                  className="pointer noselect settingBtn0 autoUpgradeBtn"
+                  className="pointer noselect settingBtn0 autoUpgradeBtn toggleConfigBtn"
                 >
                   <div id="autoGoldenText">AutoGold</div>
+                  <div
+                    id="goldConfig"
+                    aria-label="Configure Auto Golden"
+                  >
+                    <span className="glyphicon glyphicon-cog"></span>
+                  </div>
                 </div>
               </div>
               <div className="col-xs-3 lowPad">

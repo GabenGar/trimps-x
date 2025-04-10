@@ -64,7 +64,8 @@ body {
 }
 
 #talentsContainer,
-#talentsHere {
+#talentsHere,
+.talentTable {
   width: 100%;
 }
 
@@ -127,10 +128,34 @@ body {
     -5px -5px 1.4vw black;
 }
 
+
+.critTier8{
+	color: #fc47fc;
+	text-shadow:
+	-1px -1px 0 #440000,
+	 1px -1px 0 #440000,
+	 -1px 1px 0 #440000,
+	  1px 1px 0 #440000,5px 5px 1.4vw #754788, 5px -5px 1.4vw #754788, -5px 5px 1.4vw #754788, -5px -5px 1.4vw #754788;
+}
+
+.critTier9{
+	color: #ff9900;
+	text-shadow:
+	-1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000,5px 5px 1.4vw #3cff00, 5px -5px 1.4vw #3cff00, -5px 5px 1.4vw #3cff00, -5px -5px 1.4vw #3cff00;
+}
+
+.talentContainer {
+	display: inline-block;
+	width: 16.666666%;
+}
+
 .talentItem {
   display: grid;
   align-content: center;
-  width: 16.666666%;
+  width: 100%;
   text-align: center;
   border: 1px solid white;
   cursor: pointer;
@@ -349,7 +374,8 @@ body {
   float: right;
 }
 
-.toggleConfigBtn div:nth-child(2):hover {
+.toggleConfigBtn div:nth-child(2):hover,
+.settingsBtnConfig + button:hover {
   background-color: #666666;
 }
 
@@ -866,10 +892,33 @@ body {
   display: none;
 }
 
+#goldConfig{
+	color: white;
+}
+
 .settingsBtn {
+  width: 100%;
+  text-align: center;
   border: 1px solid black !important;
   cursor: pointer;
-  text-align: center;
+}
+
+.settingsBtnConfig {
+	width: 83%;
+	border-right: none !important;
+}
+
+.settingsBtnConfig + button {
+	width: 17%;
+	background: gray;
+	border: 1px solid black ;
+	border-left: none;
+	cursor: pointer;
+}
+
+.settingsBtnConfig + button > span {
+  // @TODO remove later
+	top: .2vw !important;
 }
 
 #togglesaveAndExit.settingBtn0 {
@@ -906,13 +955,15 @@ body {
 }
 
 .settingBtn2,
-.btn-yellow {
+.btn-yellow,
+.colorYellow {
   background-color: yellow;
   color: black;
 }
 
 .settingBtn2:hover,
-.btn-yellow:hover {
+.btn-yellow:hover,
+.colorYellow:hover {
   background-color: #e6e600;
   color: black;
   border-color: #c2c200;
@@ -1594,6 +1645,11 @@ body {
   background-color: #809080;
 }
 
+.twLimitSpeed{
+	width: 100%;
+	text-align: center;
+}
+
 #statsWrapper,
 #achievementWrapper,
 #heirloomWrapper,
@@ -1606,6 +1662,10 @@ body {
   padding-left: 5vw;
   padding-right: 5vw;
   color: white;
+}
+
+#heirloomSelections{
+	overflow-y: auto;
 }
 
 .mutLine {
@@ -1684,15 +1744,17 @@ body {
   display: inline-block;
 }
 
-#mutZoomButtons div {
+#mutZoomButtons div,
+#mutZoomButtons button {
   width: 2.5vw;
   border: 1px solid white;
   display: inline-block;
-  padding-top: 0.55vh;
+  background: inherit;
 }
 
-#mutZoomOut {
-  margin-left: 1vw;
+#mutZoomOut,
+#mutZoomIn {
+
 }
 
 /* .mutTreeName{
@@ -1713,6 +1775,9 @@ body {
   width: 8em;
   text-align: center;
   pointer-events: none;
+}
+
+.sealAutoBattle{
 }
 
 #modReplaceBox,
@@ -2480,6 +2545,66 @@ body {
   }
 }
 
+/*
+            #660066 purple
+			#003300 green
+			#ff9900 orange
+            #003399 blue
+
+ */
+ .selectedHeirloomItem.heirloomRare12{
+	font-size: 1.35vw;
+}
+
+.rarityBdBox.heirloomRare12, .heirloomRare12{
+    color: #fff;
+	text-shadow: 0.05vw 0.05vw 0.05vw #660066, -0.05vw 0.05vw 0.05vw #003300, 0.05vw -0.05vw 0.05vw #003399, -0.05vw -0.05vw 0.05vw #003399, 0.15vw 0.15vw 0.15vw #660066, -0.15vw 0.15vw 0.15vw #003300, 0.15vw -0.15vw 0.15vw #003399, -0.15vw -0.15vw 0.15vw #003399,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+}
+
+.specDesc12{
+	color: #fff;
+}
+
+.heirloomRare12 .heirloomMod:hover, .heirloomRare12.rarityBdBox{
+	border: 0.2vw solid #fff;
+}
+
+.heirloomRare12 .heirloomMod{
+	background-color: initial;
+}
+
+.selectedHeirloomItem.heirloomRare12{
+	background: linear-gradient(35deg,  #000 0%, #660066 20%, #003300 40%, #003399 60%,#ff9900 80%, #000 100%);
+}
+
+.heirloomRare12.heirloomThing, .heirloomRare12 div .selectedHeirloomIcon, .rarityBdBox.heirloomRare12 {
+    color: #fff;
+	text-shadow: 0.05vw 0.05vw 0.05vw #660066, -0.05vw 0.05vw 0.05vw #003300, 0.05vw -0.05vw 0.05vw #003399, -0.05vw -0.05vw 0.05vw #ff9900, 0.15vw 0.15vw 0.15vw #660066, -0.15vw 0.15vw 0.15vw #003300, 0.15vw -0.15vw 0.15vw #003399, -0.15vw -0.15vw 0.15vw #ff9900,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+}
+
+.heirloomRare12.heirloomThing.animated, .heirloomRare12 div .selectedHeirloomIcon.animated, .rarityBdBox.heirloomRare12 {
+	animation: heirRare12Animated 10s linear infinite alternate;
+
+}
+
+@keyframes heirRare12Animated{
+	0% {
+		text-shadow: 0.05vw 0.05vw 0.05vw #660066, -0.05vw 0.05vw 0.05vw #003300, 0.05vw -0.05vw 0.05vw #003399, -0.05vw -0.05vw 0.05vw #ff9900, 0.15vw 0.15vw 0.15vw #660066, -0.15vw 0.15vw 0.15vw #003300, 0.15vw -0.15vw 0.15vw #003399, -0.15vw -0.15vw 0.15vw #ff9900,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+	}
+	25% {
+		text-shadow: 0.05vw 0.05vw 0.05vw #003300, -0.05vw 0.05vw 0.05vw #003399, 0.05vw -0.05vw 0.05vw #ff9900, -0.05vw -0.05vw 0.05vw #660066, 0.15vw 0.15vw 0.15vw #003300, -0.15vw 0.15vw 0.15vw #003399, 0.15vw -0.15vw 0.15vw #ff9900, -0.15vw -0.15vw 0.15vw #660066,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+	}
+	50% {
+		text-shadow: 0.05vw 0.05vw 0.05vw #ff9900, -0.05vw 0.05vw 0.05vw #660066, 0.05vw -0.05vw 0.05vw #003300, -0.05vw -0.05vw 0.05vw #003399, 0.15vw 0.15vw 0.15vw #ff9900, -0.15vw 0.15vw 0.15vw #660066, 0.15vw -0.15vw 0.15vw #003300, -0.15vw -0.15vw 0.15vw #003399,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+	}
+	75% {
+		text-shadow: 0.05vw 0.05vw 0.05vw #003399, -0.05vw 0.05vw 0.05vw #ff9900, 0.05vw -0.05vw 0.05vw #660066, -0.05vw -0.05vw 0.05vw #003300, 0.15vw 0.15vw 0.15vw #003399, -0.15vw 0.15vw 0.15vw #ff9900, 0.15vw -0.15vw 0.15vw #660066, -0.15vw -0.15vw 0.15vw #003300,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+	}
+	100% {
+		text-shadow: 0.05vw 0.05vw 0.05vw #660066, -0.05vw 0.05vw 0.05vw #003300, 0.05vw -0.05vw 0.05vw #003399, -0.05vw -0.05vw 0.05vw #ff9900, 0.15vw 0.15vw 0.15vw #660066, -0.15vw 0.15vw 0.15vw #003300, 0.15vw -0.15vw 0.15vw #003399, -0.15vw -0.15vw 0.15vw #ff9900,5px 5px 1.4vw black, 5px -5px 1.4vw black, -5px 5px 1.4vw black, -5px -5px 1.4vw black;
+	}
+}
+
 .upgradeCostTextMax {
   margin-top: -2.5%;
   display: block;
@@ -2770,6 +2895,7 @@ body {
 
 #heirloomNameInput {
   width: 70%;
+  color: black !important;
 }
 
 .heirloomEquipped {
@@ -3288,6 +3414,23 @@ body {
   border-radius: 25px;
 }
 
+.achieveTier15 {
+	border-image: linear-gradient(to top, rgba(11,65,3,1) 10%, rgba(9,9,87,1) 40%, rgba(181,179,26,1) 50%, rgba(30,23,135,1) 60%, rgba(11,65,3,1) 90%);
+	border-image-slice: 3;
+}
+
+.achievementPopupIcon.achieveTier15,
+#achievementHoverTitle.achieveTier15,
+#achievementPopupTitle.achieveTier15,
+#achievementTrackerTitle.achieveTier15 {
+	background-image: radial-gradient(ellipse at center, rgba(11,65,3,1) 10%, rgba(9,9,87,1) 40%, rgba(181,179,26,1) 50%, rgba(30,23,135,1) 60%, rgba(11,65,3,1) 90%);
+	color: black;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-radius: 25px;
+}
+
 #statsTitle {
 }
 
@@ -3666,6 +3809,18 @@ body {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.fluffFormStuffy{
+	color: #22b14d;
+	text-shadow:
+	-1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 #fluffyExpBreakdown {
@@ -4751,10 +4906,10 @@ body {
 .btn-new {
   background: linear-gradient(
     90deg,
-    rgba(27, 11, 171, 1) 10%,
-    rgba(5, 5, 5, 1) 35%,
-    rgba(194, 16, 187, 1) 65%,
-    rgba(171, 172, 12, 1) 85%
+    rgba(34,177,76,1) 42%,
+    rgba(255,127,39,1) 60%,
+    rgba(255,127,39,1) 77%,
+    rgba(255,0,0,1) 91%
   );
   color: white;
   font-weight: bold;
@@ -4774,12 +4929,13 @@ body {
 .open > .dropdown-toggle.btn-new {
   background: linear-gradient(
     90deg,
-    rgba(127, 127, 128, 1) 10%,
-    rgba(23, 105, 37, 1) 26%,
-    rgba(108, 9, 157, 1) 41%,
-    rgba(122, 23, 23, 1) 57%,
-    rgba(107, 74, 19, 1) 75%,
-    rgba(161, 110, 8, 1) 92%
+    rgba(34,177,76,1) 20%,
+    rgba(255,127,39,1) 30%,
+    rgba(34,177,76,1) 45%,
+    rgba(255,0,0,1) 50%,
+    rgba(34,177,76,1) 55%,
+    rgba(255,127,39,1) 70%,
+    rgba(34,177,76,1) 80%
   );
   color: white;
 }
@@ -5681,7 +5837,6 @@ sup {
   position: absolute;
   top: 0;
   left: 0.5vw;
-  border: 1px solid black;
   height: 90vh;
   width: calc(25vw - 4px);
   pointer-events: none;
@@ -5779,6 +5934,7 @@ sup {
 
 .spireControlBox {
   width: 19%;
+  background: inherit;
 }
 
 .spireTrapBox {
@@ -5802,13 +5958,14 @@ sup {
   text-align: center;
 }
 
-.spireControlBoxDbl div {
+.spireControlBoxDbl button {
   display: inline-block;
   width: 45%;
   margin: 2.5%;
   padding: 0.25vw;
   cursor: pointer;
   border: 1px solid #dadada;
+  background: inherit;
 }
 
 .spireTrapBoxSmall,
@@ -6006,12 +6163,24 @@ sup {
     1px 1px 0 black;
 }
 
-.thing.thingColorCanNotAfford .affordSR {
+.thing.thingColorCanNotAfford .affordSR,
+.thing.thingColorFiringJob .affordSR {
   display: none;
 }
 
-.thing.thingColorCanAfford .cantAffordSR {
+.thing.thingColorCanAfford .cantAffordSR,
+.thing.thingColorFiringJob .cantAffordSR,
+.thing.thingColorCtrl .cantAffordSR {
   display: none;
+}
+
+.thing.thingColorCanAfford .firingSR,
+.thing.thingColorCanNotAfford .firingSR {
+	display: none;
+}
+
+:not(.efficientYes) > .efficientSR {
+	display:none;
 }
 
 .screenReaderAchievements {
@@ -6278,7 +6447,6 @@ sup {
 
 #offlineProgressText {
   left: 0;
-  padding-top: 0.35vw;
   width: 100%;
   position: absolute;
   font-weight: bold;
@@ -6292,20 +6460,15 @@ sup {
 }
 
 #offlineTimeOffline {
-  padding-top: 2vw;
   text-align: center;
-  margin-bottom: 1.8vw;
 }
 
 #offlineTimeOffline div input {
-  margin: 0.5vw 0;
 }
 
 .offlineExtraBtn {
   width: 45%;
-  margin: 0.2vw 2%;
   display: inline-block;
-  padding: 0.4vw 0.64vw;
 }
 
 #offlineExtraBtnsContainer {
@@ -6315,9 +6478,8 @@ sup {
 #offlineExtraBtnsContainer,
 #offlineMapBtns,
 #offlineZoneBtns {
-  height: 20vw;
+  height: 22.5vw;
   border: 1px solid white;
-  padding-top: 2vw;
 }
 
 #offlineZoneBtns {
@@ -6779,7 +6941,6 @@ sup {
   max-height: 11em;
   overflow-y: auto;
   background-color: #222222;
-  overflow-x: hidden;
 }
 
 #autoItemsDiv.modeLg {
@@ -6818,20 +6979,25 @@ sup {
   width: calc((63.66% - 24px) / 3);
 }
 
+.autoItemsLine {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.autoItemContainer{
+	display: inline-block;
+  max-width: 8em;
+}
+
 .autoItem {
-  display: inline-block;
-  width: calc((100% - 1.4em - 2px) / 7);
   text-align: center;
   cursor: pointer;
   padding: 0.2em;
   color: white;
-  margin-right: 0.1em;
-  margin-left: 0.1em;
-  margin-top: 0.1em;
 }
 
-.autoItem:first-child {
-  margin-left: calc(0.1em + 1px);
+.autoItemContainer:first-child{
 }
 
 /* .autoItem:nth-child(7){
@@ -6928,6 +7094,10 @@ sup {
   text-align: center;
 }
 
+#abLevelButtons button:focus{
+	color: white;
+}
+
 .autoItemUpgrade {
   border: 1px solid #5e5de8;
   background-color: #090792;
@@ -6944,6 +7114,14 @@ sup {
   border: 1px solid #3f3fa0;
   background-color: #060472;
   color: white;
+}
+
+#autoBattleMenuButtons .btn:focus {
+	color: white;
+}
+
+#autoItemsDiv .btn:focus {
+	color: white;
 }
 
 .abError {
@@ -7041,6 +7219,7 @@ sup {
   vertical-align: top;
   height: 9.5em;
   border-color: #918f8f;
+  background: inherit;
 }
 
 #Extra_LimbsBonusBox {
@@ -7185,6 +7364,8 @@ sup {
   position: absolute;
   color: #090792;
   cursor: pointer;
+  background: inherit;
+  border-width: 0;
 }
 
 #abCloseBtn {
@@ -7193,6 +7374,8 @@ sup {
   position: absolute;
   cursor: pointer;
   color: #921707;
+  background: inherit;
+  border-width: 0;
 }
 
 .ringContainer {
@@ -7401,4 +7584,38 @@ input[type="range"] {
     text-align: right;
     padding-right: 20%;
   }
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	appearance: none;
+}
+
+label {
+	display: inline !important;
+	max-width: inherit !important;
+	margin-bottom: inherit !important;
+	font-weight: inherit !important;
+}
+
+.numFormatTooltip {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.numFormatTooltip > tbody > tr > td :nth-child(1) {
+  width: 9vw;
+}
+
+.numFormatTooltip > tbody > tr > td {
+  padding-right: .5vw;
 }
