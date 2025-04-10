@@ -22,3 +22,17 @@
   gap: 1em;
   justify-content: center;
 }
+
+.equipped {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.carried {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+  justify-content: center;
+}

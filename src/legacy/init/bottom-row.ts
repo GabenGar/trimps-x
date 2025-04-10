@@ -245,6 +245,12 @@ function initBuyContainer() {
   }
 
   {
+    const autoGoldConfig = ensureIDSelector<HTMLElementTagNameMap["div"]>("goldConfig");
+
+    autoGoldConfig.onclick = () => archoGolden.popup()
+  }
+
+  {
     const autoPrestigeBtn = ensureIDSelector<HTMLDivElement>("autoPrestigeBtn");
 
     autoPrestigeBtn.onmouseover = (event) =>

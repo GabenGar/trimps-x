@@ -285,6 +285,10 @@ declare global {
   };
 
   function toggleAutoGolden(): void;
+
+  const archoGolden: {
+    popup(): void;
+  };
 }
 
 type ITooltipThirdArg = "update" | MouseEvent;

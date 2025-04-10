@@ -95,7 +95,7 @@ export function HeirloomsOverview() {
       </div>
 
       <div className="row">
-        <div className="col-xs-6">
+        <div id="heirloomSelections" className="col-xs-6">
           <div id="equippedHeirlooms">
             <div className="row">
               <div
@@ -135,7 +135,7 @@ export function HeirloomsOverview() {
 
             <div
               id="equippedHeirloomsBtnGroup"
-              className="heirloomBtnGroup"
+              className={clsx("heirloomBtnGroup", styles.equipped)}
               style={{ visibility: "hidden" }}
             >
               <div
@@ -159,7 +159,7 @@ export function HeirloomsOverview() {
             <div id="carriedHeirloomsHere"></div>
             <div
               id="carriedHeirloomsBtnGroup"
-              className="heirloomBtnGroup"
+              className={clsx("heirloomBtnGroup", styles.carried)}
               style={{ visibility: "hidden" }}
             >
               <div
