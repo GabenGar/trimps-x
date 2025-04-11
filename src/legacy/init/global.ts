@@ -9,14 +9,18 @@ declare global {
     fightClicked(): void;
   };
 
-  function tooltip(title: "hide"): void;
+  function tooltip(what: "hide"): void;
   function tooltip(
-    title: string,
-    secondArg: null | "customText" | "advMaps",
-    thirdArg: ITooltipThirdArg,
-    fourthArg?: string | 1 | 2 | 3 | true,
-    fifthArg?: string,
-    sixthArg?: number,
+    what: ITooltipWhatArg,
+    isItIn: null | "customText" | "advMaps",
+    event: ITooltipEvent,
+    textString?: string | 1 | 2 | 3 | true,
+    attachFunction?: IAttachFunctionArg,
+    numCheck?: number,
+    renameBtn?: unknown,
+    noHide?: unknown,
+    hideCancel?: unknown,
+    ignoreShift?: unknown,
   ): void;
 
   function hideBones(): void;
@@ -127,7 +131,7 @@ declare global {
     next(): void;
   };
 
-  function getZoneStats(event: MouseEvent): void;
+  function getZoneStats(event: MouseEvent, update?: boolean): void;
 
   function fightManual(): void;
 
@@ -291,6 +295,120 @@ declare global {
   };
 }
 
-type ITooltipThirdArg = "update" | MouseEvent;
+type ITooltipEvent = "update" | MouseEvent;
+type ITooltipWhatArg =
+  | "The Improbability"
+  | "Corruption"
+  | "The Spire"
+  | "The Magma"
+  | "The Mutated Zones"
+  | "Stuffy's Spire"
+  | "Hub"
+  | "Special Modifier"
+  | "Confirm Purchase"
+  | "Trimps Info"
+  | "NW Trimps Info"
+  | "Mastery Info"
+  | "Fluffy"
+  | "Scryer Formation"
+  | "First Amalgamator"
+  | "Empowerments of Nature"
+  | "Helium Per Hour"
+  | "Finish Daily"
+  | "Switch Daily"
+  | "Decay"
+  | "Melt"
+  | "Heirloom"
+  | "Bone Shrine"
+  | "Respec"
+  | "Respec Mutators"
+  | "Well Fed"
+  | "Geneticistassist"
+  | "Welcome"
+  | "Trustworthy Trimps"
+  | "Unequip Heirloom"
+  | "Configure AutoStructure"
+  | "AutoStructure"
+  | "Configure AutoEquip"
+  | "AutoEquip"
+  | "Configure Generator State"
+  | "Rename SA Preset"
+  | "Configure AutoJobs"
+  | "Archaeology Automator"
+  | "AutoJobs"
+  | "AutoGold"
+  | "Unliving"
+  | "AutoGolden Unlocked"
+  | "Poisoned"
+  | "Chilled"
+  | "Breezy"
+  | "Perk Preset"
+  | "Rename Preset"
+  | "UnlockedChallenge2"
+  | "UnlockedChallenge3"
+  | "Eggs"
+  | "Portal"
+  | "Repeat Map"
+  | "Challenge2"
+  | "Geneticistassist Settings"
+  | "Configure Maps"
+  | "Set Map At Zone"
+  | "Change Heirloom Icon"
+  | "Change Portal Color"
+  | "Message Config"
+  | "Hotkeys"
+  | "Void"
+  | "Helium"
+  | "Radon"
+  | "Mastery"
+  | "The Improbability"
+  | "Corruption"
+  | "A Whole New World"
+  | "Change Universe"
+  | "The Spire"
+  | "Stuffy's Spire"
+  | "The Magma"
+  | "The Mutated Zones"
+  | "Exit Spire"
+  | "Confirm Respec Masteries"
+  | "Respec Masteries"
+  | "The Geneticistassist"
+  | "MagnetoShriek"
+  | "Reset"
+  | "Fight"
+  | "AutoFight"
+  | "New Achievements"
+  | "Upgrade Generator"
+  | "Queue"
+  | "Toxic"
+  | "Momentum"
+  | "Custom"
+  | "Max"
+  | "Export"
+  | "Lost Time"
+  | "Export Perks"
+  | "Import"
+  | "Import Perks"
+  | "AutoPrestige"
+  | "AutoUpgrade"
+  | "Recycle All"
+  | "PlayFab Login"
+  | "PlayFab Conflict"
+  | "DominationDominating"
+  | "DominationWeak"
+  | "Fire Trimps"
+  | "Maps"
+  | "Error"
+  | "Amalgamator"
+  | "Time Warp Limiter"
+  | "Scale Equality Scaling"
+  | "Equality Scaling"
+  | "Shield"
+  | "Coordination"
+  | "Configure Number Formats"
+  | "confirm"
+  | "Spire Settings"
+  | string;
+type IAttachFunctionArg = string;
 
 export const defineGlobals = undefined;
