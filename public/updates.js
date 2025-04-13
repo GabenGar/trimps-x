@@ -30,7 +30,7 @@ var openTooltip = null;
  *
  * @param {string} what
  * @param {null | string} [isItIn]
- * @param {string} [event]
+ * @param {string | MouseEvent} [event]
  * @param {string} [textString]
  * @param {string} [attachFunction]
  * @param {number} [numCheck]
@@ -3824,6 +3824,7 @@ function tooltip(
       elem.style.left = "33.75%";
     }
   }
+
   if (isItIn == "customText") {
     costText = attachFunction ? attachFunction : "";
     tooltipText = textString;
@@ -4166,86 +4167,116 @@ function countAlertsIn(where){
 	return count;
 }
 
+/**
+ *
+ * @param {HTMLElement} elem
+ * @param {MouseEvent} [event]
+ * @param {unknown} extraInf
+ * @returns {void}
+ */
 function positionTooltip(elem, event, extraInf) {
-	const e = event || window.event;
-	if (!e) return;
+  const e = event || window.event;
 
-	let cordx = 0;
-	let cordy = 0;
-
-	if (e.pageX || e.pageY) {
-		cordx = e.pageX;
-		cordy = e.pageY;
-	} else if (e.clientX || e.clientY) {
-		cordx = e.clientX;
-		cordy = e.clientY;
+  if (!e) {
+		return
 	}
 
-	lastMousePos = [cordx, cordy];
-	const bodw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	const bodh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	const tiph = Math.max(elem.clientHeight, elem.scrollHeight, elem.offsetHeight);
-	const tipw = Math.max(elem.clientWidth, elem.scrollWidth, elem.offsetWidth);
-	const center = cordx - tipw / 2;
-	const spacing = bodh * 0.04;
+  let cordx = 0;
+  let cordy = 0;
 
-	if (extraInf === 'forceLeft') {
-		elem.style.left = Math.floor(cordx - bodw * 0.55) + 'px';
-		elem.style.top = Math.floor(cordy - tiph * 0.5) + 'px';
-		return;
-	}
+  if (e.pageX || e.pageY) {
+    cordx = e.pageX;
+    cordy = e.pageY;
+  } else if (e.clientX || e.clientY) {
+    cordx = e.clientX;
+    cordy = e.clientY;
+  }
 
-	const setting = extraInf === 'Heirloom' ? 1 : game.options.menu.tooltipPosition.enabled;
-	let setLeft;
-	let setTop;
+  lastMousePos = [cordx, cordy];
+  const bodw = Math.max(
+    document.documentElement.getBoundingClientRect().width,
+    window.innerWidth || 0,
+  );
+  const bodh = Math.max(
+    document.documentElement.getBoundingClientRect().height,
+    window.innerHeight || 0,
+  );
+  const tiph = Math.max(
+    elem.clientHeight,
+    elem.scrollHeight,
+    elem.offsetHeight,
+  );
+  const tipw = Math.max(elem.clientWidth, elem.scrollWidth, elem.offsetWidth);
+  const center = cordx - tipw / 2;
+  const spacing = bodh * 0.04;
 
-	if (setting === 0) {
-		setLeft = cordx + spacing;
-		if (setLeft + tipw > bodw) {
-			setLeft = bodw - tipw;
-		}
-		setTop = cordy - tiph - spacing;
-	}
+  if (extraInf === "forceLeft") {
+    elem.style.left = Math.floor(cordx - bodw * 0.55) + "px";
+    elem.style.top = Math.floor(cordy - tiph * 0.5) + "px";
 
-	if (setting >= 1 || setTop < 0) {
-		setLeft = center;
-		if (setLeft < 0) {
-			setLeft = 0;
-		} else if (setLeft > bodw - tipw) {
-			setLeft = bodw - tipw;
-		}
+    return;
+  }
 
-		const maxAbove = cordy - tiph - spacing;
-		if (setting === 1 || maxAbove < 0) {
-			setTop = cordy + spacing;
-			if (setTop + tiph > bodh) {
-				setTop = maxAbove;
-			}
-		} else {
-			setTop = maxAbove;
-		}
-	}
+  const setting =
+    extraInf === "Heirloom" ? 1 : game.options.menu.tooltipPosition.enabled;
+  let setLeft;
+  let setTop;
 
-	/* check if the tooltip is offscreen vertically */
-	if (setTop < 0 || setTop + tiph > bodh) {
-		const spaceLeft = cordx;
-		const spaceRight = bodw - cordx;
-		if (spaceRight >= spaceLeft) {
-			setLeft = cordx + spacing;
-			if (setLeft + tipw > bodw) {
-				setLeft = bodw - tipw;
-			}
-		} else {
-			setLeft = cordx - tipw - spacing;
-			if (setLeft < 0) {
-				setLeft = 0;
-			}
-		}
-		setTop = Math.max(0, Math.min(cordy - tiph / 2, bodh - tiph));
-	}
+  if (setting === 0) {
+    setLeft = cordx + spacing;
 
-	elem.style.left = Math.floor(setLeft) + 'px';
-	elem.style.top = Math.floor(setTop) + 'px';
+    if (setLeft + tipw > bodw) {
+      setLeft = bodw - tipw;
+    }
+
+    setTop = cordy - tiph - spacing;
+  }
+
+  if (setting >= 1 || setTop < 0) {
+    setLeft = center;
+
+    if (setLeft < 0) {
+      setLeft = 0;
+    } else if (setLeft > bodw - tipw) {
+      setLeft = bodw - tipw;
+    }
+
+    const maxAbove = cordy - tiph - spacing;
+
+    if (setting === 1 || maxAbove < 0) {
+      setTop = cordy + spacing;
+
+      if (setTop + tiph > bodh) {
+        setTop = maxAbove;
+      }
+    } else {
+      setTop = maxAbove;
+    }
+  }
+
+  /* check if the tooltip is offscreen vertically */
+  if (setTop < 0 || setTop + tiph > bodh) {
+    const spaceLeft = cordx;
+    const spaceRight = bodw - cordx;
+
+    if (spaceRight >= spaceLeft) {
+      setLeft = cordx + spacing;
+
+      if (setLeft + tipw > bodw) {
+        setLeft = bodw - tipw;
+      }
+    } else {
+      setLeft = cordx - tipw - spacing;
+
+      if (setLeft < 0) {
+        setLeft = 0;
+      }
+    }
+    setTop = Math.max(0, Math.min(cordy - tiph / 2, bodh - tiph));
+  }
+
+  elem.style.left = Math.floor(setLeft) + "px";
+  elem.style.top = Math.floor(setTop) + "px";
 }
 
 function addTooltipPricing(toTip, what, isItIn) {
@@ -4695,7 +4726,7 @@ function getZoneSeconds(){
 
 /**
  *
- * @param {MouseEvent} event
+ * @param {MouseEvent | null} event
  * @param {boolean} [update]
  * @returns {void}
  */
