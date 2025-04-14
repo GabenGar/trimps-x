@@ -4,7 +4,7 @@ import styles from "./buy.module.scss";
 
 export function BuyColumn() {
   return (
-    <div id="buyCol" className="col-xs-5" style={{ visibility: "hidden" }}>
+    <div id="buyCol" style={{ visibility: "hidden" }}>
       <Queue />
 
       <div id="outerBuyContainer">
