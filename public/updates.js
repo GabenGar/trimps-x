@@ -3043,7 +3043,7 @@ function tooltip(
       tooltipText += `<${tagName} class='thing pointer noselect thingColor permGenUpgrade' ${events} id='generatorUpgrade${item}'></${tagName}>`;
     }
 
-    tooltipText += `<br/><div id='generatorUpgradeDescription' class='noselect' aria-live='polite'>${usingScreenReader ? "" : "<b>Click an upgrade to learn more about it!</b><br/>"}</div>`;
+    tooltipText += `<br/><div id='generatorUpgradeDescription' aria-live='polite'>${usingScreenReader ? "" : "<b>Click an upgrade to learn more about it!</b><br/>"}</div>`;
     tooltipText += "</div>";
     costText =
       "<b style='color: red'>These upgrades persist through portal and cannot be refunded. Choose wisely! " +
