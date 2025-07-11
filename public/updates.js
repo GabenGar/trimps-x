@@ -3494,7 +3494,7 @@ function tooltip(
 
     if (textString) {
       tooltipText =
-        '<div style="font-size: 1.7vh"><div class="maxCenter"><div style="width: 50%; margin-left: 25%" role="button" tabindex="0" class="noselect pointer portalThing thing perkColorOff changingOff equalityColor' +
+        '<div><div class="maxCenter"><div style="width: 50%; margin-left: 25%" role="button" tabindex="0" class="noselect pointer portalThing thing perkColorOff changingOff equalityColor' +
         state +
         '" id="equalityScaling2" onclick="toggleEqualityScale(true)"><span class="thingName">Scale Equality</span><br><span class="thingOwned"><span id="equalityScalingState2">' +
         state +

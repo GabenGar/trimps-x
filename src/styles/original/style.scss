@@ -34,9 +34,6 @@ body {
   color: #ffdddd;
 }
 
-.smallEnemyName {
-}
-
 .liquid ul li {
   border: 0;
   background: yellow;
@@ -181,19 +178,10 @@ body {
   padding: 0.5vw 0;
 }
 
-.talentIcon {
-}
-
-.talentIcon .icomoon {
-}
-
 #addChallenge {
   display: block;
   text-align: center;
   font-weight: bold;
-}
-
-.talentName {
 }
 
 .talentPurchased {
@@ -336,29 +324,21 @@ body {
 }
 
 .resProgress {
-  height: 2em;
+  height: 3em;
 }
 
 .title {
   font-weight: bold;
 }
 
-#logBtnGroup {
-}
-
-#logBtnGroup div button {
-}
-
 .workBtn {
   border: 1px solid white;
   background: rgba(0, 0, 0, 1);
   text-align: center;
-  padding: 0.2vw;
 }
 
 .toggleConfigBtn {
   overflow: hidden;
-  height: 1.35vw;
 }
 
 .toggleConfigBtn div {
@@ -379,9 +359,6 @@ body {
 .toggleConfigBtn div:nth-child(2):hover,
 .settingsBtnConfig + button:hover {
   background-color: #666666;
-}
-
-.toggleConfigBtn div span {
 }
 
 #autoGoldenChoices {
@@ -468,12 +445,6 @@ body {
   padding: 4px;
 }
 
-#scienceCollectBtn {
-}
-
-.portalBtn {
-}
-
 #portalTimer {
   cursor: pointer;
 }
@@ -544,33 +515,17 @@ body {
   text-decoration: underline;
 }
 
-.bdPercent {
-}
-
-.bdNumber {
-}
-
-.collectRow {
-}
-
 #trapArea {
   border: 1px solid white;
   display: inline-block;
   padding: 2%;
   margin-bottom: 2%;
   margin-top: 2%;
-  width: 85%;
-}
-
-#trappingBar {
+  width: 90%;
 }
 
 #trappingProgress {
   margin-top: 3%;
-}
-
-#empHide,
-#unempHide {
 }
 
 #buyCol {
@@ -853,9 +808,6 @@ body {
   font-weight: bold;
 }
 
-.innerFightBar {
-}
-
 #battleHead {
   text-align: center;
 }
@@ -1040,9 +992,6 @@ body {
   height: 5.2vw;
 }
 
-#settingsTabs {
-}
-
 .settingTypeBtn {
   margin-right: 0;
 }
@@ -1077,9 +1026,6 @@ body {
 
 .progress {
   margin-bottom: 0;
-}
-
-.ownedArea {
 }
 
 #leftMenu {
@@ -1136,7 +1082,7 @@ body {
 
 #tooltipDiv,
 #tooltipDiv2 {
-  width: 32.5vw;
+  max-width: 90%;
   position: absolute;
   background: lightgrey;
   display: none;
@@ -1152,12 +1098,6 @@ body {
 #tooltipDiv.tooltipExtraHeirloom {
   background-color: initial;
   border: initial;
-}
-
-#tooltipDiv .selectedHeirloomItem {
-}
-
-#tooltipDiv .selectedHeirloomItem.heirloomRare11 {
 }
 
 #tooltipDiv.tooltipExtraHeirloom hr {
@@ -1204,9 +1144,6 @@ body {
   display: block;
 }
 
-#mapsBtnText {
-}
-
 .shrinkBtnText div:first-child {
   margin-top: 0.3em !important;
 }
@@ -1226,18 +1163,10 @@ body {
   display: inline-block;
 }
 
-.badBadge {
-}
-
-#badCanCrit {
-}
 
 .trimpBadge {
   background-color: yellow;
   color: black;
-}
-
-.antiBadge {
 }
 
 .sugarRushBadge {
@@ -1326,8 +1255,7 @@ body {
   text-align: center;
   margin-bottom: 5px;
 }
-.selectMapBtn {
-}
+
 .mapStatsValue {
   text-align: left;
 }
@@ -1358,9 +1286,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 1vw;
   margin-right: 1px;
-}
-
-#advMapsTitle {
 }
 
 .advMapsTitle {
@@ -1584,9 +1509,6 @@ body {
   background-color: #696980;
 }
 
-.portalThing.detailed {
-}
-
 .portalThing {
   width: 19.3%;
 }
@@ -1629,14 +1551,8 @@ body {
   letter-spacing: -0.01em;
 }
 
-.portalThing.detailed.tinyPerk {
-}
-
 .portalThing .thingName {
   font-weight: bold;
-}
-
-.portalThing .thingOwned {
 }
 
 .portalThing.additive.perkColorOn {
@@ -1754,11 +1670,6 @@ body {
   background: inherit;
 }
 
-#mutZoomOut,
-#mutZoomIn {
-
-}
-
 /* .mutTreeName{
 	position: absolute;
 	top: -1.5em;
@@ -1779,15 +1690,9 @@ body {
   pointer-events: none;
 }
 
-.sealAutoBattle{
-}
-
 #modReplaceBox,
 #modUpgradeBox {
-  border: 0.1vw solid #777;
-  padding: 0.2vw;
-  padding-top: 0.55vw;
-  height: 6vw;
+  border: $size-thin solid #777;
 }
 
 #addCarriedBtn,
@@ -1797,9 +1702,6 @@ body {
   width: initial;
   padding: 0.1vw 0.2vw;
   margin: 0;
-}
-
-.heirloomEquippedContainer.col-xs-4 {
 }
 
 .heirloomEquippedContainer.col-xs-4 div {
@@ -1867,10 +1769,6 @@ body {
 .heirloomBtnInactive {
   background-color: #333;
   color: white;
-}
-
-#modUpgradeCost {
-  margin-bottom: calc(0.4vw - 1px);
 }
 
 #modReplaceSelect {
@@ -2381,12 +2279,6 @@ body {
   }
 }
 
-.selectedHeirloomItem.heirloomRare10 {
-}
-
-.selectedHeirloomItem.heirloomRare11 {
-}
-
 .rarityBdBox.heirloomRare11,
 .heirloomRare11 {
   color: #1989d4;
@@ -2675,11 +2567,6 @@ body {
   box-shadow: inset 0px 0px 0px 0.2vw #646473;
 }
 
-#ShieldEquippedName,
-#StaffEquippedName,
-#CoreEquippedName {
-}
-
 .renameHeirloomBtn {
   background-color: black;
   color: white;
@@ -2959,18 +2846,6 @@ body {
   color: #00bfff;
 }
 
-.doubleTall {
-}
-
-.tripleTall {
-}
-
-.quadTall {
-}
-
-.quinTall {
-}
-
 #achievementPopup {
   position: absolute;
   top: 80%;
@@ -3053,9 +2928,6 @@ body {
   cursor: pointer;
 }
 
-.bdZoneTitle {
-}
-
 #roboTrimpBtn {
   text-align: center;
 }
@@ -3069,16 +2941,10 @@ body {
   color: black;
 }
 
-#achievementHelpContainer {
-}
-
 #achievementMainClose,
 #achievementClose2 {
   color: #6f1f1f;
   cursor: pointer;
-}
-
-#achievementClose2 {
 }
 
 #steamAchieveSync {
@@ -3087,25 +2953,10 @@ body {
   margin-top: 0.4vw;
 }
 
-#achievementHeader {
-}
-
 .achievementMainTitle {
   font-weight: bold;
 }
 
-.achievementPopupIcon {
-}
-
-#achievementPopupDescription,
-#achievementHoverDescription,
-#achievementTrackerDescription {
-}
-
-#achievementPopupReward,
-#achievementHoverReward,
-#achievementTrackerReward {
-}
 
 #achievementHoverProgress,
 #achievementTrackerProgress {
@@ -3431,9 +3282,6 @@ body {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	border-radius: 25px;
-}
-
-#statsTitle {
 }
 
 .activatePortalBtn {
@@ -3849,9 +3697,6 @@ body {
   width: 100%;
 }
 
-#fluffyTooltipTopContainer {
-}
-
 #fluffyLevelBreakdown {
   border: 1px solid black;
   width: 100%;
@@ -4233,9 +4078,6 @@ body {
   margin-bottom: 1%;
 }
 
-#singleRunBonuses div .boneBtn {
-}
-
 .singleBonusBox {
   width: 50%;
   display: inline-block;
@@ -4254,17 +4096,11 @@ body {
   margin-bottom: 1vw;
 }
 
-.boostSpacer {
-}
-
 .importsPreview {
   text-align: left;
   margin-bottom: 0.1vw;
   width: 95%;
   display: inline-block;
-}
-
-.bundleBtn {
 }
 
 .boneBtnStateOff {
@@ -4345,19 +4181,11 @@ body {
   margin-top: 0.6vw;
   margin-bottom: 0.6vw;
 }
-#boneTopRow {
-}
+
 #boneTitleContainer {
   font-weight: bold;
 }
-#boneOwnedContainer {
-}
-#purchaseBonesTitle,
-#purchasingBonesTitle {
-}
 
-#importBuyDesc {
-}
 
 .messageCheckboxHolder input {
   width: 1vw;
@@ -4369,14 +4197,8 @@ body {
   font-weight: bold;
 }
 
-.messageNameHolder {
-}
-
 #messageConfigMessage {
   height: 3vw;
-}
-
-.messageConfigCheckbox {
 }
 
 .thingSmall {
@@ -4481,9 +4303,6 @@ body {
 .importOwned {
   background-color: green !important;
   color: white;
-}
-
-#mapBonus {
 }
 
 #blockDiv {
@@ -4591,9 +4410,6 @@ body {
   background-color: #2a5866;
 }
 
-.tinyTextTip table tbody tr td {
-}
-
 #specificChallengeDescription {
   min-height: 15em;
   overflow-y: auto;
@@ -4650,9 +4466,6 @@ body {
   background-color: #9a7300;
 }
 
-#extraGridInfo {
-}
-
 #extraGridInfoTitle {
   text-align: center;
   font-weight: bold;
@@ -4696,9 +4509,6 @@ body {
 .formationBtn.offlineForm {
   display: inline-block;
   width: 10%;
-}
-
-#helpContainer {
 }
 
 .pauseMsg {
@@ -5235,15 +5045,13 @@ input::-webkit-inner-spin-button {
 }
 
 .infoSpanNature {
-  display: inline-block;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 4vw;
-  padding: 0.1vw;
-  padding-top: 0.2vw;
   position: absolute;
   top: 0.4vw;
   left: 0.25vw;
+  display: inline-block;
+  width: 4em;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .infoSpanNature span {
@@ -5271,7 +5079,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 2%;
   cursor: pointer;
   position: relative;
-  height: 3.1vw;
+  height: 3.5em;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
@@ -5327,15 +5135,10 @@ input::-webkit-inner-spin-button {
   left: 8%;
 }
 
-#natureA span {
-}
-
 #natureContainer .row {
   overflow: hidden;
 }
 
-.natureUberName {
-}
 
 .natureMessage {
   text-shadow:
@@ -5426,9 +5229,6 @@ sup {
   display: inline-block;
 }
 
-#heliumPh.heliumPh {
-}
-
 .playFabRow div:nth-child(2) {
   border-left: 1px solid black;
 }
@@ -5480,9 +5280,6 @@ sup {
   padding-left: 0;
 }
 
-#playFabIndicator {
-}
-
 .iconStateGood {
   color: green;
 }
@@ -5522,16 +5319,12 @@ sup {
   margin: 0;
 }
 
-#dgChangeBtnContainer {
-  height: 1.6vw;
-}
-
 .dgChangeBtn {
-  border: 1px solid white;
-  text-align: center;
-  padding: 0.09vw 0.2vw 0 0.2vw;
-  height: 100%;
   display: inline-block;
+  height: 100%;
+  text-align: center;
+  border: 1px solid white;
+  padding: $size-little;
 }
 
 .eradicatedBtns #generatorPassiveBtn,
@@ -5541,17 +5334,12 @@ sup {
 
 #generatorStateConfigBtn {
   background-color: grey;
-  padding-left: 0.4vw;
-  padding-right: 0.4vw;
 }
 
 #genStateConfigTop .optionContainer {
   width: 50%;
   display: inline-block;
   margin: 0;
-}
-
-#generatorStateConfigBtn .glyphicon::before {
 }
 
 #generatorStateConfigBtn:hover {
@@ -5644,16 +5432,16 @@ sup {
 }
 
 #generatorTickContainer {
-  height: 5vw;
-  width: 5vw;
+  width: 5em;
+  height: 5em;
   display: inline-block;
   position: relative;
   margin-top: 3%;
 }
 
 #fuelContainer {
-  width: 5vw;
-  height: 5vw;
+  width: 5em;
+  height: 5em;
   display: inline-block;
   position: relative;
   border: 1px solid black;
@@ -5792,9 +5580,6 @@ sup {
 
 #donateForm input[type="image"] {
   background-color: initial !important;
-}
-
-.icon-controller-play {
 }
 
 .patchNotice {
@@ -6190,15 +5975,9 @@ sup {
 	display:none;
 }
 
-.screenReaderAchievements {
-}
-
 .screenReaderAchievements tbody tr td {
   padding: 0.1vw;
   border: 1px solid white;
-}
-
-.screenReaderPerk {
 }
 
 #swapPortalUniverseBtn {
@@ -6319,10 +6098,6 @@ sup {
 
 .heirloomSpent {
   text-decoration: italic;
-}
-
-#challengeTrappapalooza .thingName,
-#challengePandemonium .thingName {
 }
 
 .questMessage {
@@ -6468,9 +6243,6 @@ sup {
 
 #offlineTimeOffline {
   text-align: center;
-}
-
-#offlineTimeOffline div input {
 }
 
 .offlineExtraBtn {
@@ -6666,9 +6438,6 @@ sup {
   background-color: #dcdcdc;
 }
 
-#achievementTrackerIconContainer {
-}
-
 #achievementTrackerProgress,
 #achievementTrackerReward {
   margin-top: 0.2vw;
@@ -6726,9 +6495,6 @@ sup {
     -1px 1px 0 black,
     1px 1px 0 black;
   z-index: 9999999;
-}
-
-#achievementTrackerTitle {
 }
 
 #mayhemPoisonStacks span {
@@ -6945,13 +6711,8 @@ sup {
 }
 
 #autoItemsDiv {
-  max-height: 11em;
   overflow-y: auto;
   background-color: #222222;
-}
-
-#autoItemsDiv.modeLg {
-  max-height: 16em;
 }
 
 .abOptions .btn {
@@ -7003,13 +6764,6 @@ sup {
   padding: 0.2em;
   color: white;
 }
-
-.autoItemContainer:first-child{
-}
-
-/* .autoItem:nth-child(7){
-	margin-right: 0;
-} */
 
 .autoItemEquipped {
   border: 1px solid #42bd7f;
@@ -7300,9 +7054,6 @@ sup {
   background-color: #252953 !important;
 }
 
-.contractDescription.descriptionSm {
-}
-
 #autoBattleMenuButtons .btn {
   border-radius: 12px 12px 0 0;
   padding: 0.35vw 1.5vw;
@@ -7322,9 +7073,6 @@ sup {
 
 .darkBorder.btn.autoColorGrey {
   border: 1px solid #26262c;
-}
-
-.contractBox .btn {
 }
 
 .abTabNone a {
@@ -7517,17 +7265,10 @@ input[type="range"] {
   background: transparent;
 }
 
-@media screen and (max-width: 1200px) {
-  #tooltipDiv {
-  }
-}
-
 @media (max-width: 1000px) {
   #tooltipDiv.tooltipExtraEquality {
     width: 80%;
     left: 10% !important;
-  }
-  #settingsTable > tbody > tr > td {
   }
   /* SPIRE TD */
   #floatingCombatText {
@@ -7538,10 +7279,6 @@ input[type="range"] {
   }
   #playerSpireInfoPanel {
     width: 50vw !important;
-  }
-  .playerSpireEnemy {
-  }
-  .floatingCombatText {
   }
 
   /* LOG */
@@ -7572,21 +7309,11 @@ input[type="range"] {
     padding-top: 2px;
     height: 65px;
   }
-  #queueRow {
-  }
-  #noQueue {
-  }
-  .queueItem {
-  }
-  #queueItemsHere {
-  }
+
   #dgChangeBtnContainer {
     height: auto;
   }
-  .heirloomEquippedContainer.col-xs-4 {
-  }
-  .infoSpanNature {
-  }
+
   .natureTitle {
     text-align: right;
     padding-right: 20%;
