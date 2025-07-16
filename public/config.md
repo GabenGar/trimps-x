@@ -1,0 +1,96 @@
+# `config.js`
+
+## Declared Symbols
+- `newGame()`
+- `game`
+
+## Referenced Symbols
+### unknown
+- `nw`
+
+### `main.js`
+- `getCurrentMapObject()`
+- `getEmpowerment()`
+- `getUberEmpowerment()`
+- `Fluffy`
+- `heliumOrRadon()`
+- `createVoidMap()`
+- `needAnS()`
+- `formatMinutesForDescriptions()`
+- `simpleSeconds()`
+- `scaleLootBonuses()`
+- `getPerkLevel()`
+- `calcHeirloomBonus()`
+- `calculatePercentageBuildingCost()`
+- `usingScreenReader`
+- `save()`
+- `isNumberBad()`
+- `updateTalentNumbers()`
+- `handlePauseMessage()`
+- `addMapModifier()`
+- `log10()`
+- `getHighestLevelCleared()`
+- `setGather()`
+- `getLastPortal()`
+- `mutations`
+- `countChallengeSquaredReward()`
+- `updateAntiStacks()`
+- `getGameTime()`
+- `getPerkLevel()`
+- `manageStacks()`
+- `getRandomIntSeeded()`
+- `isSaving`
+- `getDailyChallenge()`
+- `portalUniverse`
+- `startDaily()`
+- `abandonDaily()`
+- `getDailyHeliumValue()`
+- `countDailyWeight()`
+- `getTotalPerkResource()`
+- `unlockPerk()`
+- `updateBalanceStacks()`
+- `addHelium()`
+- `getScientistLevel()`
+- `getScientistInfo()`
+- `toggleAutoPrestiges()`
+- `toggleAutoUpgrades()`
+- `updateElectricityStacks()`
+- `updateLivingStacks()`
+- `updateMapCredits()`
+- `startTheMagma()`
+- `portalWindowOpen`
+
+### `updates.js`
+- `prettify()`
+- `refreshMaps()`
+- `swapClass()`
+- `message()`
+- `lastTooltipTitle`
+- `displayEfficientEquipment()`
+- `drawAllUpgrades()`
+- `drawAllEquipment()`
+- `updateMazPreset()`
+- `cancelTooltip()`
+- `tooltip()`
+- `verticalCenterTooltip()`
+- `readNiceCheckbox()`
+- `toggleSetting()`
+- `autoBattle`
+- `screenReaderAssert()`
+- `tooltipUpdateFunction`
+- `romanNumeral()`
+- `getZoneMinutes()`
+- `formatMultAsPercent()`
+- `giveSingleAchieve()`
+- `unlockUpgrade()`
+- `addNewSetting()`
+- `updateDecayStacks()`
+- `unlockEquipment()`
+
+### `objects.js`
+- `u2Mutations`
+- `holidayObj`
+- `alchObj`
+
+### `playerSpire.js`
+- `playerSpire`
