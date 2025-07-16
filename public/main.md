@@ -62,7 +62,6 @@
 - `checkChallengeSquaredAllowed()`
 - `formatDailySeedDate()`
 - `getSpecialSquaredRewards()`
-- `needAnS()`
 - `getSquaredDescriptionInRun()`
 - `viewPortalUpgrades()`
 - `screwThisUniverse()`
@@ -127,7 +126,6 @@
 - `cancelPortal()`
 - `restoreNumTab()`
 - `loadEquipment()`
-- `getCurrentMapObject()`
 - `scaleLootLevel()`
 - `rewardResource()`
 - `isScryerBonusActive()`
@@ -234,7 +232,6 @@
 - `checkVoidMap()`
 - `seededRandom()`
 - `getRandomIntSeeded()`
-- `createVoidMap()`
 - `buffVoidMaps()`
 - `buffVoidMaps200()`
 - `addVoidAlert()`
@@ -248,7 +245,6 @@
 - `getParityBonus()`
 - `calculateParityBonus()`
 - `getHazardParityMult()`
-- `getHazardGammaBonus()`
 - `calcHeirloomBonusDecimal()`
 - `calcHeirloomBonus()`
 - `populateHeirloomWindow()`
@@ -442,7 +438,6 @@
 - `getHighestIdealRow()`
 - `getTalentsPurchased()`
 - `displayTalents()`
-- `updateTalentNumbers()`
 - `respecTalents()`
 - `purchaseTalent()`
 - `completeTalentPurchase()`
@@ -452,7 +447,6 @@
 - `getHighestTalentTier()`
 - `getAllowedTalentTiers()`
 - `initTalents()`
-- `countPurchasedTalents()`
 - `checkAffordableTalents()`
 - `getNextTalentCost()`
 - `getTotalTalentCost()`
@@ -678,39 +672,48 @@
 - `makeScreenreaderTooltips()`
 - `makeAccessibleTooltip()`
 - `keyTooltip()`
+- `usingScreenReader`
+- `portalWindowOpen`
 
 ## Referenced Symbols
+### unknown
 - `kongregate`
-- `usingScreenReader`
-- `game`
-- `autoBattle`
-- `u2Mutations`
-- `playerSpire`
 - `LZString`
-- `message()`
-- `postMessages()`
 - `nw`
 - `saveWindowSettings()`
 - `greenworks`
 - `saveToSteam()`
+- `Decimal`
+- `loadFromSteam()`
+- `mutTreeWrapper`
+
+### `updates.js`
+- `message()`
+- `postMessages()`
 - `tooltip()`
 - `toggleSetting()`
 - `resetGame()`
 - `addNewSetting()`
 - `addQueueItem()`
-- `alchObj`
 - `unlockUpgrade()`
 - `unlockJob()`
 - `achievementCompatibilityUnlock()`
 - `checkAchieve()`
-- `unlockUpgrade()`
 - `giveSingleAchieve()`
 - `calculateAchievementBonus()`
 - `cancelTooltip()`
-- `Decimal`
-- `loadFromSteam()`
-- `holidayObj`
 - `displayPerksBtn()`
 - `screenReaderSummary()`
-- `buildNiceCheckbox`
-- `mutTreeWrapper`
+- `buildNiceCheckbox()`
+
+### `config.js`
+- `game`
+
+### `objects.js`
+- `autoBattle`
+- `u2Mutations`
+- `alchObj`
+- `holidayObj`
+
+### `playerSpire.js`
+- `playerSpire`

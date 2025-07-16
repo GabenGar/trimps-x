@@ -9,22 +9,26 @@
 - `update()`
 
 ## Referenced Symbols
-
+### `config.js`
 - `game`
-- `prettify()`
+
+### `main.js`
 - `htmlEncode()`
-- `tooltip()`
-- `buildNiceCheckbox()`
-- `readNiceCheckbox()`
-- `cancelTooltip()`
-- `giveSingleAchieve()`
-- `romanNumeral()`
 - `usingScreenReader`
 - `makeAccessibleTooltip()`
-- `tooltipUpdateFunction`
 - `isNumberBad()`
 - `calculateTimeToMax()`
 - `calcHeirloomBonus()`
 - `needAnS()`
 - `heliumOrRadon()`
 - `Fluffy`
+
+### `updates.js`
+- `prettify()`
+- `tooltip()`
+- `buildNiceCheckbox()`
+- `readNiceCheckbox()`
+- `cancelTooltip()`
+- `giveSingleAchieve()`
+- `romanNumeral()`
+- `tooltipUpdateFunction`

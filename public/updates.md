@@ -82,7 +82,6 @@
 - `filterMessage()`
 - `getTabClass()`
 - `lastScrolls`
-- `filterTabs()`
 - `enableDisableTab()`
 - `setMax()`
 - `convertNotationsToNumber()`
@@ -115,7 +114,6 @@
 - `getUniqueColor()`
 - `getMapIcon()`
 - `getMapSpecTag()`
-- `unlockUpgrade()`
 - `drawAllUpgrades()`
 - `drawUpgrade()`
 - `updateSRBuyAmt()`
@@ -123,7 +121,6 @@
 - `updateButtonColor()`
 - `getWarpstationColor()`
 - `unlockEquipment()`
-- `drawAllEquipment()`
 - `drawEquipment()`
 - `displayPerksBtn()`
 - `hasNewSetting`
@@ -164,17 +161,22 @@
 - `screenReaderSummary()`
 
 ## Referenced Symbols
+### unknown
+- `kongregate`
+- `DecimalBreed()`
+- `activateSteamAchieve()`
 
+### `config.js`
 - `game`
+- `newGame()`
+
+### `main.js`
 - `getHighestLevelCleared()`
 - `shiftPressed`
-- `tooltip()`
 - `mapSpecialModifierConfig`
 - `dailyModifiers`
 - `boneTemp`
-- `kongregate`
 - `checkIfLiquidZone()`
-- `u2Mutations`
 - `getOverkillerCount()`
 - `needAnS()`
 - `canU2Overkill()`
@@ -191,7 +193,6 @@
 - `getAutoStructureSetting()`
 - `getAutoEquipSetting()`
 - `getGenStateConfigTooltip()`
-- `autoBattle`
 - `getAutoJobsSetting()`
 - `getTotalPortals()`
 - `portalUniverse`
@@ -208,7 +209,6 @@
 - `getHighestIdealRow()`
 - `getAllowedTalentTiers()`
 - `canPurchaseRow()`
-- `portalUniverse`
 - `checkIfSpireWorld()`
 - `getMagmiteDecayAmt()`
 - `updateGeneratorUpgradeHtml()`
@@ -255,14 +255,12 @@
 - `hideBones()`
 - `setGather()`
 - `recycleAllExtraHeirlooms()`
-- `newGame()`
 - `getDailyChallenge()`
 - `getSLevel()`
 - `toggleAutoStorage()`
 - `recalculateHeirloomBonuses()`
 - `getAutoJobsSetting()`
 - `getRandomIntSeeded()`
-- `DecimalBreed()`
 - `pauseFight()`
 - `repeatClicked()`
 - `toggleAutoTrap()`
@@ -315,13 +313,16 @@
 - `enablePlayFab()`
 - `calculateDamage()`
 - `checkHousing()`
-- `activateSteamAchieve()`
 - `countHeliumSpent()`
 - `getHighestPrestige()`
 - `toZalgo()`
 - `getGoldenFrequency()`
 - `makeIconEffectHTML()`
 - `save()`
-- `formatSecondsForZoneTime(`
+- `formatSecondsForZoneTime()`
 - `getCurrentMapCell()`
 - `getEnergyShieldMult()`
+
+### `objects.js`
+- `u2Mutations`
+- `autoBattle`

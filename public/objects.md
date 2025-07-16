@@ -8,24 +8,19 @@
 - `u2Mutations`
 
 ## Referenced Symbols
-- `message()`
+### `config.js`
 - `game`
-- `swapClass()`
-- `prettify()`
+
+### `main.js`
 - `getFarmlandsResType()`
-- `lastTooltipTitle`
-- `cancelTooltip()`
 - `isNumberBad()`
-- `tooltip()`
-- `giveSingleAchieve()`
 - `htmlEncode()`
 - `needAnS()`
 - `checkAverageExotics()`
 - `canU2Overkill()`
 - `updateTalentNumbers()`
-- `filterTabs()`
-- `getNextTalentCost()`
 - `makeAccessibleTooltip()`
+- `getNextTalentCost()`
 - `getRecycleValueByRarity()`
 - `getHeirloomRarity()`
 - `simpleSeconds()`
@@ -35,7 +30,6 @@
 - `countDailyWeight()`
 - `Fluffy`
 - `calcHeirloomBonus()`
-- `checkAchieve()`
 - `rewardResource()`
 - `heliumIcon()`
 - `getRandomIntSeeded()`
@@ -43,3 +37,14 @@
 - `getAmountInRange()`
 - `updateAllBattleNumbers()`
 - `getCurrentWorldCell()`
+
+### `updates.js`
+- `prettify()`
+- `message()`
+- `swapClass()`
+- `lastTooltipTitle`
+- `cancelTooltip()`
+- `tooltip()`
+- `giveSingleAchieve()`
+- `filterTabs()`
+- `checkAchieve()`
